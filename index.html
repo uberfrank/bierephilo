@@ -30,6 +30,7 @@
             <li><a href="#home" class="nav-link active">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#questions" class="nav-link">Questions</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
@@ -40,34 +41,35 @@
         <section id="home" class="section hero">
             <div class="container">
                 <h2 class="hero-title">Welcome to Bierephilo</h2>
-                <p class="hero-subtitle">Your perfect mobile companion</p>
-                <button class="btn btn-primary" id="ctaButton">Get Started</button>
+                <p class="hero-subtitle">Where beer meets philosophy - 168 questions to ponder</p>
+                <button class="btn btn-primary" id="ctaButton">Explore Questions</button>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="section about">
             <div class="container">
-                <h2 class="section-title">About Us</h2>
+                <h2 class="section-title">About Bierephilo</h2>
                 <p class="section-text">
-                    Bierephilo is a modern mobile-first web application designed to provide
-                    an exceptional user experience on all devices.
+                    Bierephilo combines the convivial spirit of beer culture with deep philosophical inquiry.
+                    Explore 168 thought-provoking questions across 12 philosophical categories,
+                    perfect for contemplation over a good drink.
                 </p>
                 <div class="card-grid">
                     <div class="card">
-                        <div class="card-icon">⚡</div>
-                        <h3 class="card-title">Fast</h3>
-                        <p class="card-text">Lightning-fast performance optimized for mobile</p>
+                        <div class="card-icon">🤔</div>
+                        <h3 class="card-title">168 Questions</h3>
+                        <p class="card-text">Deep philosophical questions to explore and discuss</p>
                     </div>
                     <div class="card">
-                        <div class="card-icon">📱</div>
-                        <h3 class="card-title">Responsive</h3>
-                        <p class="card-text">Perfect on any screen size</p>
+                        <div class="card-icon">📚</div>
+                        <h3 class="card-title">12 Categories</h3>
+                        <p class="card-text">From metaphysics to ethics, logic to aesthetics</p>
                     </div>
                     <div class="card">
-                        <div class="card-icon">🎨</div>
-                        <h3 class="card-title">Beautiful</h3>
-                        <p class="card-text">Clean and modern design</p>
+                        <div class="card-icon">🌐</div>
+                        <h3 class="card-title">Bilingual</h3>
+                        <p class="card-text">Questions available in French and English</p>
                     </div>
                 </div>
             </div>
@@ -100,6 +102,45 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Questions Section -->
+        <section id="questions" class="section questions">
+            <div class="container">
+                <h2 class="section-title">Philosophical Questions</h2>
+                <p class="section-text">
+                    Browse and explore thought-provoking questions. Filter by category or search for specific topics.
+                </p>
+
+                <!-- Language Toggle -->
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="en">English</button>
+                    <button class="lang-btn" data-lang="fr">Français</button>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">All Categories</button>
+                    <div id="categoryButtons" class="category-buttons"></div>
+                </div>
+
+                <!-- Search -->
+                <div class="search-container">
+                    <input type="text" id="questionSearch" class="search-input" placeholder="Search questions...">
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <!-- Question Count -->
+                <div class="question-count" id="questionCount"></div>
+
+                <!-- Questions List -->
+                <div class="questions-list" id="questionsList">
+                    <div class="loading">Loading questions...</div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination" id="pagination"></div>
             </div>
         </section>
 

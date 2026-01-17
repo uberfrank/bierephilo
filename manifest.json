@@ -1,7 +1,7 @@
 {
-  "name": "Bierephilo",
+  "name": "Bierephilo - Philosophical Questions",
   "short_name": "Bierephilo",
-  "description": "Your perfect mobile companion",
+  "description": "Where beer meets philosophy - 168 thought-provoking philosophical questions across 12 categories in French and English",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -21,9 +21,16 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["lifestyle", "social"],
+  "categories": ["education", "lifestyle", "reference"],
   "screenshots": [],
   "shortcuts": [
+    {
+      "name": "Questions",
+      "short_name": "Questions",
+      "description": "Browse philosophical questions",
+      "url": "/#questions",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
     {
       "name": "Contact",
       "short_name": "Contact",

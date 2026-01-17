@@ -1,11 +1,12 @@
 // Service Worker for Bierephilo PWA
-const CACHE_NAME = 'bierephilo-v1';
+const CACHE_NAME = 'bierephilo-v2';
 const urlsToCache = [
   '/',
   '/index.html',
   '/styles.css',
   '/script.js',
-  '/manifest.json'
+  '/manifest.json',
+  '/questions_philosophiques.json'
 ];
 
 // Install event - cache resources

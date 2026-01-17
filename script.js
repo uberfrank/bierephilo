@@ -311,4 +311,365 @@ window.addEventListener('offline', () => {
 
 // Console welcome message
 console.log('%c🍺 Bierephilo', 'font-size: 24px; color: #2196F3; font-weight: bold;');
-console.log('%cWelcome to the console! Happy coding!', 'font-size: 14px; color: #666;');
+console.log('%cWelcome to the console! Happy philosophical pondering!', 'font-size: 14px; color: #666;');
+
+// ==================== PHILOSOPHICAL QUESTIONS FEATURE ====================
+
+// Questions state
+let questionsData = null;
+let currentLanguage = 'en';
+let currentCategory = 'all';
+let searchQuery = '';
+let currentPage = 1;
+const questionsPerPage = 10;
+
+// Load questions data
+async function loadQuestions() {
+    try {
+        const response = await fetch('questions_philosophiques.json');
+        if (!response.ok) throw new Error('Failed to load questions');
+        questionsData = await response.json();
+        initializeQuestions();
+    } catch (error) {
+        console.error('Error loading questions:', error);
+        document.getElementById('questionsList').innerHTML = `
+            <div class="no-results">
+                <div class="no-results-icon">⚠️</div>
+                <p class="no-results-text">Failed to load questions</p>
+                <p>Please refresh the page to try again.</p>
+            </div>
+        `;
+    }
+}
+
+// Initialize questions interface
+function initializeQuestions() {
+    renderCategoryButtons();
+    renderQuestions();
+    setupQuestionListeners();
+}
+
+// Render category filter buttons
+function renderCategoryButtons() {
+    const container = document.getElementById('categoryButtons');
+    if (!container || !questionsData) return;
+
+    const categories = questionsData.categories;
+    const buttons = categories.map(cat => {
+        const count = questionsData.questions.filter(q =>
+            q.tags.some(tag => tag === `categorie:${cat.id}`)
+        ).length;
+
+        return `
+            <button class="category-btn" data-category="${cat.id}">
+                <span>${cat.nom[currentLanguage]}</span>
+                <span class="category-count">(${count})</span>
+            </button>
+        `;
+    }).join('');
+
+    container.innerHTML = buttons;
+}
+
+// Get filtered questions
+function getFilteredQuestions() {
+    if (!questionsData) return [];
+
+    let filtered = questionsData.questions;
+
+    // Filter by category
+    if (currentCategory !== 'all') {
+        filtered = filtered.filter(q =>
+            q.tags.some(tag => tag === `categorie:${currentCategory}`)
+        );
+    }
+
+    // Filter by search query
+    if (searchQuery.trim()) {
+        const query = searchQuery.toLowerCase();
+        filtered = filtered.filter(q => {
+            const questionText = q.question[currentLanguage].toLowerCase();
+            const tagsText = q.tags.join(' ').toLowerCase();
+            return questionText.includes(query) || tagsText.includes(query);
+        });
+    }
+
+    return filtered;
+}
+
+// Render questions
+function renderQuestions() {
+    const container = document.getElementById('questionsList');
+    const countElement = document.getElementById('questionCount');
+    if (!container || !questionsData) return;
+
+    const filteredQuestions = getFilteredQuestions();
+    const totalQuestions = filteredQuestions.length;
+
+    // Update count
+    if (countElement) {
+        countElement.textContent = `Showing ${totalQuestions} question${totalQuestions !== 1 ? 's' : ''}`;
+    }
+
+    // No results
+    if (totalQuestions === 0) {
+        container.innerHTML = `
+            <div class="no-results">
+                <div class="no-results-icon">🤔</div>
+                <p class="no-results-text">No questions found</p>
+                <p>Try adjusting your filters or search terms.</p>
+            </div>
+        `;
+        renderPagination(0);
+        return;
+    }
+
+    // Pagination
+    const totalPages = Math.ceil(totalQuestions / questionsPerPage);
+    if (currentPage > totalPages) currentPage = 1;
+
+    const startIndex = (currentPage - 1) * questionsPerPage;
+    const endIndex = startIndex + questionsPerPage;
+    const paginatedQuestions = filteredQuestions.slice(startIndex, endIndex);
+
+    // Render question cards
+    const cardsHTML = paginatedQuestions.map(q => renderQuestionCard(q)).join('');
+    container.innerHTML = cardsHTML;
+
+    // Render pagination
+    renderPagination(totalPages);
+
+    // Scroll to questions section
+    if (currentPage > 1 || searchQuery || currentCategory !== 'all') {
+        const questionsSection = document.getElementById('questions');
+        if (questionsSection) {
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const targetPosition = questionsSection.offsetTop - headerHeight;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+}
+
+// Render a single question card
+function renderQuestionCard(question) {
+    const categoryTag = question.tags.find(tag => tag.startsWith('categorie:'));
+    const categoryId = categoryTag ? categoryTag.split(':')[1] : '';
+    const category = questionsData.categories.find(c => c.id === categoryId);
+    const categoryName = category ? category.nom[currentLanguage] : '';
+
+    const difficultyTag = question.tags.find(tag => tag.startsWith('difficulte:'));
+    const difficulty = difficultyTag ? difficultyTag.split(':')[1] : '';
+
+    const themeTag = question.tags.find(tag => tag.startsWith('theme:'));
+    const theme = themeTag ? themeTag.split(':')[1].replace(/_/g, ' ') : '';
+
+    return `
+        <div class="question-card" data-id="${question.id}">
+            <div class="question-number">Question #${question.id}</div>
+            <div class="question-text">${question.question[currentLanguage]}</div>
+            <div class="question-tags">
+                ${categoryName ? `<span class="tag">${categoryName}</span>` : ''}
+                ${difficulty ? `<span class="tag difficulty">${difficulty}</span>` : ''}
+                ${theme ? `<span class="tag">${theme}</span>` : ''}
+            </div>
+        </div>
+    `;
+}
+
+// Render pagination
+function renderPagination(totalPages) {
+    const container = document.getElementById('pagination');
+    if (!container) return;
+
+    if (totalPages <= 1) {
+        container.innerHTML = '';
+        return;
+    }
+
+    let buttons = [];
+
+    // Previous button
+    buttons.push(`
+        <button class="page-btn" data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}>
+            ‹ Prev
+        </button>
+    `);
+
+    // Page numbers
+    const maxVisiblePages = 5;
+    let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+    if (endPage - startPage < maxVisiblePages - 1) {
+        startPage = Math.max(1, endPage - maxVisiblePages + 1);
+    }
+
+    if (startPage > 1) {
+        buttons.push(`<button class="page-btn" data-page="1">1</button>`);
+        if (startPage > 2) {
+            buttons.push(`<span class="page-btn" disabled>...</span>`);
+        }
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+        buttons.push(`
+            <button class="page-btn ${i === currentPage ? 'active' : ''}" data-page="${i}">
+                ${i}
+            </button>
+        `);
+    }
+
+    if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+            buttons.push(`<span class="page-btn" disabled>...</span>`);
+        }
+        buttons.push(`<button class="page-btn" data-page="${totalPages}">${totalPages}</button>`);
+    }
+
+    // Next button
+    buttons.push(`
+        <button class="page-btn" data-page="${currentPage + 1}" ${currentPage === totalPages ? 'disabled' : ''}>
+            Next ›
+        </button>
+    `);
+
+    container.innerHTML = buttons.join('');
+}
+
+// Setup event listeners for questions interface
+function setupQuestionListeners() {
+    // Language toggle
+    const langButtons = document.querySelectorAll('.lang-btn');
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const lang = btn.dataset.lang;
+            if (lang === currentLanguage) return;
+
+            currentLanguage = lang;
+            langButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            renderCategoryButtons();
+            renderQuestions();
+        });
+    });
+
+    // Category filter - All Categories button
+    const allCategoriesBtn = document.querySelector('.filter-btn[data-category="all"]');
+    if (allCategoriesBtn) {
+        allCategoriesBtn.addEventListener('click', () => {
+            if (currentCategory === 'all') return;
+            currentCategory = 'all';
+            currentPage = 1;
+
+            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+            allCategoriesBtn.classList.add('active');
+
+            renderQuestions();
+        });
+    }
+
+    // Category buttons (delegated event handling)
+    const categoryContainer = document.getElementById('categoryButtons');
+    if (categoryContainer) {
+        categoryContainer.addEventListener('click', (e) => {
+            const btn = e.target.closest('.category-btn');
+            if (!btn) return;
+
+            const category = btn.dataset.category;
+            if (category === currentCategory) return;
+
+            currentCategory = category;
+            currentPage = 1;
+
+            if (allCategoriesBtn) allCategoriesBtn.classList.remove('active');
+            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            renderQuestions();
+        });
+    }
+
+    // Search
+    const searchInput = document.getElementById('questionSearch');
+    if (searchInput) {
+        let searchTimeout;
+        searchInput.addEventListener('input', (e) => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                searchQuery = e.target.value;
+                currentPage = 1;
+                renderQuestions();
+            }, 300); // Debounce search
+        });
+    }
+
+    // Pagination (delegated event handling)
+    const paginationContainer = document.getElementById('pagination');
+    if (paginationContainer) {
+        paginationContainer.addEventListener('click', (e) => {
+            const btn = e.target.closest('.page-btn[data-page]');
+            if (!btn || btn.disabled) return;
+
+            const page = parseInt(btn.dataset.page);
+            if (page === currentPage || isNaN(page)) return;
+
+            currentPage = page;
+            renderQuestions();
+        });
+    }
+
+    // Question card clicks (delegated event handling)
+    const questionsList = document.getElementById('questionsList');
+    if (questionsList) {
+        questionsList.addEventListener('click', (e) => {
+            const card = e.target.closest('.question-card');
+            if (!card) return;
+
+            const questionId = parseInt(card.dataset.id);
+            const question = questionsData.questions.find(q => q.id === questionId);
+            if (question) {
+                showQuestionDetail(question);
+            }
+        });
+    }
+}
+
+// Show question detail (could be expanded to show in a modal)
+function showQuestionDetail(question) {
+    const categoryTag = question.tags.find(tag => tag.startsWith('categorie:'));
+    const categoryId = categoryTag ? categoryTag.split(':')[1] : '';
+    const category = questionsData.categories.find(c => c.id === categoryId);
+
+    const message = `Question #${question.id}\n\n${question.question[currentLanguage]}\n\nCategory: ${category ? category.nom[currentLanguage] : 'Unknown'}`;
+
+    showToast(`Question #${question.id} - Click for details`);
+    console.log(message);
+    console.log('Full question data:', question);
+}
+
+// Update CTA button to scroll to questions
+if (ctaButton) {
+    ctaButton.addEventListener('click', () => {
+        const questionsSection = document.getElementById('questions');
+        if (!questionsSection) return;
+
+        const headerHeight = document.querySelector('.header').offsetHeight;
+        const targetPosition = questionsSection.offsetTop - headerHeight;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+
+        showToast('Explore 168 philosophical questions!');
+    });
+}
+
+// Load questions when page loads
+if (document.getElementById('questionsList')) {
+    loadQuestions();
+}

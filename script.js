@@ -673,3 +673,545 @@ if (ctaButton) {
 if (document.getElementById('questionsList')) {
     loadQuestions();
 }
+
+// ==================== GAME FEATURE ====================
+
+// Game state
+let gameState = {
+    mode: null,              // 'random', 'by-tags', 'custom'
+    questionCount: 'all',    // 'all' or number
+    selectedTags: [],        // Array of selected tag strings
+    customTagCounts: {},     // For custom mode: { tag: count }
+    mug: [],                 // Array of questions in the virtual mug
+    currentRound: 0,         // Current round number
+    totalRounds: 0,          // Total rounds played
+    roundQuestions: [],      // Questions drawn in current round
+    selectedDrawCount: 1,    // Number of questions to draw (1-5)
+    gameLanguage: 'en'       // Language for game
+};
+
+// Helper function to shuffle array
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+// Helper function to switch game screens
+function switchGameScreen(screenId) {
+    const screens = document.querySelectorAll('.game-screen');
+    screens.forEach(screen => screen.classList.remove('active'));
+
+    const targetScreen = document.getElementById(screenId);
+    if (targetScreen) {
+        targetScreen.classList.add('active');
+
+        // Scroll to game section
+        const gameSection = document.getElementById('game');
+        if (gameSection) {
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const targetPosition = gameSection.offsetTop - headerHeight;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+}
+
+// Initialize game - reset state and show mode selection
+function initializeGame() {
+    gameState = {
+        mode: null,
+        questionCount: 'all',
+        selectedTags: [],
+        customTagCounts: {},
+        mug: [],
+        currentRound: 0,
+        totalRounds: 0,
+        roundQuestions: [],
+        selectedDrawCount: 1,
+        gameLanguage: currentLanguage
+    };
+
+    switchGameScreen('gameModeScreen');
+}
+
+// Play Game button click
+const playGameButton = document.getElementById('playGameButton');
+if (playGameButton) {
+    playGameButton.addEventListener('click', () => {
+        initializeGame();
+
+        const gameSection = document.getElementById('game');
+        if (gameSection) {
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const targetPosition = gameSection.offsetTop - headerHeight;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+}
+
+// Game mode selection
+const gameModeButtons = document.querySelectorAll('.game-mode-btn');
+gameModeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const mode = btn.dataset.mode;
+        gameState.mode = mode;
+
+        // Update all questions count
+        if (questionsData) {
+            const totalQuestions = questionsData.questions.length;
+            const countElement = document.getElementById('allQuestionsCount');
+            if (countElement) {
+                countElement.textContent = `${totalQuestions} questions`;
+            }
+        }
+
+        switchGameScreen('questionCountScreen');
+        showToast(`${mode === 'random' ? 'Fully Random' : mode === 'by-tags' ? 'By Tags' : 'Custom'} mode selected`);
+    });
+});
+
+// Question count selection
+const countOptionButtons = document.querySelectorAll('.count-option-btn');
+const sampleSlider = document.getElementById('sampleSlider');
+const sampleValue = document.getElementById('sampleValue');
+const sampleSliderContainer = document.getElementById('sampleSliderContainer');
+const continueToTags = document.getElementById('continueToTags');
+
+countOptionButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const count = btn.dataset.count;
+
+        // Update selected state
+        countOptionButtons.forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+
+        if (count === 'all') {
+            gameState.questionCount = 'all';
+            sampleSliderContainer.style.display = 'none';
+        } else {
+            gameState.questionCount = parseInt(sampleSlider.value);
+            sampleSliderContainer.style.display = 'block';
+        }
+    });
+});
+
+// Sample slider
+if (sampleSlider && sampleValue) {
+    sampleSlider.addEventListener('input', (e) => {
+        const value = e.target.value;
+        sampleValue.textContent = value;
+        gameState.questionCount = parseInt(value);
+    });
+}
+
+// Back to mode
+document.getElementById('backToMode')?.addEventListener('click', () => {
+    switchGameScreen('gameModeScreen');
+});
+
+// Continue to tags (or start game for fully random)
+continueToTags?.addEventListener('click', () => {
+    if (gameState.mode === 'random') {
+        // For fully random, skip tag selection and start game
+        startGameplay();
+    } else {
+        // For by-tags and custom, go to tag selection
+        renderTagSelection();
+        switchGameScreen('tagSelectionScreen');
+    }
+});
+
+// Render tag selection screen
+function renderTagSelection() {
+    const container = document.getElementById('tagCategories');
+    const titleElement = document.getElementById('tagScreenTitle');
+
+    if (!container || !questionsData) return;
+
+    // Update title based on mode
+    if (titleElement) {
+        titleElement.textContent = gameState.mode === 'custom' ? 'Select Tags & Set Counts' : 'Select Tags';
+    }
+
+    // Show/hide custom sliders container
+    const customSlidersContainer = document.getElementById('customTagSliders');
+    if (customSlidersContainer) {
+        customSlidersContainer.style.display = gameState.mode === 'custom' ? 'block' : 'none';
+        customSlidersContainer.innerHTML = '';
+    }
+
+    // Render categories as checkboxes
+    const categories = questionsData.categories;
+    const html = categories.map(category => {
+        const categoryTag = `categorie:${category.id}`;
+        const count = questionsData.questions.filter(q =>
+            q.tags.includes(categoryTag)
+        ).length;
+
+        const isChecked = gameState.selectedTags.includes(categoryTag);
+
+        return `
+            <div class="tag-category">
+                <label class="tag-checkbox-label">
+                    <input type="checkbox" class="tag-checkbox" data-tag="${categoryTag}" ${isChecked ? 'checked' : ''}>
+                    <span class="tag-checkbox-text">${category.nom[gameState.gameLanguage]}</span>
+                    <span class="tag-count">(${count})</span>
+                </label>
+            </div>
+        `;
+    }).join('');
+
+    container.innerHTML = html;
+
+    // Setup checkbox listeners
+    setupTagCheckboxes();
+}
+
+// Setup tag checkbox listeners
+function setupTagCheckboxes() {
+    const checkboxes = document.querySelectorAll('.tag-checkbox');
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', (e) => {
+            const tag = e.target.dataset.tag;
+
+            if (e.target.checked) {
+                if (!gameState.selectedTags.includes(tag)) {
+                    gameState.selectedTags.push(tag);
+                }
+
+                // For custom mode, add slider
+                if (gameState.mode === 'custom') {
+                    addCustomTagSlider(tag);
+                }
+            } else {
+                gameState.selectedTags = gameState.selectedTags.filter(t => t !== tag);
+
+                // For custom mode, remove slider
+                if (gameState.mode === 'custom') {
+                    removeCustomTagSlider(tag);
+                }
+            }
+        });
+    });
+}
+
+// Add custom tag slider
+function addCustomTagSlider(tag) {
+    const container = document.getElementById('customTagSliders');
+    if (!container || !questionsData) return;
+
+    // Get tag info
+    const categoryId = tag.split(':')[1];
+    const category = questionsData.categories.find(c => c.id === categoryId);
+    if (!category) return;
+
+    const maxCount = questionsData.questions.filter(q => q.tags.includes(tag)).length;
+    const defaultCount = Math.min(5, maxCount);
+    gameState.customTagCounts[tag] = defaultCount;
+
+    const sliderHtml = `
+        <div class="custom-tag-slider" data-tag="${tag}">
+            <div class="custom-tag-slider-header">
+                <span class="custom-tag-name">${category.nom[gameState.gameLanguage]}</span>
+                <span class="custom-tag-value" id="value-${tag.replace(/:/g, '-')}">${defaultCount}</span>
+            </div>
+            <input type="range" class="slider" id="slider-${tag.replace(/:/g, '-')}"
+                   min="1" max="${maxCount}" value="${defaultCount}" step="1">
+            <div class="slider-markers">
+                <span>1</span>
+                <span>${maxCount}</span>
+            </div>
+        </div>
+    `;
+
+    container.insertAdjacentHTML('beforeend', sliderHtml);
+
+    // Setup slider listener
+    const slider = document.getElementById(`slider-${tag.replace(/:/g, '-')}`);
+    const valueSpan = document.getElementById(`value-${tag.replace(/:/g, '-')}`);
+
+    if (slider && valueSpan) {
+        slider.addEventListener('input', (e) => {
+            const value = parseInt(e.target.value);
+            valueSpan.textContent = value;
+            gameState.customTagCounts[tag] = value;
+        });
+    }
+}
+
+// Remove custom tag slider
+function removeCustomTagSlider(tag) {
+    const container = document.getElementById('customTagSliders');
+    if (!container) return;
+
+    const slider = container.querySelector(`[data-tag="${tag}"]`);
+    if (slider) {
+        slider.remove();
+    }
+
+    delete gameState.customTagCounts[tag];
+}
+
+// Back to count screen
+document.getElementById('backToCount')?.addEventListener('click', () => {
+    switchGameScreen('questionCountScreen');
+});
+
+// Start game button
+document.getElementById('startGame')?.addEventListener('click', () => {
+    if (gameState.selectedTags.length === 0) {
+        showToast('Please select at least one tag');
+        return;
+    }
+
+    startGameplay();
+});
+
+// Start gameplay - build mug and show gameplay screen
+function startGameplay() {
+    if (!questionsData) return;
+
+    // Build question pool based on mode
+    let pool = [];
+
+    if (gameState.mode === 'random') {
+        // Fully random - all questions
+        pool = [...questionsData.questions];
+    } else if (gameState.mode === 'by-tags') {
+        // By tags - questions matching selected tags
+        pool = questionsData.questions.filter(q =>
+            gameState.selectedTags.some(tag => q.tags.includes(tag))
+        );
+    } else if (gameState.mode === 'custom') {
+        // Custom - specific counts from each tag
+        pool = [];
+        gameState.selectedTags.forEach(tag => {
+            const count = gameState.customTagCounts[tag] || 0;
+            const tagQuestions = questionsData.questions.filter(q => q.tags.includes(tag));
+            const shuffled = shuffleArray(tagQuestions);
+            pool.push(...shuffled.slice(0, count));
+        });
+    }
+
+    // Remove duplicates (a question might match multiple tags)
+    const uniquePool = Array.from(new Set(pool.map(q => q.id)))
+        .map(id => pool.find(q => q.id === id));
+
+    // Apply question count limit
+    if (gameState.questionCount !== 'all') {
+        const shuffled = shuffleArray(uniquePool);
+        gameState.mug = shuffled.slice(0, gameState.questionCount);
+    } else {
+        gameState.mug = shuffleArray(uniquePool);
+    }
+
+    // Reset game state
+    gameState.currentRound = 0;
+    gameState.totalRounds = 0;
+    gameState.roundQuestions = [];
+    gameState.selectedDrawCount = 1;
+
+    // Show gameplay screen
+    updateGameplayUI();
+    switchGameScreen('gameplayScreen');
+    showToast(`Game started! ${gameState.mug.length} questions in the mug`);
+}
+
+// Update gameplay UI
+function updateGameplayUI() {
+    // Update mug count
+    const mugCountElement = document.getElementById('mugCount');
+    if (mugCountElement) {
+        mugCountElement.textContent = gameState.mug.length;
+    }
+
+    // Update round number
+    const roundElement = document.getElementById('currentRound');
+    if (roundElement) {
+        roundElement.textContent = gameState.currentRound;
+    }
+
+    // Render current round questions
+    renderRoundQuestions();
+
+    // Update draw buttons state
+    updateDrawButtons();
+}
+
+// Render round questions
+function renderRoundQuestions() {
+    const container = document.getElementById('roundQuestions');
+    if (!container) return;
+
+    if (gameState.roundQuestions.length === 0) {
+        container.innerHTML = `
+            <div class="empty-round">
+                <div class="empty-round-icon">🎲</div>
+                <p>Draw questions to start the round</p>
+            </div>
+        `;
+        return;
+    }
+
+    const html = gameState.roundQuestions.map(question => {
+        const categoryTag = question.tags.find(tag => tag.startsWith('categorie:'));
+        const categoryId = categoryTag ? categoryTag.split(':')[1] : '';
+        const category = questionsData.categories.find(c => c.id === categoryId);
+        const categoryName = category ? category.nom[gameState.gameLanguage] : '';
+
+        const difficultyTag = question.tags.find(tag => tag.startsWith('difficulte:'));
+        const difficulty = difficultyTag ? difficultyTag.split(':')[1] : '';
+
+        const themeTag = question.tags.find(tag => tag.startsWith('theme:'));
+        const theme = themeTag ? themeTag.split(':')[1].replace(/_/g, ' ') : '';
+
+        return `
+            <div class="round-question-card">
+                <div class="round-question-number">Question #${question.id}</div>
+                <div class="round-question-text">${question.question[gameState.gameLanguage]}</div>
+                <div class="round-question-tags">
+                    ${categoryName ? `<span class="tag">${categoryName}</span>` : ''}
+                    ${difficulty ? `<span class="tag difficulty">${difficulty}</span>` : ''}
+                    ${theme ? `<span class="tag">${theme}</span>` : ''}
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    container.innerHTML = html;
+}
+
+// Update draw buttons state
+function updateDrawButtons() {
+    const drawButtons = document.querySelectorAll('.draw-btn');
+    const mugRemaining = gameState.mug.length;
+
+    drawButtons.forEach(btn => {
+        const count = parseInt(btn.dataset.count);
+
+        // Disable if not enough questions in mug
+        if (count > mugRemaining) {
+            btn.disabled = true;
+        } else {
+            btn.disabled = false;
+        }
+
+        // Update selected state
+        if (count === gameState.selectedDrawCount) {
+            btn.classList.add('selected');
+        } else {
+            btn.classList.remove('selected');
+        }
+    });
+}
+
+// Draw button selection
+const drawButtons = document.querySelectorAll('.draw-btn');
+drawButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const count = parseInt(btn.dataset.count);
+        gameState.selectedDrawCount = count;
+        updateDrawButtons();
+    });
+});
+
+// Draw questions button
+document.getElementById('drawQuestions')?.addEventListener('click', () => {
+    if (gameState.mug.length === 0) {
+        // Game complete
+        showGameComplete();
+        return;
+    }
+
+    // Draw questions from mug
+    const drawCount = Math.min(gameState.selectedDrawCount, gameState.mug.length);
+    const drawnQuestions = gameState.mug.splice(0, drawCount);
+
+    // Start new round or add to current round
+    if (gameState.roundQuestions.length === 0) {
+        gameState.currentRound++;
+        gameState.totalRounds++;
+    }
+
+    gameState.roundQuestions.push(...drawnQuestions);
+
+    // Update UI
+    updateGameplayUI();
+
+    showToast(`Drew ${drawCount} question${drawCount > 1 ? 's' : ''}`);
+
+    // Check if mug is empty
+    if (gameState.mug.length === 0) {
+        setTimeout(() => {
+            showGameComplete();
+        }, 2000);
+    }
+});
+
+// Quit game button
+document.getElementById('quitGame')?.addEventListener('click', () => {
+    if (confirm('Are you sure you want to quit the game?')) {
+        initializeGame();
+        showToast('Game ended');
+    }
+});
+
+// Show game complete screen
+function showGameComplete() {
+    const totalRoundsElement = document.getElementById('totalRounds');
+    const totalQuestionsElement = document.getElementById('totalQuestionsPlayed');
+
+    if (totalRoundsElement) {
+        totalRoundsElement.textContent = gameState.totalRounds;
+    }
+
+    if (totalQuestionsElement) {
+        totalQuestionsElement.textContent = gameState.roundQuestions.length;
+    }
+
+    switchGameScreen('gameCompleteScreen');
+    showToast('Congratulations! You\'ve completed the game!');
+}
+
+// Play again button
+document.getElementById('playAgain')?.addEventListener('click', () => {
+    initializeGame();
+});
+
+// Back to home button
+document.getElementById('backToHome')?.addEventListener('click', () => {
+    const homeSection = document.getElementById('home');
+    if (homeSection) {
+        const headerHeight = document.querySelector('.header').offsetHeight;
+        const targetPosition = homeSection.offsetTop - headerHeight;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+});
+
+// Game language toggle
+const gameLangButtons = document.querySelectorAll('#tagSelectionScreen .lang-btn');
+gameLangButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        if (lang === gameState.gameLanguage) return;
+
+        gameState.gameLanguage = lang;
+        gameLangButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Re-render tag selection
+        renderTagSelection();
+    });
+});

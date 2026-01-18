@@ -1,0 +1,1924 @@
+{
+  "metadata": {
+    "titre": "Philosophical Questions",
+    "total_categories": 12,
+    "questions_par_categorie": 14,
+    "total_questions": 168,
+    "format_tags": "type:valeur",
+    "langues_disponibles": [
+      "en"
+    ]
+  },
+  "categories": [
+    {
+      "id": "metaphysique",
+      "nom": "Metaphysics",
+      "description": "Questions about the fundamental nature of reality"
+    },
+    {
+      "id": "epistemologie",
+      "nom": "Epistemology",
+      "description": "Questions about knowledge and truth"
+    },
+    {
+      "id": "ethique",
+      "nom": "Ethics",
+      "description": "Questions about good, evil, and morality"
+    },
+    {
+      "id": "philosophie_politique",
+      "nom": "Political Philosophy",
+      "description": "Questions about justice, power, and society"
+    },
+    {
+      "id": "philosophie_esprit",
+      "nom": "Philosophy of Mind",
+      "description": "Questions about consciousness and identity"
+    },
+    {
+      "id": "existentialisme",
+      "nom": "Existentialism",
+      "description": "Questions about the meaning of existence"
+    },
+    {
+      "id": "esthetique",
+      "nom": "Aesthetics",
+      "description": "Questions about beauty and art"
+    },
+    {
+      "id": "logique",
+      "nom": "Logic",
+      "description": "Questions about reasoning and argumentation"
+    },
+    {
+      "id": "philosophie_langage",
+      "nom": "Philosophy of Language",
+      "description": "Questions about meaning and communication"
+    },
+    {
+      "id": "philosophie_science",
+      "nom": "Philosophy of Science",
+      "description": "Questions about the scientific method and its limits"
+    },
+    {
+      "id": "philosophie_religion",
+      "nom": "Philosophy of Religion",
+      "description": "Questions about the divine and the sacred"
+    },
+    {
+      "id": "philosophie_temps",
+      "nom": "Philosophy of Time",
+      "description": "Questions about temporality and eternity"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "Why is there something rather than nothing?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:avancee",
+        "tradition:occidentale",
+        "theme:existence",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Do universals exist independently of particular objects?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:avancee",
+        "tradition:platonisme",
+        "theme:universaux",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Does the external world exist independently of our perception?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:intermediaire",
+        "tradition:idealisme",
+        "theme:realite",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What makes something remain the same through time?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:intermediaire",
+        "tradition:occidentale",
+        "theme:identite",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Is causality a real relation or a habit of the mind?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:avancee",
+        "tradition:empirisme",
+        "theme:causalite",
+        "approche:critique"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Are there essential properties that define each thing?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:intermediaire",
+        "tradition:aristotelisme",
+        "theme:essence",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Does chance exist or is everything determined?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:intermediaire",
+        "tradition:occidentale",
+        "theme:determinisme",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Are numbers real entities or mental constructions?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:avancee",
+        "tradition:platonisme",
+        "theme:mathematiques",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Can we conceive of absolute nothingness?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:avancee",
+        "tradition:occidentale",
+        "theme:neant",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Can infinity exist in reality or only in thought?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:avancee",
+        "tradition:occidentale",
+        "theme:infini",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Are the laws of nature necessary or contingent?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:avancee",
+        "tradition:occidentale",
+        "theme:necessite",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "What distinguishes a substance from its properties?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:intermediaire",
+        "tradition:aristotelisme",
+        "theme:substance",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Do possible worlds really exist?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:avancee",
+        "tradition:analytique",
+        "theme:possibilite",
+        "approche:modale"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Is reality fundamentally one or many?",
+      "tags": [
+        "categorie:metaphysique",
+        "difficulte:intermediaire",
+        "tradition:presocratique",
+        "theme:unite",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "What distinguishes a true belief from knowledge?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:intermediaire",
+        "tradition:platonisme",
+        "theme:connaissance",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Can we doubt everything without contradicting ourselves?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:intermediaire",
+        "tradition:cartesianisme",
+        "theme:doute",
+        "approche:methodique"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Is sensory experience the source of all knowledge?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:intermediaire",
+        "tradition:empirisme",
+        "theme:experience",
+        "approche:critique"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Are there a priori truths independent of experience?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:avancee",
+        "tradition:rationalisme",
+        "theme:apriori",
+        "approche:transcendantale"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "How can I know that I am not dreaming right now?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:debutant",
+        "tradition:cartesianisme",
+        "theme:certitude",
+        "approche:sceptique"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Is truth absolute or relative to a context?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:intermediaire",
+        "tradition:relativisme",
+        "theme:verite",
+        "approche:critique"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Can we know things as they are in themselves?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:avancee",
+        "tradition:kantisme",
+        "theme:noumene",
+        "approche:transcendantale"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Can testimony from others be a legitimate source of knowledge?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:intermediaire",
+        "tradition:analytique",
+        "theme:temoignage",
+        "approche:sociale"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Is intuition a valid form of knowledge?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:intermediaire",
+        "tradition:bergsonisme",
+        "theme:intuition",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Can radical skepticism be definitively refuted?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:avancee",
+        "tradition:scepticisme",
+        "theme:scepticisme",
+        "approche:dialectique"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Is memory a reliable source of knowledge?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:intermediaire",
+        "tradition:empirisme",
+        "theme:memoire",
+        "approche:psychologique"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "How can we justify our beliefs without falling into infinite regress?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:avancee",
+        "tradition:fondationnalisme",
+        "theme:justification",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Is scientific knowledge the only legitimate knowledge?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:intermediaire",
+        "tradition:positivisme",
+        "theme:scientisme",
+        "approche:critique"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "Do our senses deceive us systematically or occasionally?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:debutant",
+        "tradition:empirisme",
+        "theme:perception",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Is there a distinction between knowing and understanding?",
+      "tags": [
+        "categorie:epistemologie",
+        "difficulte:intermediaire",
+        "tradition:hermeneutique",
+        "theme:comprehension",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Does the end justify the means?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:debutant",
+        "tradition:consequentialisme",
+        "theme:moyens_fins",
+        "approche:pratique"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Are there intrinsically evil acts?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:intermediaire",
+        "tradition:deontologie",
+        "theme:mal",
+        "approche:normative"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Is happiness the ultimate goal of moral life?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:intermediaire",
+        "tradition:eudemonisme",
+        "theme:bonheur",
+        "approche:teleologique"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Can we act morally from pure duty without any inclination?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:avancee",
+        "tradition:kantisme",
+        "theme:devoir",
+        "approche:deontologique"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Can virtue be taught?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:intermediaire",
+        "tradition:socratisme",
+        "theme:vertu",
+        "approche:maieutique"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Do we have moral obligations to future generations?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:intermediaire",
+        "tradition:contemporaine",
+        "theme:responsabilite",
+        "approche:appliquee"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "Does moral relativism necessarily lead to nihilism?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:avancee",
+        "tradition:relativisme",
+        "theme:relativisme",
+        "approche:metaethique"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Can one be moral without being free?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:avancee",
+        "tradition:kantisme",
+        "theme:liberte",
+        "approche:transcendantale"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Can egoism be a defensible ethical position?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:intermediaire",
+        "tradition:egoisme",
+        "theme:egoisme",
+        "approche:normative"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "Should we always tell the truth?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:debutant",
+        "tradition:deontologie",
+        "theme:veracite",
+        "approche:pratique"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Do animals have moral rights?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:intermediaire",
+        "tradition:utilitarisme",
+        "theme:droits_animaux",
+        "approche:appliquee"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "Can we sacrifice an innocent person to save many?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:intermediaire",
+        "tradition:utilitarisme",
+        "theme:dilemme",
+        "approche:consequentialiste"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Is pity a virtue or a weakness?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:intermediaire",
+        "tradition:nietzscheanisme",
+        "theme:compassion",
+        "approche:genealogique"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "What grounds moral obligation?",
+      "tags": [
+        "categorie:ethique",
+        "difficulte:avancee",
+        "tradition:occidentale",
+        "theme:fondement",
+        "approche:metaethique"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "What legitimizes the authority of the State?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:intermediaire",
+        "tradition:contractualisme",
+        "theme:legitimite",
+        "approche:normative"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "Should individual freedom take precedence over the common good?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:intermediaire",
+        "tradition:liberalisme",
+        "theme:liberte",
+        "approche:normative"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "Is perfect equality compatible with freedom?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:avancee",
+        "tradition:socialisme",
+        "theme:egalite",
+        "approche:dialectique"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "Is democracy the best form of government?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:intermediaire",
+        "tradition:democratie",
+        "theme:gouvernement",
+        "approche:comparative"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "Can civil disobedience be justified?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:intermediaire",
+        "tradition:contemporaine",
+        "theme:resistance",
+        "approche:pratique"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "Is private property a natural right?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:intermediaire",
+        "tradition:liberalisme",
+        "theme:propriete",
+        "approche:jusnaturaliste"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "Is a society without a State possible?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:avancee",
+        "tradition:anarchisme",
+        "theme:anarchie",
+        "approche:utopique"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "Is justice reducible to social utility?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:avancee",
+        "tradition:utilitarisme",
+        "theme:justice",
+        "approche:consequentialiste"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "Does power necessarily corrupt?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:intermediaire",
+        "tradition:realisme",
+        "theme:pouvoir",
+        "approche:empirique"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "Are human rights universal or culturally relative?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:intermediaire",
+        "tradition:droits_homme",
+        "theme:universalisme",
+        "approche:interculturelle"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "Can violence be a legitimate means of political action?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:avancee",
+        "tradition:revolutionnaire",
+        "theme:violence",
+        "approche:critique"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "What is a just society?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:intermediaire",
+        "tradition:rawlsienne",
+        "theme:justice_sociale",
+        "approche:normative"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "Does the general interest exist or is it just a fiction?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:avancee",
+        "tradition:republicanisme",
+        "theme:bien_commun",
+        "approche:critique"
+      ]
+    },
+    {
+      "id": 57,
+      "question": "Can someone be forced to be free?",
+      "tags": [
+        "categorie:philosophie_politique",
+        "difficulte:avancee",
+        "tradition:rousseauisme",
+        "theme:liberte_positive",
+        "approche:dialectique"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "Can consciousness exist without the brain?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:avancee",
+        "tradition:dualisme",
+        "theme:conscience",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "What makes me the same person as yesterday?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:intermediaire",
+        "tradition:empirisme",
+        "theme:identite_personnelle",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "Can a machine truly think?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:intermediaire",
+        "tradition:computationnalisme",
+        "theme:intelligence_artificielle",
+        "approche:fonctionnaliste"
+      ]
+    },
+    {
+      "id": 61,
+      "question": "Are mind and body two distinct substances?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:intermediaire",
+        "tradition:cartesianisme",
+        "theme:dualisme",
+        "approche:metaphysique"
+      ]
+    },
+    {
+      "id": 62,
+      "question": "Do other minds exist or am I alone in being conscious?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:avancee",
+        "tradition:solipsisme",
+        "theme:autres_esprits",
+        "approche:sceptique"
+      ]
+    },
+    {
+      "id": 63,
+      "question": "What is it like to be a bat?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:avancee",
+        "tradition:phenomenologie",
+        "theme:qualia",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 64,
+      "question": "Is the will free or determined by prior causes?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:avancee",
+        "tradition:determinisme",
+        "theme:libre_arbitre",
+        "approche:metaphysique"
+      ]
+    },
+    {
+      "id": 65,
+      "question": "Are emotions judgments or mere sensations?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:intermediaire",
+        "tradition:cognitivisme",
+        "theme:emotions",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 66,
+      "question": "Can we have thought without language?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:intermediaire",
+        "tradition:analytique",
+        "theme:pensee",
+        "approche:linguistique"
+      ]
+    },
+    {
+      "id": 67,
+      "question": "Does the unconscious really exist?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:intermediaire",
+        "tradition:psychanalyse",
+        "theme:inconscient",
+        "approche:psychologique"
+      ]
+    },
+    {
+      "id": 68,
+      "question": "What distinguishes an action from a mere bodily movement?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:intermediaire",
+        "tradition:analytique",
+        "theme:action",
+        "approche:conceptuelle"
+      ]
+    },
+    {
+      "id": 69,
+      "question": "Is perception direct or always mediated?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:avancee",
+        "tradition:realisme",
+        "theme:perception",
+        "approche:epistemologique"
+      ]
+    },
+    {
+      "id": 70,
+      "question": "Can mental states be reduced to brain states?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:avancee",
+        "tradition:materialisme",
+        "theme:reduction",
+        "approche:scientifique"
+      ]
+    },
+    {
+      "id": 71,
+      "question": "Does attention modify what we perceive?",
+      "tags": [
+        "categorie:philosophie_esprit",
+        "difficulte:intermediaire",
+        "tradition:phenomenologie",
+        "theme:attention",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 72,
+      "question": "Does life have an objective meaning or must we create it?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:existentialisme",
+        "theme:sens",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 73,
+      "question": "Does anxiety reveal our human condition?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:heideggerianisme",
+        "theme:angoisse",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 74,
+      "question": "Are we condemned to be free?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:sartrisme",
+        "theme:liberte",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 75,
+      "question": "Does death give or take away meaning from life?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:existentialisme",
+        "theme:mort",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 76,
+      "question": "Can one live authentically in a mass society?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:heideggerianisme",
+        "theme:authenticite",
+        "approche:critique"
+      ]
+    },
+    {
+      "id": 77,
+      "question": "Can the absurd be overcome or must it be accepted?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:camusien",
+        "theme:absurde",
+        "approche:litteraire"
+      ]
+    },
+    {
+      "id": 78,
+      "question": "Does existence truly precede essence?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:avancee",
+        "tradition:sartrisme",
+        "theme:essence",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 79,
+      "question": "Is bad faith inevitable?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:avancee",
+        "tradition:sartrisme",
+        "theme:mauvaise_foi",
+        "approche:psychologique"
+      ]
+    },
+    {
+      "id": 80,
+      "question": "Is the other necessary for my own existence?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:sartrisme",
+        "theme:autrui",
+        "approche:dialectique"
+      ]
+    },
+    {
+      "id": 81,
+      "question": "Is despair a condition or a choice?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:kierkegaardianisme",
+        "theme:desespoir",
+        "approche:psychologique"
+      ]
+    },
+    {
+      "id": 82,
+      "question": "Can we escape the facticity of our existence?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:avancee",
+        "tradition:heideggerianisme",
+        "theme:facticite",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 83,
+      "question": "Does commitment give meaning to existence?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:sartrisme",
+        "theme:engagement",
+        "approche:politique"
+      ]
+    },
+    {
+      "id": 84,
+      "question": "Is solitude the fundamental condition of humanity?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:existentialisme",
+        "theme:solitude",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 85,
+      "question": "Must we imagine Sisyphus happy?",
+      "tags": [
+        "categorie:existentialisme",
+        "difficulte:intermediaire",
+        "tradition:camusien",
+        "theme:bonheur",
+        "approche:litteraire"
+      ]
+    },
+    {
+      "id": 86,
+      "question": "Is beauty objective or subjective?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:kantisme",
+        "theme:beaute",
+        "approche:transcendantale"
+      ]
+    },
+    {
+      "id": 87,
+      "question": "Should art have a moral purpose?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:platonisme",
+        "theme:art_morale",
+        "approche:normative"
+      ]
+    },
+    {
+      "id": 88,
+      "question": "What distinguishes art from non-art?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:analytique",
+        "theme:definition_art",
+        "approche:conceptuelle"
+      ]
+    },
+    {
+      "id": 89,
+      "question": "Can judgments of taste claim universality?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:avancee",
+        "tradition:kantisme",
+        "theme:gout",
+        "approche:transcendantale"
+      ]
+    },
+    {
+      "id": 90,
+      "question": "Can art express the ineffable?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:romantisme",
+        "theme:expression",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 91,
+      "question": "Does a perfect copy of a work have the same value as the original?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:contemporaine",
+        "theme:authenticite",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 92,
+      "question": "Is the sublime a higher form of beauty?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:avancee",
+        "tradition:kantisme",
+        "theme:sublime",
+        "approche:transcendantale"
+      ]
+    },
+    {
+      "id": 93,
+      "question": "Is engaged art still art?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:marxisme",
+        "theme:engagement",
+        "approche:politique"
+      ]
+    },
+    {
+      "id": 94,
+      "question": "Can ugliness be aesthetically interesting?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:contemporaine",
+        "theme:laideur",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 95,
+      "question": "Is the artist's intention necessary to interpret a work?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:hermeneutique",
+        "theme:interpretation",
+        "approche:hermeneutique"
+      ]
+    },
+    {
+      "id": 96,
+      "question": "Can art change the world?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:contemporaine",
+        "theme:pouvoir_art",
+        "approche:politique"
+      ]
+    },
+    {
+      "id": 97,
+      "question": "Is aesthetic pleasure disinterested?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:avancee",
+        "tradition:kantisme",
+        "theme:plaisir",
+        "approche:transcendantale"
+      ]
+    },
+    {
+      "id": 98,
+      "question": "Can nature be considered a work of art?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:romantisme",
+        "theme:nature",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 99,
+      "question": "Has contemporary art abandoned beauty?",
+      "tags": [
+        "categorie:esthetique",
+        "difficulte:intermediaire",
+        "tradition:contemporaine",
+        "theme:art_contemporain",
+        "approche:critique"
+      ]
+    },
+    {
+      "id": 100,
+      "question": "Can a contradiction be true?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:avancee",
+        "tradition:logique_paraconsistante",
+        "theme:contradiction",
+        "approche:formelle"
+      ]
+    },
+    {
+      "id": 101,
+      "question": "Are the laws of logic necessary truths?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:avancee",
+        "tradition:logicisme",
+        "theme:necessite",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 102,
+      "question": "Can we reason validly from false premises?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:intermediaire",
+        "tradition:aristotelisme",
+        "theme:validite",
+        "approche:formelle"
+      ]
+    },
+    {
+      "id": 103,
+      "question": "Can the liar's paradox be solved?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:avancee",
+        "tradition:analytique",
+        "theme:paradoxe",
+        "approche:semantique"
+      ]
+    },
+    {
+      "id": 104,
+      "question": "Does formal logic capture all human reasoning?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:intermediaire",
+        "tradition:analytique",
+        "theme:formalisation",
+        "approche:critique"
+      ]
+    },
+    {
+      "id": 105,
+      "question": "Are there multiple equally valid logics?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:avancee",
+        "tradition:pluralisme_logique",
+        "theme:pluralisme",
+        "approche:comparative"
+      ]
+    },
+    {
+      "id": 106,
+      "question": "Is induction logically justifiable?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:avancee",
+        "tradition:empirisme",
+        "theme:induction",
+        "approche:epistemologique"
+      ]
+    },
+    {
+      "id": 107,
+      "question": "What makes an argument fallacious?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:intermediaire",
+        "tradition:rhetorique",
+        "theme:sophisme",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 108,
+      "question": "Can logic ground mathematics?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:avancee",
+        "tradition:logicisme",
+        "theme:fondements",
+        "approche:formelle"
+      ]
+    },
+    {
+      "id": 109,
+      "question": "Can a formal system prove its own consistency?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:avancee",
+        "tradition:godelien",
+        "theme:incompletude",
+        "approche:metamathematique"
+      ]
+    },
+    {
+      "id": 110,
+      "question": "Is logical truth conventional or discovered?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:avancee",
+        "tradition:conventionnalisme",
+        "theme:verite_logique",
+        "approche:philosophique"
+      ]
+    },
+    {
+      "id": 111,
+      "question": "Can we think the impossible?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:intermediaire",
+        "tradition:phenomenologie",
+        "theme:impossibilite",
+        "approche:conceptuelle"
+      ]
+    },
+    {
+      "id": 112,
+      "question": "Is the law of excluded middle universally valid?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:avancee",
+        "tradition:intuitionnisme",
+        "theme:tiers_exclu",
+        "approche:constructiviste"
+      ]
+    },
+    {
+      "id": 113,
+      "question": "What distinguishes a good reason from a bad one?",
+      "tags": [
+        "categorie:logique",
+        "difficulte:intermediaire",
+        "tradition:analytique",
+        "theme:raison",
+        "approche:normative"
+      ]
+    },
+    {
+      "id": 114,
+      "question": "Is the meaning of a word determined by its use?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:intermediaire",
+        "tradition:wittgensteinianisme",
+        "theme:sens",
+        "approche:pragmatique"
+      ]
+    },
+    {
+      "id": 115,
+      "question": "Can we express a thought without betraying it?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:intermediaire",
+        "tradition:hermeneutique",
+        "theme:expression",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 116,
+      "question": "Does language structure our thought?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:intermediaire",
+        "tradition:sapir_whorf",
+        "theme:pensee",
+        "approche:linguistique"
+      ]
+    },
+    {
+      "id": 117,
+      "question": "How can a word refer to something?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:avancee",
+        "tradition:analytique",
+        "theme:reference",
+        "approche:semantique"
+      ]
+    },
+    {
+      "id": 118,
+      "question": "Is there a private language?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:avancee",
+        "tradition:wittgensteinianisme",
+        "theme:langage_prive",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 119,
+      "question": "Is metaphor reducible to literal meaning?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:intermediaire",
+        "tradition:rhetorique",
+        "theme:metaphore",
+        "approche:semantique"
+      ]
+    },
+    {
+      "id": 120,
+      "question": "Can one lie without using words?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:intermediaire",
+        "tradition:pragmatique",
+        "theme:mensonge",
+        "approche:pratique"
+      ]
+    },
+    {
+      "id": 121,
+      "question": "Are the limits of my language the limits of my world?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:avancee",
+        "tradition:wittgensteinianisme",
+        "theme:limites",
+        "approche:transcendantale"
+      ]
+    },
+    {
+      "id": 122,
+      "question": "What makes an utterance performative?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:intermediaire",
+        "tradition:pragmatique",
+        "theme:performatif",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 123,
+      "question": "Is perfect translation possible?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:avancee",
+        "tradition:quinienne",
+        "theme:traduction",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 124,
+      "question": "Can language express the ineffable?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:avancee",
+        "tradition:mystique",
+        "theme:ineffable",
+        "approche:negative"
+      ]
+    },
+    {
+      "id": 125,
+      "question": "Is understanding a sentence knowing its truth conditions?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:avancee",
+        "tradition:veritativeconditionnelle",
+        "theme:comprehension",
+        "approche:semantique"
+      ]
+    },
+    {
+      "id": 126,
+      "question": "Do proper names have meaning or only reference?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:avancee",
+        "tradition:fregeen",
+        "theme:noms_propres",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 127,
+      "question": "Can silence be a form of communication?",
+      "tags": [
+        "categorie:philosophie_langage",
+        "difficulte:intermediaire",
+        "tradition:pragmatique",
+        "theme:silence",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 128,
+      "question": "Do scientific theories describe reality or are they mere instruments?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:avancee",
+        "tradition:instrumentalisme",
+        "theme:realisme",
+        "approche:epistemologique"
+      ]
+    },
+    {
+      "id": 129,
+      "question": "What distinguishes science from pseudoscience?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:intermediaire",
+        "tradition:popperianisme",
+        "theme:demarcation",
+        "approche:methodologique"
+      ]
+    },
+    {
+      "id": 130,
+      "question": "Are scientific revolutions rational?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:avancee",
+        "tradition:kuhnien",
+        "theme:revolution",
+        "approche:historique"
+      ]
+    },
+    {
+      "id": 131,
+      "question": "Can we observe without prior theory?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:avancee",
+        "tradition:empirisme",
+        "theme:observation",
+        "approche:epistemologique"
+      ]
+    },
+    {
+      "id": 132,
+      "question": "Does science progress toward truth?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:intermediaire",
+        "tradition:realisme",
+        "theme:progres",
+        "approche:historique"
+      ]
+    },
+    {
+      "id": 133,
+      "question": "Are scientific laws discoveries or inventions?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:intermediaire",
+        "tradition:constructivisme",
+        "theme:lois",
+        "approche:epistemologique"
+      ]
+    },
+    {
+      "id": 134,
+      "question": "Can experience definitively refute a theory?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:avancee",
+        "tradition:falsificationnisme",
+        "theme:refutation",
+        "approche:methodologique"
+      ]
+    },
+    {
+      "id": 135,
+      "question": "Do theoretical entities like electrons really exist?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:avancee",
+        "tradition:realisme_scientifique",
+        "theme:entites_theoriques",
+        "approche:ontologique"
+      ]
+    },
+    {
+      "id": 136,
+      "question": "Is simplicity a criterion of scientific truth?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:intermediaire",
+        "tradition:occamien",
+        "theme:simplicite",
+        "approche:methodologique"
+      ]
+    },
+    {
+      "id": 137,
+      "question": "Can human sciences achieve the objectivity of natural sciences?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:intermediaire",
+        "tradition:hermeneutique",
+        "theme:objectivite",
+        "approche:comparative"
+      ]
+    },
+    {
+      "id": 138,
+      "question": "Can science explain everything?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:intermediaire",
+        "tradition:scientisme",
+        "theme:limites",
+        "approche:critique"
+      ]
+    },
+    {
+      "id": 139,
+      "question": "Can two incompatible theories be equally confirmed by the facts?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:avancee",
+        "tradition:sous_determination",
+        "theme:sous_determination",
+        "approche:epistemologique"
+      ]
+    },
+    {
+      "id": 140,
+      "question": "Is science morally neutral?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:intermediaire",
+        "tradition:ethique_sciences",
+        "theme:valeurs",
+        "approche:normative"
+      ]
+    },
+    {
+      "id": 141,
+      "question": "Is scientific reductionism justified?",
+      "tags": [
+        "categorie:philosophie_science",
+        "difficulte:avancee",
+        "tradition:reductionnisme",
+        "theme:reduction",
+        "approche:metaphysique"
+      ]
+    },
+    {
+      "id": 142,
+      "question": "Can the existence of God be proven?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:theisme",
+        "theme:existence_dieu",
+        "approche:argumentative"
+      ]
+    },
+    {
+      "id": 143,
+      "question": "Is evil compatible with the existence of a good and omnipotent God?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:theodicee",
+        "theme:mal",
+        "approche:dialectique"
+      ]
+    },
+    {
+      "id": 144,
+      "question": "Are faith and reason compatible?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:fideisme",
+        "theme:foi_raison",
+        "approche:dialectique"
+      ]
+    },
+    {
+      "id": 145,
+      "question": "Can mystical experience be a source of knowledge?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:avancee",
+        "tradition:mystique",
+        "theme:experience_mystique",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 146,
+      "question": "Is religion a necessary illusion?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:critique",
+        "theme:illusion",
+        "approche:psychologique"
+      ]
+    },
+    {
+      "id": 147,
+      "question": "Can one be moral without believing in God?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:atheisme",
+        "theme:morale_religion",
+        "approche:ethique"
+      ]
+    },
+    {
+      "id": 148,
+      "question": "Is life after death conceivable?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:eschatologie",
+        "theme:immortalite",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 149,
+      "question": "Can the sacred exist without institutionalized religion?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:phenomenologie_religion",
+        "theme:sacre",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 150,
+      "question": "Do all religions say the same thing in different forms?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:perennialisme",
+        "theme:pluralisme",
+        "approche:comparative"
+      ]
+    },
+    {
+      "id": 151,
+      "question": "Is atheism a position of faith?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:atheisme",
+        "theme:atheisme",
+        "approche:epistemologique"
+      ]
+    },
+    {
+      "id": 152,
+      "question": "Can God create a stone so heavy that He cannot lift it?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:theologie",
+        "theme:omnipotence",
+        "approche:logique"
+      ]
+    },
+    {
+      "id": 153,
+      "question": "Does prayer have meaning if God is omniscient?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:theisme",
+        "theme:priere",
+        "approche:pratique"
+      ]
+    },
+    {
+      "id": 154,
+      "question": "Are miracles possible or contradictory to the laws of nature?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:avancee",
+        "tradition:empirisme",
+        "theme:miracle",
+        "approche:epistemologique"
+      ]
+    },
+    {
+      "id": 155,
+      "question": "Does religion respond to a fundamental human need?",
+      "tags": [
+        "categorie:philosophie_religion",
+        "difficulte:intermediaire",
+        "tradition:anthropologie",
+        "theme:besoin_religieux",
+        "approche:fonctionnelle"
+      ]
+    },
+    {
+      "id": 156,
+      "question": "Is time real or an illusion of our mind?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:avancee",
+        "tradition:idealisme",
+        "theme:realite_temps",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 157,
+      "question": "Do the past and future exist in the same way as the present?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:avancee",
+        "tradition:eternlisme",
+        "theme:existence_temporelle",
+        "approche:metaphysique"
+      ]
+    },
+    {
+      "id": 158,
+      "question": "Why does time seem to flow in only one direction?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:avancee",
+        "tradition:physique",
+        "theme:fleche_temps",
+        "approche:scientifique"
+      ]
+    },
+    {
+      "id": 159,
+      "question": "Does the present moment have duration?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:intermediaire",
+        "tradition:phenomenologie",
+        "theme:present",
+        "approche:analytique"
+      ]
+    },
+    {
+      "id": 160,
+      "question": "Is time travel logically possible?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:avancee",
+        "tradition:analytique",
+        "theme:voyage_temps",
+        "approche:logique"
+      ]
+    },
+    {
+      "id": 161,
+      "question": "Did time exist before the universe?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:avancee",
+        "tradition:cosmologie",
+        "theme:origine_temps",
+        "approche:speculative"
+      ]
+    },
+    {
+      "id": 162,
+      "question": "Can we live fully in the present?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:intermediaire",
+        "tradition:stoicisme",
+        "theme:carpe_diem",
+        "approche:pratique"
+      ]
+    },
+    {
+      "id": 163,
+      "question": "Is lived time the same as measured time?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:intermediaire",
+        "tradition:bergsonisme",
+        "theme:duree",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 164,
+      "question": "Is eternity the absence of time or infinite time?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:avancee",
+        "tradition:theologie",
+        "theme:eternite",
+        "approche:conceptuelle"
+      ]
+    },
+    {
+      "id": 165,
+      "question": "Do our memories necessarily distort the past?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:intermediaire",
+        "tradition:phenomenologie",
+        "theme:memoire",
+        "approche:psychologique"
+      ]
+    },
+    {
+      "id": 166,
+      "question": "Does anticipation of the future influence our perception of the present?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:intermediaire",
+        "tradition:phenomenologie",
+        "theme:anticipation",
+        "approche:phenomenologique"
+      ]
+    },
+    {
+      "id": 167,
+      "question": "Can we be nostalgic for a time we never lived?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:intermediaire",
+        "tradition:contemporaine",
+        "theme:nostalgie",
+        "approche:psychologique"
+      ]
+    },
+    {
+      "id": 168,
+      "question": "Does time truly heal all wounds?",
+      "tags": [
+        "categorie:philosophie_temps",
+        "difficulte:debutant",
+        "tradition:sagesse_populaire",
+        "theme:guerison",
+        "approche:pratique"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "features": "Fonctionnalités",
+    "playGame": "Jouer",
+    "questions": "Questions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bienvenue sur Bierephilo",
+    "subtitle": "Où la bière rencontre la philosophie - 168 questions à méditer",
+    "playGameButton": "Jouer",
+    "browseButton": "Parcourir les questions"
+  },
+  "about": {
+    "title": "À propos de Bierephilo",
+    "description": "Bierephilo combine l'esprit convivial de la culture de la bière avec une enquête philosophique profonde. Explorez 168 questions stimulantes réparties dans 12 catégories philosophiques, parfaites pour la contemplation autour d'une bonne boisson.",
+    "card1Title": "168 Questions",
+    "card1Text": "Questions philosophiques profondes à explorer et discuter",
+    "card2Title": "12 Catégories",
+    "card2Text": "De la métaphysique à l'éthique, de la logique à l'esthétique",
+    "card3Title": "Bilingue",
+    "card3Text": "Questions disponibles en français et en anglais"
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "feature1Title": "Optimisé Tactile",
+    "feature1Text": "Conçu pour les interactions tactiles avec support gestuel",
+    "feature2Title": "Sécurisé",
+    "feature2Text": "Construit selon les meilleures pratiques de sécurité",
+    "feature3Title": "Progressif",
+    "feature3Text": "Fonctionne hors ligne et peut être installé comme application"
+  },
+  "game": {
+    "title": "Jouer à Bierephilo",
+    "subtitle": "Tirez des questions de la chope philosophique et explorez des idées profondes tour par tour",
+    "modeTitle": "Choisissez votre mode de jeu",
+    "randomMode": "Totalement aléatoire",
+    "randomModeDesc": "Toutes les questions mélangées aléatoirement",
+    "byTagsMode": "Par étiquettes",
+    "byTagsModeDesc": "Sélectionnez des catégories ou étiquettes spécifiques",
+    "customMode": "Personnalisé",
+    "customModeDesc": "Mélangez et associez les étiquettes avec des comptes personnalisés",
+    "questionCountTitle": "Combien de questions ?",
+    "allQuestions": "Toutes les questions",
+    "allQuestionsDesc": "168 questions",
+    "sample": "Échantillon",
+    "sampleDesc": "Choisissez une quantité personnalisée",
+    "sliderLabel": "Nombre de questions :",
+    "backButton": "Retour",
+    "continueButton": "Continuer",
+    "tagSelectionTitle": "Sélectionner les étiquettes",
+    "tagSelectionCustomTitle": "Sélectionner les étiquettes et définir les quantités",
+    "startGameButton": "Démarrer le jeu",
+    "questionsLeft": "questions restantes",
+    "round": "Tour",
+    "quitGame": "Quitter",
+    "drawLabel": "Tirer des questions :",
+    "drawButton": "Tirer des questions",
+    "emptyRound": "Tirez des questions pour commencer le tour",
+    "mugEmpty": "Chope vide !",
+    "gameCompleteText": "Vous avez exploré toutes les questions de votre chope philosophique.",
+    "roundsPlayed": "Tours joués",
+    "questionsExplored": "Questions explorées",
+    "playAgain": "Rejouer",
+    "backToHome": "Retour à l'accueil"
+  },
+  "questionsSection": {
+    "title": "Questions philosophiques",
+    "description": "Parcourez et explorez des questions stimulantes. Filtrez par catégorie ou recherchez des sujets spécifiques.",
+    "allCategories": "Toutes les catégories",
+    "searchPlaceholder": "Rechercher des questions...",
+    "showing": "Affichage de",
+    "question": "question",
+    "questions": "questions",
+    "noResults": "Aucune question trouvée",
+    "noResultsDesc": "Essayez d'ajuster vos filtres ou vos termes de recherche.",
+    "loading": "Chargement des questions...",
+    "questionNumber": "Question n°",
+    "prev": "Préc",
+    "next": "Suiv"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "nameLabel": "Nom",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "sendButton": "Envoyer le message",
+    "successMessage": "Message envoyé avec succès !"
+  },
+  "footer": {
+    "copyright": "© 2026 Bierephilo. Tous droits réservés.",
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  },
+  "messages": {
+    "welcome": "Bienvenue sur Bierephilo ! 🍺",
+    "messageSent": "Message envoyé avec succès !",
+    "letsGetInTouch": "Restons en contact !",
+    "explore168Questions": "Explorez 168 questions philosophiques !",
+    "modeSelected": "mode sélectionné",
+    "selectAtLeastOneTag": "Veuillez sélectionner au moins une étiquette",
+    "gameStarted": "Jeu commencé !",
+    "questionsInMug": "questions dans la chope",
+    "drew": "Tiré",
+    "gameEnded": "Jeu terminé",
+    "congratulations": "Félicitations ! Vous avez terminé le jeu !",
+    "quitConfirm": "Êtes-vous sûr de vouloir quitter le jeu ?",
+    "addToHomeScreen": "Ajoutez Bierephilo à votre écran d'accueil pour un accès facile !",
+    "appInstalled": "Application installée avec succès !",
+    "backOnline": "Vous êtes de nouveau en ligne !",
+    "offline": "Vous êtes hors ligne. Certaines fonctionnalités peuvent être limitées.",
+    "questionDetails": "Cliquez pour plus de détails",
+    "failedToLoad": "Échec du chargement des questions",
+    "refreshPage": "Veuillez actualiser la page pour réessayer."
+  },
+  "language": {
+    "english": "English",
+    "french": "Français"
+  }
+}

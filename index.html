@@ -30,6 +30,7 @@
             <li><a href="#home" class="nav-link active">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#game" class="nav-link">Play Game</a></li>
             <li><a href="#questions" class="nav-link">Questions</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
@@ -42,7 +43,10 @@
             <div class="container">
                 <h2 class="hero-title">Welcome to Bierephilo</h2>
                 <p class="hero-subtitle">Where beer meets philosophy - 168 questions to ponder</p>
-                <button class="btn btn-primary" id="ctaButton">Explore Questions</button>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="playGameButton">Play Game</button>
+                    <button class="btn btn-secondary" id="ctaButton">Browse Questions</button>
+                </div>
             </div>
         </section>
 
@@ -99,6 +103,140 @@
                         <div class="feature-content">
                             <h3 class="feature-title">Progressive</h3>
                             <p class="feature-text">Works offline and can be installed as an app</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section id="game" class="section game-section">
+            <div class="container">
+                <h2 class="section-title">Play Bierephilo</h2>
+                <p class="section-text">Draw questions from the philosophical mug and explore deep ideas round by round</p>
+
+                <!-- Game Mode Selection Screen -->
+                <div id="gameModeScreen" class="game-screen active">
+                    <h3 class="game-subtitle">Choose Your Game Mode</h3>
+                    <div class="game-mode-buttons">
+                        <button class="game-mode-btn" data-mode="random">
+                            <div class="game-mode-icon">🎲</div>
+                            <h4>Fully Random</h4>
+                            <p>All questions shuffled randomly</p>
+                        </button>
+                        <button class="game-mode-btn" data-mode="by-tags">
+                            <div class="game-mode-icon">🏷️</div>
+                            <h4>By Tags</h4>
+                            <p>Select specific categories or tags</p>
+                        </button>
+                        <button class="game-mode-btn" data-mode="custom">
+                            <div class="game-mode-icon">⚙️</div>
+                            <h4>Custom</h4>
+                            <p>Mix and match tags with custom counts</p>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question Count Selection Screen -->
+                <div id="questionCountScreen" class="game-screen">
+                    <h3 class="game-subtitle">How Many Questions?</h3>
+                    <div class="question-count-options">
+                        <button class="count-option-btn" data-count="all">
+                            <div class="count-icon">📚</div>
+                            <h4>All Questions</h4>
+                            <p id="allQuestionsCount">168 questions</p>
+                        </button>
+                        <button class="count-option-btn" data-count="sample">
+                            <div class="count-icon">🎯</div>
+                            <h4>Sample</h4>
+                            <p>Choose a custom amount</p>
+                        </button>
+                    </div>
+                    <div id="sampleSliderContainer" class="slider-container" style="display: none;">
+                        <label for="sampleSlider" class="slider-label">Number of questions: <span id="sampleValue">20</span></label>
+                        <input type="range" id="sampleSlider" class="slider" min="5" max="168" value="20" step="1">
+                        <div class="slider-markers">
+                            <span>5</span>
+                            <span>168</span>
+                        </div>
+                    </div>
+                    <div class="game-nav-buttons">
+                        <button class="btn btn-secondary" id="backToMode">Back</button>
+                        <button class="btn btn-primary" id="continueToTags">Continue</button>
+                    </div>
+                </div>
+
+                <!-- Tag Selection Screen (for by-tags and custom modes) -->
+                <div id="tagSelectionScreen" class="game-screen">
+                    <h3 class="game-subtitle" id="tagScreenTitle">Select Tags</h3>
+
+                    <!-- Language Toggle for Game -->
+                    <div class="language-toggle">
+                        <button class="lang-btn active" data-lang="en">English</button>
+                        <button class="lang-btn" data-lang="fr">Français</button>
+                    </div>
+
+                    <!-- Tag Categories -->
+                    <div id="tagCategories" class="tag-categories"></div>
+
+                    <!-- Custom Mode: Per-Tag Sliders -->
+                    <div id="customTagSliders" class="custom-tag-sliders" style="display: none;"></div>
+
+                    <div class="game-nav-buttons">
+                        <button class="btn btn-secondary" id="backToCount">Back</button>
+                        <button class="btn btn-primary" id="startGame">Start Game</button>
+                    </div>
+                </div>
+
+                <!-- Gameplay Screen -->
+                <div id="gameplayScreen" class="game-screen">
+                    <div class="game-header">
+                        <div class="game-info">
+                            <div class="mug-count">
+                                <span class="mug-icon">🍺</span>
+                                <span id="mugCount">0</span> questions left
+                            </div>
+                            <div class="round-info">
+                                Round <span id="currentRound">1</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary btn-sm" id="quitGame">Quit Game</button>
+                    </div>
+
+                    <div id="roundQuestions" class="round-questions"></div>
+
+                    <div class="draw-controls">
+                        <label for="drawCount" class="draw-label">Draw questions:</label>
+                        <div class="draw-selector">
+                            <button class="draw-btn" data-count="1">1</button>
+                            <button class="draw-btn" data-count="2">2</button>
+                            <button class="draw-btn" data-count="3">3</button>
+                            <button class="draw-btn" data-count="4">4</button>
+                            <button class="draw-btn" data-count="5">5</button>
+                        </div>
+                        <button class="btn btn-primary" id="drawQuestions">Draw Questions</button>
+                    </div>
+                </div>
+
+                <!-- Game Complete Screen -->
+                <div id="gameCompleteScreen" class="game-screen">
+                    <div class="game-complete-content">
+                        <div class="complete-icon">🎉</div>
+                        <h3 class="game-subtitle">Mug Empty!</h3>
+                        <p class="complete-text">You've explored all the questions in your philosophical mug.</p>
+                        <div class="game-stats">
+                            <div class="stat-item">
+                                <div class="stat-value" id="totalRounds">0</div>
+                                <div class="stat-label">Rounds Played</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value" id="totalQuestionsPlayed">0</div>
+                                <div class="stat-label">Questions Explored</div>
+                            </div>
+                        </div>
+                        <div class="game-nav-buttons">
+                            <button class="btn btn-primary" id="playAgain">Play Again</button>
+                            <button class="btn btn-secondary" id="backToHome">Back to Home</button>
                         </div>
                     </div>
                 </div>

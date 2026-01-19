@@ -33,88 +33,13 @@
     <!-- Navigation -->
     <nav class="nav" id="mainNav">
         <ul class="nav-list">
-            <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
-            <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
-            <li><a href="#features" class="nav-link" data-i18n="nav.features">Features</a></li>
-            <li><a href="#game" class="nav-link" data-i18n="nav.playGame">Play Game</a></li>
+            <li><a href="#game" class="nav-link active" data-i18n="nav.playGame">Play</a></li>
             <li><a href="#questions" class="nav-link" data-i18n="nav.questions">Questions</a></li>
-            <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
     <main class="main">
-        <!-- Hero Section -->
-        <section id="home" class="section hero">
-            <div class="container">
-                <h2 class="hero-title" data-i18n="hero.title">Welcome to Bierephilo</h2>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">Where beer meets philosophy - 168 questions to ponder</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" id="playGameButton" data-i18n="hero.playGameButton">Play Game</button>
-                    <button class="btn btn-secondary" id="ctaButton" data-i18n="hero.browseButton">Browse Questions</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section about">
-            <div class="container">
-                <h2 class="section-title" data-i18n="about.title">About Bierephilo</h2>
-                <p class="section-text" data-i18n="about.description">
-                    Bierephilo combines the convivial spirit of beer culture with deep philosophical inquiry.
-                    Explore 168 thought-provoking questions across 12 philosophical categories,
-                    perfect for contemplation over a good drink.
-                </p>
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-icon">🤔</div>
-                        <h3 class="card-title" data-i18n="about.card1Title">168 Questions</h3>
-                        <p class="card-text" data-i18n="about.card1Text">Deep philosophical questions to explore and discuss</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">📚</div>
-                        <h3 class="card-title" data-i18n="about.card2Title">12 Categories</h3>
-                        <p class="card-text" data-i18n="about.card2Text">From metaphysics to ethics, logic to aesthetics</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">🌐</div>
-                        <h3 class="card-title" data-i18n="about.card3Title">Bilingual</h3>
-                        <p class="card-text" data-i18n="about.card3Text">Questions available in French and English</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section id="features" class="section features">
-            <div class="container">
-                <h2 class="section-title" data-i18n="features.title">Features</h2>
-                <div class="feature-list">
-                    <div class="feature-item">
-                        <div class="feature-icon">✨</div>
-                        <div class="feature-content">
-                            <h3 class="feature-title" data-i18n="features.feature1Title">Touch Optimized</h3>
-                            <p class="feature-text" data-i18n="features.feature1Text">Designed for touch interactions with gesture support</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🔒</div>
-                        <div class="feature-content">
-                            <h3 class="feature-title" data-i18n="features.feature2Title">Secure</h3>
-                            <p class="feature-text" data-i18n="features.feature2Text">Built with security best practices</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🚀</div>
-                        <div class="feature-content">
-                            <h3 class="feature-title" data-i18n="features.feature3Title">Progressive</h3>
-                            <p class="feature-text" data-i18n="features.feature3Text">Works offline and can be installed as an app</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Game Section -->
         <section id="game" class="section game-section">
             <div class="container">
@@ -236,7 +161,6 @@
                         </div>
                         <div class="game-nav-buttons">
                             <button class="btn btn-primary" id="playAgain" data-i18n="game.playAgain">Play Again</button>
-                            <button class="btn btn-secondary" id="backToHome" data-i18n="game.backToHome">Back to Home</button>
                         </div>
                     </div>
                 </div>
@@ -273,31 +197,6 @@
 
                 <!-- Pagination -->
                 <div class="pagination" id="pagination"></div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section contact">
-            <div class="container">
-                <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name" class="form-label" data-i18n="contact.nameLabel">Name</label>
-                        <input type="text" id="name" name="name" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label" data-i18n="contact.emailLabel">Email</label>
-                        <input type="email" id="email" name="email" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label" data-i18n="contact.messageLabel">Message</label>
-                        <textarea id="message" name="message" class="form-textarea" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.sendButton">Send Message</button>
-                </form>
-                <div class="form-success" id="formSuccess">
-                    <span data-i18n="contact.successMessage">✓ Message sent successfully!</span>
-                </div>
             </div>
         </section>
     </main>

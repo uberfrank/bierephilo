@@ -98,9 +98,6 @@ async function changeLanguage(lang) {
 const menuToggle = document.getElementById('menuToggle');
 const mainNav = document.getElementById('mainNav');
 const navLinks = document.querySelectorAll('.nav-link');
-const contactForm = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-const ctaButton = document.getElementById('ctaButton');
 const toast = document.getElementById('toast');
 const toastMessage = document.getElementById('toastMessage');
 
@@ -151,45 +148,6 @@ document.addEventListener('click', (e) => {
         menuToggle.classList.remove('active');
         mainNav.classList.remove('active');
     }
-});
-
-// Contact Form Handling
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-
-    // Simulate form submission
-    console.log('Form submitted:', data);
-
-    // Show success message
-    formSuccess.classList.add('show');
-    contactForm.reset();
-
-    // Show toast notification
-    showToast(getTranslation('messages.messageSent'));
-
-    // Hide success message after 5 seconds
-    setTimeout(() => {
-        formSuccess.classList.remove('show');
-    }, 5000);
-});
-
-// CTA Button Click
-ctaButton.addEventListener('click', () => {
-    // Scroll to contact section
-    const contactSection = document.getElementById('contact');
-    const headerHeight = document.querySelector('.header').offsetHeight;
-    const targetPosition = contactSection.offsetTop - headerHeight;
-
-    window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-    });
-
-    showToast('Let\'s get in touch!');
 });
 
 // Toast Notification Function
@@ -756,24 +714,6 @@ function showQuestionDetail(question) {
     console.log('Full question data:', question);
 }
 
-// Update CTA button to scroll to questions
-if (ctaButton) {
-    ctaButton.addEventListener('click', () => {
-        const questionsSection = document.getElementById('questions');
-        if (!questionsSection) return;
-
-        const headerHeight = document.querySelector('.header').offsetHeight;
-        const targetPosition = questionsSection.offsetTop - headerHeight;
-
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-        });
-
-        showToast(getTranslation('messages.explore168Questions'));
-    });
-}
-
 // Load questions when page loads
 if (document.getElementById('questionsList')) {
     loadQuestions();
@@ -841,24 +781,6 @@ function initializeGame() {
     };
 
     switchGameScreen('gameModeScreen');
-}
-
-// Play Game button click
-const playGameButton = document.getElementById('playGameButton');
-if (playGameButton) {
-    playGameButton.addEventListener('click', () => {
-        initializeGame();
-
-        const gameSection = document.getElementById('game');
-        if (gameSection) {
-            const headerHeight = document.querySelector('.header').offsetHeight;
-            const targetPosition = gameSection.offsetTop - headerHeight;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
-    });
 }
 
 // Game mode selection
@@ -1242,13 +1164,10 @@ document.getElementById('drawQuestions')?.addEventListener('click', () => {
     const drawCount = Math.min(gameState.selectedDrawCount, gameState.mug.length);
     const drawnQuestions = gameState.mug.splice(0, drawCount);
 
-    // Start new round or add to current round
-    if (gameState.roundQuestions.length === 0) {
-        gameState.currentRound++;
-        gameState.totalRounds++;
-    }
-
-    gameState.roundQuestions.push(...drawnQuestions);
+    // Start new round and replace previous draw
+    gameState.currentRound++;
+    gameState.totalRounds++;
+    gameState.roundQuestions = drawnQuestions;
 
     // Update UI
     updateGameplayUI();
@@ -1292,18 +1211,5 @@ function showGameComplete() {
 // Play again button
 document.getElementById('playAgain')?.addEventListener('click', () => {
     initializeGame();
-});
-
-// Back to home button
-document.getElementById('backToHome')?.addEventListener('click', () => {
-    const homeSection = document.getElementById('home');
-    if (homeSection) {
-        const headerHeight = document.querySelector('.header').offsetHeight;
-        const targetPosition = homeSection.offsetTop - headerHeight;
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-        });
-    }
 });
 

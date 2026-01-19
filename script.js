@@ -3,6 +3,97 @@
 
 'use strict';
 
+// ==================== MULTILINGUAL SUPPORT ====================
+
+// Global language state
+let currentLanguage = 'en';
+let translations = {};
+
+// Load translations
+async function loadTranslations(lang) {
+    try {
+        const response = await fetch(`translations-${lang}.json`);
+        if (!response.ok) throw new Error('Failed to load translations');
+        return await response.json();
+    } catch (error) {
+        console.error('Error loading translations:', error);
+        return null;
+    }
+}
+
+// Get nested translation value
+function getTranslation(key) {
+    const keys = key.split('.');
+    let value = translations;
+
+    for (const k of keys) {
+        if (value && typeof value === 'object') {
+            value = value[k];
+        } else {
+            return key; // Return key if translation not found
+        }
+    }
+
+    return value || key;
+}
+
+// Update all UI text with translations
+function updateUIText() {
+    // Update elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const translation = getTranslation(key);
+
+        if (translation) {
+            element.textContent = translation;
+        }
+    });
+
+    // Update placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        const translation = getTranslation(key);
+
+        if (translation) {
+            element.placeholder = translation;
+        }
+    });
+
+    // Update HTML lang attribute
+    document.documentElement.setAttribute('lang', currentLanguage);
+    document.documentElement.setAttribute('data-lang', currentLanguage);
+}
+
+// Change language
+async function changeLanguage(lang) {
+    if (lang === currentLanguage) return;
+
+    currentLanguage = lang;
+
+    // Load translations
+    translations = await loadTranslations(lang);
+    if (!translations) {
+        console.error('Failed to load translations, reverting to previous language');
+        return;
+    }
+
+    // Update UI
+    updateUIText();
+
+    // Reload questions if questions data exists
+    if (questionsData) {
+        await loadQuestions();
+    }
+
+    // Update global language buttons
+    document.querySelectorAll('.global-lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    // Save language preference
+    localStorage.setItem('preferredLanguage', lang);
+}
+
 // DOM Elements
 const menuToggle = document.getElementById('menuToggle');
 const mainNav = document.getElementById('mainNav');
@@ -78,7 +169,7 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset();
 
     // Show toast notification
-    showToast('Message sent successfully!');
+    showToast(getTranslation('messages.messageSent'));
 
     // Hide success message after 5 seconds
     setTimeout(() => {
@@ -103,6 +194,10 @@ ctaButton.addEventListener('click', () => {
 
 // Toast Notification Function
 function showToast(message, duration = 3000) {
+    // If message is a translation key (starts with lowercase letter and contains dots), translate it
+    if (message && /^[a-z].*\./.test(message)) {
+        message = getTranslation(message);
+    }
     toastMessage.textContent = message;
     toast.classList.add('show');
 
@@ -251,10 +346,25 @@ const updateActiveNavLink = debounce(() => {
 
 window.addEventListener('scroll', updateActiveNavLink);
 
-// Page load animation
-window.addEventListener('load', () => {
+// Page load animation and initialization
+window.addEventListener('load', async () => {
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.3s ease';
+
+    // Load saved language preference or default to 'en'
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    currentLanguage = savedLanguage;
+
+    // Load translations
+    translations = await loadTranslations(currentLanguage);
+
+    // Update UI with translations
+    updateUIText();
+
+    // Update global language buttons
+    document.querySelectorAll('.global-lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === currentLanguage);
+    });
 
     requestAnimationFrame(() => {
         document.body.style.opacity = '1';
@@ -262,7 +372,7 @@ window.addEventListener('load', () => {
 
     // Show welcome toast
     setTimeout(() => {
-        showToast('Welcome to Bierephilo! 🍺');
+        showToast(getTranslation('messages.welcome'));
     }, 500);
 });
 
@@ -288,7 +398,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
     // Show install prompt after 30 seconds
     setTimeout(() => {
         if (deferredPrompt) {
-            showToast('Add Bierephilo to your home screen for easy access!', 5000);
+            showToast(getTranslation('messages.addToHomeScreen'), 5000);
         }
     }, 30000);
 });
@@ -296,28 +406,35 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // Handle install prompt
 window.addEventListener('appinstalled', () => {
     console.log('PWA installed');
-    showToast('App installed successfully!');
+    showToast(getTranslation('messages.appInstalled'));
     deferredPrompt = null;
 });
 
 // Online/Offline status
 window.addEventListener('online', () => {
-    showToast('You are back online!');
+    showToast(getTranslation('messages.backOnline'));
 });
 
 window.addEventListener('offline', () => {
-    showToast('You are offline. Some features may be limited.');
+    showToast(getTranslation('messages.offline'));
 });
 
 // Console welcome message
 console.log('%c🍺 Bierephilo', 'font-size: 24px; color: #2196F3; font-weight: bold;');
 console.log('%cWelcome to the console! Happy philosophical pondering!', 'font-size: 14px; color: #666;');
 
+// Global language toggle
+document.querySelectorAll('.global-lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        changeLanguage(lang);
+    });
+});
+
 // ==================== PHILOSOPHICAL QUESTIONS FEATURE ====================
 
 // Questions state
 let questionsData = null;
-let currentLanguage = 'en';
 let currentCategory = 'all';
 let searchQuery = '';
 let currentPage = 1;
@@ -326,19 +443,22 @@ const questionsPerPage = 10;
 // Load questions data
 async function loadQuestions() {
     try {
-        const response = await fetch('questions_philosophiques.json');
+        const response = await fetch(`questions-${currentLanguage}.json`);
         if (!response.ok) throw new Error('Failed to load questions');
         questionsData = await response.json();
         initializeQuestions();
     } catch (error) {
         console.error('Error loading questions:', error);
-        document.getElementById('questionsList').innerHTML = `
-            <div class="no-results">
-                <div class="no-results-icon">⚠️</div>
-                <p class="no-results-text">Failed to load questions</p>
-                <p>Please refresh the page to try again.</p>
-            </div>
-        `;
+        const questionsList = document.getElementById('questionsList');
+        if (questionsList) {
+            questionsList.innerHTML = `
+                <div class="no-results">
+                    <div class="no-results-icon">⚠️</div>
+                    <p class="no-results-text">${getTranslation('messages.failedToLoad')}</p>
+                    <p>${getTranslation('messages.refreshPage')}</p>
+                </div>
+            `;
+        }
     }
 }
 
@@ -362,7 +482,7 @@ function renderCategoryButtons() {
 
         return `
             <button class="category-btn" data-category="${cat.id}">
-                <span>${cat.nom[currentLanguage]}</span>
+                <span>${cat.nom}</span>
                 <span class="category-count">(${count})</span>
             </button>
         `;
@@ -388,7 +508,7 @@ function getFilteredQuestions() {
     if (searchQuery.trim()) {
         const query = searchQuery.toLowerCase();
         filtered = filtered.filter(q => {
-            const questionText = q.question[currentLanguage].toLowerCase();
+            const questionText = q.question.toLowerCase();
             const tagsText = q.tags.join(' ').toLowerCase();
             return questionText.includes(query) || tagsText.includes(query);
         });
@@ -408,7 +528,8 @@ function renderQuestions() {
 
     // Update count
     if (countElement) {
-        countElement.textContent = `Showing ${totalQuestions} question${totalQuestions !== 1 ? 's' : ''}`;
+        const questionWord = totalQuestions !== 1 ? getTranslation('questionsSection.questions') : getTranslation('questionsSection.question');
+        countElement.textContent = `${getTranslation('questionsSection.showing')} ${totalQuestions} ${questionWord}`;
     }
 
     // No results
@@ -416,8 +537,8 @@ function renderQuestions() {
         container.innerHTML = `
             <div class="no-results">
                 <div class="no-results-icon">🤔</div>
-                <p class="no-results-text">No questions found</p>
-                <p>Try adjusting your filters or search terms.</p>
+                <p class="no-results-text">${getTranslation('questionsSection.noResults')}</p>
+                <p>${getTranslation('questionsSection.noResultsDesc')}</p>
             </div>
         `;
         renderPagination(0);
@@ -458,7 +579,7 @@ function renderQuestionCard(question) {
     const categoryTag = question.tags.find(tag => tag.startsWith('categorie:'));
     const categoryId = categoryTag ? categoryTag.split(':')[1] : '';
     const category = questionsData.categories.find(c => c.id === categoryId);
-    const categoryName = category ? category.nom[currentLanguage] : '';
+    const categoryName = category ? category.nom : '';
 
     const difficultyTag = question.tags.find(tag => tag.startsWith('difficulte:'));
     const difficulty = difficultyTag ? difficultyTag.split(':')[1] : '';
@@ -468,8 +589,8 @@ function renderQuestionCard(question) {
 
     return `
         <div class="question-card" data-id="${question.id}">
-            <div class="question-number">Question #${question.id}</div>
-            <div class="question-text">${question.question[currentLanguage]}</div>
+            <div class="question-number">${getTranslation('questionsSection.questionNumber')}${question.id}</div>
+            <div class="question-text">${question.question}</div>
             <div class="question-tags">
                 ${categoryName ? `<span class="tag">${categoryName}</span>` : ''}
                 ${difficulty ? `<span class="tag difficulty">${difficulty}</span>` : ''}
@@ -494,7 +615,7 @@ function renderPagination(totalPages) {
     // Previous button
     buttons.push(`
         <button class="page-btn" data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}>
-            ‹ Prev
+            ‹ ${getTranslation('questionsSection.prev')}
         </button>
     `);
 
@@ -532,7 +653,7 @@ function renderPagination(totalPages) {
     // Next button
     buttons.push(`
         <button class="page-btn" data-page="${currentPage + 1}" ${currentPage === totalPages ? 'disabled' : ''}>
-            Next ›
+            ${getTranslation('questionsSection.next')} ›
         </button>
     `);
 
@@ -541,22 +662,6 @@ function renderPagination(totalPages) {
 
 // Setup event listeners for questions interface
 function setupQuestionListeners() {
-    // Language toggle
-    const langButtons = document.querySelectorAll('.lang-btn');
-    langButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const lang = btn.dataset.lang;
-            if (lang === currentLanguage) return;
-
-            currentLanguage = lang;
-            langButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            renderCategoryButtons();
-            renderQuestions();
-        });
-    });
-
     // Category filter - All Categories button
     const allCategoriesBtn = document.querySelector('.filter-btn[data-category="all"]');
     if (allCategoriesBtn) {
@@ -644,9 +749,9 @@ function showQuestionDetail(question) {
     const categoryId = categoryTag ? categoryTag.split(':')[1] : '';
     const category = questionsData.categories.find(c => c.id === categoryId);
 
-    const message = `Question #${question.id}\n\n${question.question[currentLanguage]}\n\nCategory: ${category ? category.nom[currentLanguage] : 'Unknown'}`;
+    const message = `${getTranslation('questionsSection.questionNumber')}${question.id}\n\n${question.question}\n\nCategory: ${category ? category.nom : 'Unknown'}`;
 
-    showToast(`Question #${question.id} - Click for details`);
+    showToast(`${getTranslation('questionsSection.questionNumber')}${question.id} - ${getTranslation('messages.questionDetails')}`);
     console.log(message);
     console.log('Full question data:', question);
 }
@@ -665,7 +770,7 @@ if (ctaButton) {
             behavior: 'smooth'
         });
 
-        showToast('Explore 168 philosophical questions!');
+        showToast(getTranslation('messages.explore168Questions'));
     });
 }
 
@@ -686,8 +791,7 @@ let gameState = {
     currentRound: 0,         // Current round number
     totalRounds: 0,          // Total rounds played
     roundQuestions: [],      // Questions drawn in current round
-    selectedDrawCount: 1,    // Number of questions to draw (1-5)
-    gameLanguage: 'en'       // Language for game
+    selectedDrawCount: 1     // Number of questions to draw (1-5)
 };
 
 // Helper function to shuffle array
@@ -733,8 +837,7 @@ function initializeGame() {
         currentRound: 0,
         totalRounds: 0,
         roundQuestions: [],
-        selectedDrawCount: 1,
-        gameLanguage: currentLanguage
+        selectedDrawCount: 1
     };
 
     switchGameScreen('gameModeScreen');
@@ -770,12 +873,13 @@ gameModeButtons.forEach(btn => {
             const totalQuestions = questionsData.questions.length;
             const countElement = document.getElementById('allQuestionsCount');
             if (countElement) {
-                countElement.textContent = `${totalQuestions} questions`;
+                countElement.textContent = `${totalQuestions} ${getTranslation('questionsSection.questions')}`;
             }
         }
 
         switchGameScreen('questionCountScreen');
-        showToast(`${mode === 'random' ? 'Fully Random' : mode === 'by-tags' ? 'By Tags' : 'Custom'} mode selected`);
+        const modeName = mode === 'random' ? getTranslation('game.randomMode') : mode === 'by-tags' ? getTranslation('game.byTagsMode') : getTranslation('game.customMode');
+        showToast(`${modeName} ${getTranslation('messages.modeSelected')}`);
     });
 });
 
@@ -839,7 +943,9 @@ function renderTagSelection() {
 
     // Update title based on mode
     if (titleElement) {
-        titleElement.textContent = gameState.mode === 'custom' ? 'Select Tags & Set Counts' : 'Select Tags';
+        const titleKey = gameState.mode === 'custom' ? 'game.tagSelectionCustomTitle' : 'game.tagSelectionTitle';
+        titleElement.textContent = getTranslation(titleKey);
+        titleElement.setAttribute('data-i18n', titleKey);
     }
 
     // Show/hide custom sliders container
@@ -863,7 +969,7 @@ function renderTagSelection() {
             <div class="tag-category">
                 <label class="tag-checkbox-label">
                     <input type="checkbox" class="tag-checkbox" data-tag="${categoryTag}" ${isChecked ? 'checked' : ''}>
-                    <span class="tag-checkbox-text">${category.nom[gameState.gameLanguage]}</span>
+                    <span class="tag-checkbox-text">${category.nom}</span>
                     <span class="tag-count">(${count})</span>
                 </label>
             </div>
@@ -921,7 +1027,7 @@ function addCustomTagSlider(tag) {
     const sliderHtml = `
         <div class="custom-tag-slider" data-tag="${tag}">
             <div class="custom-tag-slider-header">
-                <span class="custom-tag-name">${category.nom[gameState.gameLanguage]}</span>
+                <span class="custom-tag-name">${category.nom}</span>
                 <span class="custom-tag-value" id="value-${tag.replace(/:/g, '-')}">${defaultCount}</span>
             </div>
             <input type="range" class="slider" id="slider-${tag.replace(/:/g, '-')}"
@@ -969,7 +1075,7 @@ document.getElementById('backToCount')?.addEventListener('click', () => {
 // Start game button
 document.getElementById('startGame')?.addEventListener('click', () => {
     if (gameState.selectedTags.length === 0) {
-        showToast('Please select at least one tag');
+        showToast(getTranslation('messages.selectAtLeastOneTag'));
         return;
     }
 
@@ -1023,7 +1129,7 @@ function startGameplay() {
     // Show gameplay screen
     updateGameplayUI();
     switchGameScreen('gameplayScreen');
-    showToast(`Game started! ${gameState.mug.length} questions in the mug`);
+    showToast(`${getTranslation('messages.gameStarted')} ${gameState.mug.length} ${getTranslation('messages.questionsInMug')}`);
 }
 
 // Update gameplay UI
@@ -1056,7 +1162,7 @@ function renderRoundQuestions() {
         container.innerHTML = `
             <div class="empty-round">
                 <div class="empty-round-icon">🎲</div>
-                <p>Draw questions to start the round</p>
+                <p>${getTranslation('game.emptyRound')}</p>
             </div>
         `;
         return;
@@ -1066,7 +1172,7 @@ function renderRoundQuestions() {
         const categoryTag = question.tags.find(tag => tag.startsWith('categorie:'));
         const categoryId = categoryTag ? categoryTag.split(':')[1] : '';
         const category = questionsData.categories.find(c => c.id === categoryId);
-        const categoryName = category ? category.nom[gameState.gameLanguage] : '';
+        const categoryName = category ? category.nom : '';
 
         const difficultyTag = question.tags.find(tag => tag.startsWith('difficulte:'));
         const difficulty = difficultyTag ? difficultyTag.split(':')[1] : '';
@@ -1076,8 +1182,8 @@ function renderRoundQuestions() {
 
         return `
             <div class="round-question-card">
-                <div class="round-question-number">Question #${question.id}</div>
-                <div class="round-question-text">${question.question[gameState.gameLanguage]}</div>
+                <div class="round-question-number">${getTranslation('questionsSection.questionNumber')}${question.id}</div>
+                <div class="round-question-text">${question.question}</div>
                 <div class="round-question-tags">
                     ${categoryName ? `<span class="tag">${categoryName}</span>` : ''}
                     ${difficulty ? `<span class="tag difficulty">${difficulty}</span>` : ''}
@@ -1147,7 +1253,8 @@ document.getElementById('drawQuestions')?.addEventListener('click', () => {
     // Update UI
     updateGameplayUI();
 
-    showToast(`Drew ${drawCount} question${drawCount > 1 ? 's' : ''}`);
+    const questionWord = drawCount > 1 ? getTranslation('questionsSection.questions') : getTranslation('questionsSection.question');
+    showToast(`${getTranslation('messages.drew')} ${drawCount} ${questionWord}`);
 
     // Check if mug is empty
     if (gameState.mug.length === 0) {
@@ -1159,9 +1266,9 @@ document.getElementById('drawQuestions')?.addEventListener('click', () => {
 
 // Quit game button
 document.getElementById('quitGame')?.addEventListener('click', () => {
-    if (confirm('Are you sure you want to quit the game?')) {
+    if (confirm(getTranslation('messages.quitConfirm'))) {
         initializeGame();
-        showToast('Game ended');
+        showToast(getTranslation('messages.gameEnded'));
     }
 });
 
@@ -1179,7 +1286,7 @@ function showGameComplete() {
     }
 
     switchGameScreen('gameCompleteScreen');
-    showToast('Congratulations! You\'ve completed the game!');
+    showToast(getTranslation('messages.congratulations'));
 }
 
 // Play again button
@@ -1200,18 +1307,3 @@ document.getElementById('backToHome')?.addEventListener('click', () => {
     }
 });
 
-// Game language toggle
-const gameLangButtons = document.querySelectorAll('#tagSelectionScreen .lang-btn');
-gameLangButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const lang = btn.dataset.lang;
-        if (lang === gameState.gameLanguage) return;
-
-        gameState.gameLanguage = lang;
-        gameLangButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        // Re-render tag selection
-        renderTagSelection();
-    });
-});

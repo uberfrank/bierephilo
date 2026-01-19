@@ -1388,6 +1388,45 @@ body {
     }
 }
 
+/* Global Language Toggle */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.global-language-toggle {
+    display: flex;
+    gap: 4px;
+    background: var(--bg-light);
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.global-lang-btn {
+    background: transparent;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 18px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.global-lang-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.global-lang-btn:hover:not(.active) {
+    background: rgba(33, 150, 243, 0.1);
+    color: var(--primary-color);
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     :root {

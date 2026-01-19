@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "features": "Features",
+    "playGame": "Play Game",
+    "questions": "Questions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to Bierephilo",
+    "subtitle": "Where beer meets philosophy - 168 questions to ponder",
+    "playGameButton": "Play Game",
+    "browseButton": "Browse Questions"
+  },
+  "about": {
+    "title": "About Bierephilo",
+    "description": "Bierephilo combines the convivial spirit of beer culture with deep philosophical inquiry. Explore 168 thought-provoking questions across 12 philosophical categories, perfect for contemplation over a good drink.",
+    "card1Title": "168 Questions",
+    "card1Text": "Deep philosophical questions to explore and discuss",
+    "card2Title": "12 Categories",
+    "card2Text": "From metaphysics to ethics, logic to aesthetics",
+    "card3Title": "Bilingual",
+    "card3Text": "Questions available in French and English"
+  },
+  "features": {
+    "title": "Features",
+    "feature1Title": "Touch Optimized",
+    "feature1Text": "Designed for touch interactions with gesture support",
+    "feature2Title": "Secure",
+    "feature2Text": "Built with security best practices",
+    "feature3Title": "Progressive",
+    "feature3Text": "Works offline and can be installed as an app"
+  },
+  "game": {
+    "title": "Play Bierephilo",
+    "subtitle": "Draw questions from the philosophical mug and explore deep ideas round by round",
+    "modeTitle": "Choose Your Game Mode",
+    "randomMode": "Fully Random",
+    "randomModeDesc": "All questions shuffled randomly",
+    "byTagsMode": "By Tags",
+    "byTagsModeDesc": "Select specific categories or tags",
+    "customMode": "Custom",
+    "customModeDesc": "Mix and match tags with custom counts",
+    "questionCountTitle": "How Many Questions?",
+    "allQuestions": "All Questions",
+    "allQuestionsDesc": "168 questions",
+    "sample": "Sample",
+    "sampleDesc": "Choose a custom amount",
+    "sliderLabel": "Number of questions:",
+    "backButton": "Back",
+    "continueButton": "Continue",
+    "tagSelectionTitle": "Select Tags",
+    "tagSelectionCustomTitle": "Select Tags & Set Counts",
+    "startGameButton": "Start Game",
+    "questionsLeft": "questions left",
+    "round": "Round",
+    "quitGame": "Quit Game",
+    "drawLabel": "Draw questions:",
+    "drawButton": "Draw Questions",
+    "emptyRound": "Draw questions to start the round",
+    "mugEmpty": "Mug Empty!",
+    "gameCompleteText": "You've explored all the questions in your philosophical mug.",
+    "roundsPlayed": "Rounds Played",
+    "questionsExplored": "Questions Explored",
+    "playAgain": "Play Again",
+    "backToHome": "Back to Home"
+  },
+  "questionsSection": {
+    "title": "Philosophical Questions",
+    "description": "Browse and explore thought-provoking questions. Filter by category or search for specific topics.",
+    "allCategories": "All Categories",
+    "searchPlaceholder": "Search questions...",
+    "showing": "Showing",
+    "question": "question",
+    "questions": "questions",
+    "noResults": "No questions found",
+    "noResultsDesc": "Try adjusting your filters or search terms.",
+    "loading": "Loading questions...",
+    "questionNumber": "Question #",
+    "prev": "Prev",
+    "next": "Next"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "sendButton": "Send Message",
+    "successMessage": "Message sent successfully!"
+  },
+  "footer": {
+    "copyright": "© 2026 Bierephilo. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "messages": {
+    "welcome": "Welcome to Bierephilo! 🍺",
+    "messageSent": "Message sent successfully!",
+    "letsGetInTouch": "Let's get in touch!",
+    "explore168Questions": "Explore 168 philosophical questions!",
+    "modeSelected": "mode selected",
+    "selectAtLeastOneTag": "Please select at least one tag",
+    "gameStarted": "Game started!",
+    "questionsInMug": "questions in the mug",
+    "drew": "Drew",
+    "gameEnded": "Game ended",
+    "congratulations": "Congratulations! You've completed the game!",
+    "quitConfirm": "Are you sure you want to quit the game?",
+    "addToHomeScreen": "Add Bierephilo to your home screen for easy access!",
+    "appInstalled": "App installed successfully!",
+    "backOnline": "You are back online!",
+    "offline": "You are offline. Some features may be limited.",
+    "questionDetails": "Click for details",
+    "failedToLoad": "Failed to load questions",
+    "refreshPage": "Please refresh the page to try again."
+  },
+  "language": {
+    "english": "English",
+    "french": "Français"
+  }
+}

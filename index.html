@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
@@ -18,21 +18,27 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">🍺 Bierephilo</h1>
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
-            </button>
+            <div class="header-actions">
+                <div class="global-language-toggle">
+                    <button class="global-lang-btn active" data-lang="en">EN</button>
+                    <button class="global-lang-btn" data-lang="fr">FR</button>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <!-- Navigation -->
     <nav class="nav" id="mainNav">
         <ul class="nav-list">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#features" class="nav-link">Features</a></li>
-            <li><a href="#game" class="nav-link">Play Game</a></li>
-            <li><a href="#questions" class="nav-link">Questions</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+            <li><a href="#features" class="nav-link" data-i18n="nav.features">Features</a></li>
+            <li><a href="#game" class="nav-link" data-i18n="nav.playGame">Play Game</a></li>
+            <li><a href="#questions" class="nav-link" data-i18n="nav.questions">Questions</a></li>
+            <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -41,11 +47,11 @@
         <!-- Hero Section -->
         <section id="home" class="section hero">
             <div class="container">
-                <h2 class="hero-title">Welcome to Bierephilo</h2>
-                <p class="hero-subtitle">Where beer meets philosophy - 168 questions to ponder</p>
+                <h2 class="hero-title" data-i18n="hero.title">Welcome to Bierephilo</h2>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Where beer meets philosophy - 168 questions to ponder</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary" id="playGameButton">Play Game</button>
-                    <button class="btn btn-secondary" id="ctaButton">Browse Questions</button>
+                    <button class="btn btn-primary" id="playGameButton" data-i18n="hero.playGameButton">Play Game</button>
+                    <button class="btn btn-secondary" id="ctaButton" data-i18n="hero.browseButton">Browse Questions</button>
                 </div>
             </div>
         </section>
@@ -53,8 +59,8 @@
         <!-- About Section -->
         <section id="about" class="section about">
             <div class="container">
-                <h2 class="section-title">About Bierephilo</h2>
-                <p class="section-text">
+                <h2 class="section-title" data-i18n="about.title">About Bierephilo</h2>
+                <p class="section-text" data-i18n="about.description">
                     Bierephilo combines the convivial spirit of beer culture with deep philosophical inquiry.
                     Explore 168 thought-provoking questions across 12 philosophical categories,
                     perfect for contemplation over a good drink.
@@ -62,18 +68,18 @@
                 <div class="card-grid">
                     <div class="card">
                         <div class="card-icon">🤔</div>
-                        <h3 class="card-title">168 Questions</h3>
-                        <p class="card-text">Deep philosophical questions to explore and discuss</p>
+                        <h3 class="card-title" data-i18n="about.card1Title">168 Questions</h3>
+                        <p class="card-text" data-i18n="about.card1Text">Deep philosophical questions to explore and discuss</p>
                     </div>
                     <div class="card">
                         <div class="card-icon">📚</div>
-                        <h3 class="card-title">12 Categories</h3>
-                        <p class="card-text">From metaphysics to ethics, logic to aesthetics</p>
+                        <h3 class="card-title" data-i18n="about.card2Title">12 Categories</h3>
+                        <p class="card-text" data-i18n="about.card2Text">From metaphysics to ethics, logic to aesthetics</p>
                     </div>
                     <div class="card">
                         <div class="card-icon">🌐</div>
-                        <h3 class="card-title">Bilingual</h3>
-                        <p class="card-text">Questions available in French and English</p>
+                        <h3 class="card-title" data-i18n="about.card3Title">Bilingual</h3>
+                        <p class="card-text" data-i18n="about.card3Text">Questions available in French and English</p>
                     </div>
                 </div>
             </div>
@@ -82,27 +88,27 @@
         <!-- Features Section -->
         <section id="features" class="section features">
             <div class="container">
-                <h2 class="section-title">Features</h2>
+                <h2 class="section-title" data-i18n="features.title">Features</h2>
                 <div class="feature-list">
                     <div class="feature-item">
                         <div class="feature-icon">✨</div>
                         <div class="feature-content">
-                            <h3 class="feature-title">Touch Optimized</h3>
-                            <p class="feature-text">Designed for touch interactions with gesture support</p>
+                            <h3 class="feature-title" data-i18n="features.feature1Title">Touch Optimized</h3>
+                            <p class="feature-text" data-i18n="features.feature1Text">Designed for touch interactions with gesture support</p>
                         </div>
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">🔒</div>
                         <div class="feature-content">
-                            <h3 class="feature-title">Secure</h3>
-                            <p class="feature-text">Built with security best practices</p>
+                            <h3 class="feature-title" data-i18n="features.feature2Title">Secure</h3>
+                            <p class="feature-text" data-i18n="features.feature2Text">Built with security best practices</p>
                         </div>
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">🚀</div>
                         <div class="feature-content">
-                            <h3 class="feature-title">Progressive</h3>
-                            <p class="feature-text">Works offline and can be installed as an app</p>
+                            <h3 class="feature-title" data-i18n="features.feature3Title">Progressive</h3>
+                            <p class="feature-text" data-i18n="features.feature3Text">Works offline and can be installed as an app</p>
                         </div>
                     </div>
                 </div>
@@ -112,48 +118,48 @@
         <!-- Game Section -->
         <section id="game" class="section game-section">
             <div class="container">
-                <h2 class="section-title">Play Bierephilo</h2>
-                <p class="section-text">Draw questions from the philosophical mug and explore deep ideas round by round</p>
+                <h2 class="section-title" data-i18n="game.title">Play Bierephilo</h2>
+                <p class="section-text" data-i18n="game.subtitle">Draw questions from the philosophical mug and explore deep ideas round by round</p>
 
                 <!-- Game Mode Selection Screen -->
                 <div id="gameModeScreen" class="game-screen active">
-                    <h3 class="game-subtitle">Choose Your Game Mode</h3>
+                    <h3 class="game-subtitle" data-i18n="game.modeTitle">Choose Your Game Mode</h3>
                     <div class="game-mode-buttons">
                         <button class="game-mode-btn" data-mode="random">
                             <div class="game-mode-icon">🎲</div>
-                            <h4>Fully Random</h4>
-                            <p>All questions shuffled randomly</p>
+                            <h4 data-i18n="game.randomMode">Fully Random</h4>
+                            <p data-i18n="game.randomModeDesc">All questions shuffled randomly</p>
                         </button>
                         <button class="game-mode-btn" data-mode="by-tags">
                             <div class="game-mode-icon">🏷️</div>
-                            <h4>By Tags</h4>
-                            <p>Select specific categories or tags</p>
+                            <h4 data-i18n="game.byTagsMode">By Tags</h4>
+                            <p data-i18n="game.byTagsModeDesc">Select specific categories or tags</p>
                         </button>
                         <button class="game-mode-btn" data-mode="custom">
                             <div class="game-mode-icon">⚙️</div>
-                            <h4>Custom</h4>
-                            <p>Mix and match tags with custom counts</p>
+                            <h4 data-i18n="game.customMode">Custom</h4>
+                            <p data-i18n="game.customModeDesc">Mix and match tags with custom counts</p>
                         </button>
                     </div>
                 </div>
 
                 <!-- Question Count Selection Screen -->
                 <div id="questionCountScreen" class="game-screen">
-                    <h3 class="game-subtitle">How Many Questions?</h3>
+                    <h3 class="game-subtitle" data-i18n="game.questionCountTitle">How Many Questions?</h3>
                     <div class="question-count-options">
                         <button class="count-option-btn" data-count="all">
                             <div class="count-icon">📚</div>
-                            <h4>All Questions</h4>
-                            <p id="allQuestionsCount">168 questions</p>
+                            <h4 data-i18n="game.allQuestions">All Questions</h4>
+                            <p id="allQuestionsCount" data-i18n="game.allQuestionsDesc">168 questions</p>
                         </button>
                         <button class="count-option-btn" data-count="sample">
                             <div class="count-icon">🎯</div>
-                            <h4>Sample</h4>
-                            <p>Choose a custom amount</p>
+                            <h4 data-i18n="game.sample">Sample</h4>
+                            <p data-i18n="game.sampleDesc">Choose a custom amount</p>
                         </button>
                     </div>
                     <div id="sampleSliderContainer" class="slider-container" style="display: none;">
-                        <label for="sampleSlider" class="slider-label">Number of questions: <span id="sampleValue">20</span></label>
+                        <label for="sampleSlider" class="slider-label"><span data-i18n="game.sliderLabel">Number of questions:</span> <span id="sampleValue">20</span></label>
                         <input type="range" id="sampleSlider" class="slider" min="5" max="168" value="20" step="1">
                         <div class="slider-markers">
                             <span>5</span>
@@ -161,20 +167,14 @@
                         </div>
                     </div>
                     <div class="game-nav-buttons">
-                        <button class="btn btn-secondary" id="backToMode">Back</button>
-                        <button class="btn btn-primary" id="continueToTags">Continue</button>
+                        <button class="btn btn-secondary" id="backToMode" data-i18n="game.backButton">Back</button>
+                        <button class="btn btn-primary" id="continueToTags" data-i18n="game.continueButton">Continue</button>
                     </div>
                 </div>
 
                 <!-- Tag Selection Screen (for by-tags and custom modes) -->
                 <div id="tagSelectionScreen" class="game-screen">
-                    <h3 class="game-subtitle" id="tagScreenTitle">Select Tags</h3>
-
-                    <!-- Language Toggle for Game -->
-                    <div class="language-toggle">
-                        <button class="lang-btn active" data-lang="en">English</button>
-                        <button class="lang-btn" data-lang="fr">Français</button>
-                    </div>
+                    <h3 class="game-subtitle" id="tagScreenTitle" data-i18n="game.tagSelectionTitle">Select Tags</h3>
 
                     <!-- Tag Categories -->
                     <div id="tagCategories" class="tag-categories"></div>
@@ -183,8 +183,8 @@
                     <div id="customTagSliders" class="custom-tag-sliders" style="display: none;"></div>
 
                     <div class="game-nav-buttons">
-                        <button class="btn btn-secondary" id="backToCount">Back</button>
-                        <button class="btn btn-primary" id="startGame">Start Game</button>
+                        <button class="btn btn-secondary" id="backToCount" data-i18n="game.backButton">Back</button>
+                        <button class="btn btn-primary" id="startGame" data-i18n="game.startGameButton">Start Game</button>
                     </div>
                 </div>
 
@@ -194,19 +194,19 @@
                         <div class="game-info">
                             <div class="mug-count">
                                 <span class="mug-icon">🍺</span>
-                                <span id="mugCount">0</span> questions left
+                                <span id="mugCount">0</span> <span data-i18n="game.questionsLeft">questions left</span>
                             </div>
                             <div class="round-info">
-                                Round <span id="currentRound">1</span>
+                                <span data-i18n="game.round">Round</span> <span id="currentRound">1</span>
                             </div>
                         </div>
-                        <button class="btn btn-secondary btn-sm" id="quitGame">Quit Game</button>
+                        <button class="btn btn-secondary btn-sm" id="quitGame" data-i18n="game.quitGame">Quit Game</button>
                     </div>
 
                     <div id="roundQuestions" class="round-questions"></div>
 
                     <div class="draw-controls">
-                        <label for="drawCount" class="draw-label">Draw questions:</label>
+                        <label for="drawCount" class="draw-label" data-i18n="game.drawLabel">Draw questions:</label>
                         <div class="draw-selector">
                             <button class="draw-btn" data-count="1">1</button>
                             <button class="draw-btn" data-count="2">2</button>
@@ -214,7 +214,7 @@
                             <button class="draw-btn" data-count="4">4</button>
                             <button class="draw-btn" data-count="5">5</button>
                         </div>
-                        <button class="btn btn-primary" id="drawQuestions">Draw Questions</button>
+                        <button class="btn btn-primary" id="drawQuestions" data-i18n="game.drawButton">Draw Questions</button>
                     </div>
                 </div>
 
@@ -222,21 +222,21 @@
                 <div id="gameCompleteScreen" class="game-screen">
                     <div class="game-complete-content">
                         <div class="complete-icon">🎉</div>
-                        <h3 class="game-subtitle">Mug Empty!</h3>
-                        <p class="complete-text">You've explored all the questions in your philosophical mug.</p>
+                        <h3 class="game-subtitle" data-i18n="game.mugEmpty">Mug Empty!</h3>
+                        <p class="complete-text" data-i18n="game.gameCompleteText">You've explored all the questions in your philosophical mug.</p>
                         <div class="game-stats">
                             <div class="stat-item">
                                 <div class="stat-value" id="totalRounds">0</div>
-                                <div class="stat-label">Rounds Played</div>
+                                <div class="stat-label" data-i18n="game.roundsPlayed">Rounds Played</div>
                             </div>
                             <div class="stat-item">
                                 <div class="stat-value" id="totalQuestionsPlayed">0</div>
-                                <div class="stat-label">Questions Explored</div>
+                                <div class="stat-label" data-i18n="game.questionsExplored">Questions Explored</div>
                             </div>
                         </div>
                         <div class="game-nav-buttons">
-                            <button class="btn btn-primary" id="playAgain">Play Again</button>
-                            <button class="btn btn-secondary" id="backToHome">Back to Home</button>
+                            <button class="btn btn-primary" id="playAgain" data-i18n="game.playAgain">Play Again</button>
+                            <button class="btn btn-secondary" id="backToHome" data-i18n="game.backToHome">Back to Home</button>
                         </div>
                     </div>
                 </div>
@@ -246,26 +246,20 @@
         <!-- Questions Section -->
         <section id="questions" class="section questions">
             <div class="container">
-                <h2 class="section-title">Philosophical Questions</h2>
-                <p class="section-text">
+                <h2 class="section-title" data-i18n="questionsSection.title">Philosophical Questions</h2>
+                <p class="section-text" data-i18n="questionsSection.description">
                     Browse and explore thought-provoking questions. Filter by category or search for specific topics.
                 </p>
 
-                <!-- Language Toggle -->
-                <div class="language-toggle">
-                    <button class="lang-btn active" data-lang="en">English</button>
-                    <button class="lang-btn" data-lang="fr">Français</button>
-                </div>
-
                 <!-- Category Filter -->
                 <div class="category-filter">
-                    <button class="filter-btn active" data-category="all">All Categories</button>
+                    <button class="filter-btn active" data-category="all" data-i18n="questionsSection.allCategories">All Categories</button>
                     <div id="categoryButtons" class="category-buttons"></div>
                 </div>
 
                 <!-- Search -->
                 <div class="search-container">
-                    <input type="text" id="questionSearch" class="search-input" placeholder="Search questions...">
+                    <input type="text" id="questionSearch" class="search-input" data-i18n-placeholder="questionsSection.searchPlaceholder" placeholder="Search questions...">
                     <span class="search-icon">🔍</span>
                 </div>
 
@@ -274,7 +268,7 @@
 
                 <!-- Questions List -->
                 <div class="questions-list" id="questionsList">
-                    <div class="loading">Loading questions...</div>
+                    <div class="loading" data-i18n="questionsSection.loading">Loading questions...</div>
                 </div>
 
                 <!-- Pagination -->
@@ -285,24 +279,24 @@
         <!-- Contact Section -->
         <section id="contact" class="section contact">
             <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
+                <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <label for="name" class="form-label">Name</label>
+                        <label for="name" class="form-label" data-i18n="contact.nameLabel">Name</label>
                         <input type="text" id="name" name="name" class="form-input" required>
                     </div>
                     <div class="form-group">
-                        <label for="email" class="form-label">Email</label>
+                        <label for="email" class="form-label" data-i18n="contact.emailLabel">Email</label>
                         <input type="email" id="email" name="email" class="form-input" required>
                     </div>
                     <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
+                        <label for="message" class="form-label" data-i18n="contact.messageLabel">Message</label>
                         <textarea id="message" name="message" class="form-textarea" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.sendButton">Send Message</button>
                 </form>
                 <div class="form-success" id="formSuccess">
-                    ✓ Message sent successfully!
+                    <span data-i18n="contact.successMessage">✓ Message sent successfully!</span>
                 </div>
             </div>
         </section>
@@ -311,10 +305,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">&copy; 2026 Bierephilo. All rights reserved.</p>
+            <p class="footer-text" data-i18n="footer.copyright">&copy; 2026 Bierephilo. All rights reserved.</p>
             <div class="footer-links">
-                <a href="#" class="footer-link">Privacy</a>
-                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link" data-i18n="footer.privacy">Privacy</a>
+                <a href="#" class="footer-link" data-i18n="footer.terms">Terms</a>
             </div>
         </div>
     </footer>

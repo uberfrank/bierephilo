@@ -1,36 +1,7 @@
 {
   "nav": {
-    "home": "Home",
-    "about": "About",
-    "features": "Features",
-    "playGame": "Play Game",
-    "questions": "Questions",
-    "contact": "Contact"
-  },
-  "hero": {
-    "title": "Welcome to Bierephilo",
-    "subtitle": "Where beer meets philosophy - 168 questions to ponder",
-    "playGameButton": "Play Game",
-    "browseButton": "Browse Questions"
-  },
-  "about": {
-    "title": "About Bierephilo",
-    "description": "Bierephilo combines the convivial spirit of beer culture with deep philosophical inquiry. Explore 168 thought-provoking questions across 12 philosophical categories, perfect for contemplation over a good drink.",
-    "card1Title": "168 Questions",
-    "card1Text": "Deep philosophical questions to explore and discuss",
-    "card2Title": "12 Categories",
-    "card2Text": "From metaphysics to ethics, logic to aesthetics",
-    "card3Title": "Bilingual",
-    "card3Text": "Questions available in French and English"
-  },
-  "features": {
-    "title": "Features",
-    "feature1Title": "Touch Optimized",
-    "feature1Text": "Designed for touch interactions with gesture support",
-    "feature2Title": "Secure",
-    "feature2Text": "Built with security best practices",
-    "feature3Title": "Progressive",
-    "feature3Text": "Works offline and can be installed as an app"
+    "playGame": "Play",
+    "questions": "Questions"
   },
   "game": {
     "title": "Play Bierephilo",
@@ -63,8 +34,7 @@
     "gameCompleteText": "You've explored all the questions in your philosophical mug.",
     "roundsPlayed": "Rounds Played",
     "questionsExplored": "Questions Explored",
-    "playAgain": "Play Again",
-    "backToHome": "Back to Home"
+    "playAgain": "Play Again"
   },
   "questionsSection": {
     "title": "Philosophical Questions",
@@ -81,14 +51,6 @@
     "prev": "Prev",
     "next": "Next"
   },
-  "contact": {
-    "title": "Get in Touch",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "messageLabel": "Message",
-    "sendButton": "Send Message",
-    "successMessage": "Message sent successfully!"
-  },
   "footer": {
     "copyright": "© 2026 Bierephilo. All rights reserved.",
     "privacy": "Privacy",
@@ -96,9 +58,6 @@
   },
   "messages": {
     "welcome": "Welcome to Bierephilo! 🍺",
-    "messageSent": "Message sent successfully!",
-    "letsGetInTouch": "Let's get in touch!",
-    "explore168Questions": "Explore 168 philosophical questions!",
     "modeSelected": "mode selected",
     "selectAtLeastOneTag": "Please select at least one tag",
     "gameStarted": "Game started!",

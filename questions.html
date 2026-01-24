@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Bierephilo - Your mobile companion">
+    <meta name="theme-color" content="#2196F3">
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <title>Bierephilo - Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🍺 Bierephilo</h1>
+            <div class="header-actions">
+                <div class="global-language-toggle">
+                    <button class="global-lang-btn active" data-lang="en">EN</button>
+                    <button class="global-lang-btn" data-lang="fr">FR</button>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link" data-i18n="nav.playGame">Play</a></li>
+            <li><a href="questions.html" class="nav-link active" data-i18n="nav.questions">Questions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Questions Section -->
+        <section id="questions" class="section questions">
+            <div class="container">
+                <h2 class="section-title" data-i18n="questionsSection.title">Philosophical Questions</h2>
+                <p class="section-text" data-i18n="questionsSection.description">
+                    Browse and explore thought-provoking questions. Filter by category or search for specific topics.
+                </p>
+
+                <!-- Category Filter -->
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all" data-i18n="questionsSection.allCategories">All Categories</button>
+                    <div id="categoryButtons" class="category-buttons"></div>
+                </div>
+
+                <!-- Search -->
+                <div class="search-container">
+                    <input type="text" id="questionSearch" class="search-input" data-i18n-placeholder="questionsSection.searchPlaceholder" placeholder="Search questions...">
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <!-- Question Count -->
+                <div class="question-count" id="questionCount"></div>
+
+                <!-- Questions List -->
+                <div class="questions-list" id="questionsList">
+                    <div class="loading" data-i18n="questionsSection.loading">Loading questions...</div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text" data-i18n="footer.copyright">&copy; 2026 Bierephilo. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link" data-i18n="footer.privacy">Privacy</a>
+                <a href="#" class="footer-link" data-i18n="footer.terms">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-message" id="toastMessage"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

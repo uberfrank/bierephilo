@@ -1,1924 +1,1755 @@
 {
   "metadata": {
     "titre": "Questions philosophiques",
-    "total_categories": 12,
-    "questions_par_categorie": 14,
+    "version": "2.0",
     "total_questions": 168,
-    "format_tags": "type:valeur",
-    "langues_disponibles": [
-      "fr"
-    ]
-  },
-  "categories": [
-    {
-      "id": "metaphysique",
-      "nom": "Métaphysique",
-      "description": "Questions sur la nature fondamentale de la réalité"
-    },
-    {
-      "id": "epistemologie",
-      "nom": "Épistémologie",
-      "description": "Questions sur la connaissance et la vérité"
-    },
-    {
-      "id": "ethique",
-      "nom": "Éthique",
-      "description": "Questions sur le bien, le mal et la moralité"
-    },
-    {
-      "id": "philosophie_politique",
-      "nom": "Philosophie politique",
-      "description": "Questions sur la justice, le pouvoir et la société"
-    },
-    {
-      "id": "philosophie_esprit",
-      "nom": "Philosophie de l'esprit",
-      "description": "Questions sur la conscience et l'identité"
-    },
-    {
-      "id": "existentialisme",
-      "nom": "Existentialisme",
-      "description": "Questions sur le sens de l'existence"
-    },
-    {
-      "id": "esthetique",
-      "nom": "Esthétique",
-      "description": "Questions sur la beauté et l'art"
-    },
-    {
-      "id": "logique",
-      "nom": "Logique",
-      "description": "Questions sur le raisonnement et l'argumentation"
-    },
-    {
-      "id": "philosophie_langage",
-      "nom": "Philosophie du langage",
-      "description": "Questions sur le sens et la communication"
-    },
-    {
-      "id": "philosophie_science",
-      "nom": "Philosophie des sciences",
-      "description": "Questions sur la méthode scientifique et ses limites"
-    },
-    {
-      "id": "philosophie_religion",
-      "nom": "Philosophie de la religion",
-      "description": "Questions sur le divin et le sacré"
-    },
-    {
-      "id": "philosophie_temps",
-      "nom": "Philosophie du temps",
-      "description": "Questions sur la temporalité et l'éternité"
+    "langues_disponibles": ["fr"],
+    "axes_classification": {
+      "disciplines": {
+        "description": "Branches de la philosophie",
+        "valeurs": {
+          "metaphysique": "Métaphysique",
+          "epistemologie": "Épistémologie",
+          "ethique": "Éthique",
+          "esthetique": "Esthétique",
+          "logique": "Logique",
+          "philosophie_politique": "Philosophie politique",
+          "philosophie_langage": "Philosophie du langage",
+          "ontologie": "Ontologie",
+          "philosophie_esprit": "Philosophie de l'esprit",
+          "philosophie_science": "Philosophie des sciences",
+          "philosophie_religion": "Philosophie de la religion",
+          "philosophie_temps": "Philosophie du temps"
+        }
+      },
+      "courants": {
+        "description": "Écoles de pensée",
+        "valeurs": {
+          "presocratiques": "Présocratiques",
+          "stoicisme": "Stoïcisme",
+          "existentialisme": "Existentialisme",
+          "phenomenologie": "Phénoménologie",
+          "pragmatisme": "Pragmatisme",
+          "rationalisme": "Rationalisme",
+          "empirisme": "Empirisme",
+          "utilitarisme": "Utilitarisme"
+        }
+      },
+      "complexites": {
+        "description": "Niveaux de difficulté",
+        "valeurs": {
+          "debutant": "Débutant",
+          "intermediaire": "Intermédiaire",
+          "avance": "Avancé"
+        }
+      },
+      "thematiques": {
+        "description": "Concepts transversaux",
+        "valeurs": {
+          "liberte": "Liberté",
+          "justice": "Justice",
+          "verite": "Vérité",
+          "beaute": "Beauté",
+          "conscience": "Conscience",
+          "existence": "Existence",
+          "langage": "Langage",
+          "pouvoir": "Pouvoir",
+          "bonheur": "Bonheur",
+          "temps": "Temps",
+          "mort": "Mort",
+          "identite": "Identité",
+          "connaissance": "Connaissance",
+          "morale": "Morale",
+          "art": "Art",
+          "raison": "Raison",
+          "foi": "Foi",
+          "nature": "Nature",
+          "realite": "Réalité",
+          "sens": "Sens de la vie"
+        }
+      }
     }
-  ],
+  },
   "questions": [
     {
       "id": 1,
       "question": "Pourquoi y a-t-il quelque chose plutôt que rien ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:avancee",
-        "tradition:occidentale",
-        "theme:existence",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ontologie"],
+        "courants": ["presocratiques", "rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["existence", "realite"]
+      }
     },
     {
       "id": 2,
       "question": "Les universaux existent-ils indépendamment des objets particuliers ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:avancee",
-        "tradition:platonisme",
-        "theme:universaux",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ontologie"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["existence", "realite"]
+      }
     },
     {
       "id": 3,
       "question": "Le monde extérieur existe-t-il indépendamment de notre perception ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:intermediaire",
-        "tradition:idealisme",
-        "theme:realite",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "epistemologie"],
+        "courants": ["empirisme", "rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["realite", "connaissance"]
+      }
     },
     {
       "id": 4,
       "question": "Qu'est-ce qui fait qu'une chose reste la même à travers le temps ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:intermediaire",
-        "tradition:occidentale",
-        "theme:identite",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ontologie"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["identite", "temps"]
+      }
     },
     {
       "id": 5,
       "question": "La causalité est-elle une relation réelle ou une habitude de l'esprit ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:avancee",
-        "tradition:empirisme",
-        "theme:causalite",
-        "approche:critique"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "epistemologie"],
+        "courants": ["empirisme"],
+        "complexite": "avance",
+        "thematiques": ["realite", "connaissance"]
+      }
     },
     {
       "id": 6,
       "question": "Existe-t-il des propriétés essentielles qui définissent chaque chose ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:intermediaire",
-        "tradition:aristotelisme",
-        "theme:essence",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ontologie"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["existence", "identite"]
+      }
     },
     {
       "id": 7,
       "question": "Le hasard existe-t-il ou tout est-il déterminé ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:intermediaire",
-        "tradition:occidentale",
-        "theme:determinisme",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique"],
+        "courants": ["stoicisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["liberte", "realite"]
+      }
     },
     {
       "id": 8,
       "question": "Les nombres sont-ils des entités réelles ou des constructions mentales ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:avancee",
-        "tradition:platonisme",
-        "theme:mathematiques",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ontologie"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["realite", "connaissance"]
+      }
     },
     {
       "id": 9,
       "question": "Peut-on concevoir le néant absolu ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:avancee",
-        "tradition:occidentale",
-        "theme:neant",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ontologie"],
+        "courants": ["existentialisme", "phenomenologie"],
+        "complexite": "avance",
+        "thematiques": ["existence", "realite"]
+      }
     },
     {
       "id": 10,
       "question": "L'infini peut-il exister dans la réalité ou seulement en pensée ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:avancee",
-        "tradition:occidentale",
-        "theme:infini",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ontologie"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["realite", "existence"]
+      }
     },
     {
       "id": 11,
       "question": "Les lois de la nature sont-elles nécessaires ou contingentes ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:avancee",
-        "tradition:occidentale",
-        "theme:necessite",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "philosophie_science"],
+        "courants": ["rationalisme", "empirisme"],
+        "complexite": "avance",
+        "thematiques": ["nature", "realite"]
+      }
     },
     {
       "id": 12,
       "question": "Qu'est-ce qui distingue une substance de ses propriétés ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:intermediaire",
-        "tradition:aristotelisme",
-        "theme:substance",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ontologie"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["existence", "identite"]
+      }
     },
     {
       "id": 13,
       "question": "Les mondes possibles existent-ils réellement ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:avancee",
-        "tradition:analytique",
-        "theme:possibilite",
-        "approche:modale"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "logique"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["existence", "realite"]
+      }
     },
     {
       "id": 14,
       "question": "La réalité est-elle fondamentalement une ou multiple ?",
-      "tags": [
-        "categorie:metaphysique",
-        "difficulte:intermediaire",
-        "tradition:presocratique",
-        "theme:unite",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ontologie"],
+        "courants": ["presocratiques"],
+        "complexite": "intermediaire",
+        "thematiques": ["realite", "existence"]
+      }
     },
     {
       "id": 15,
       "question": "Qu'est-ce qui distingue une croyance vraie d'une connaissance ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:intermediaire",
-        "tradition:platonisme",
-        "theme:connaissance",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "verite"]
+      }
     },
     {
       "id": 16,
       "question": "Peut-on douter de tout sans se contredire ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:intermediaire",
-        "tradition:cartesianisme",
-        "theme:doute",
-        "approche:methodique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "verite", "raison"]
+      }
     },
     {
       "id": 17,
       "question": "L'expérience sensible est-elle la source de toute connaissance ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:intermediaire",
-        "tradition:empirisme",
-        "theme:experience",
-        "approche:critique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["empirisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "verite"]
+      }
     },
     {
       "id": 18,
       "question": "Existe-t-il des vérités a priori indépendantes de l'expérience ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:avancee",
-        "tradition:rationalisme",
-        "theme:apriori",
-        "approche:transcendantale"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["verite", "connaissance", "raison"]
+      }
     },
     {
       "id": 19,
       "question": "Comment puis-je savoir que je ne rêve pas en ce moment ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:debutant",
-        "tradition:cartesianisme",
-        "theme:certitude",
-        "approche:sceptique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "debutant",
+        "thematiques": ["conscience", "verite", "realite"]
+      }
     },
     {
       "id": 20,
       "question": "La vérité est-elle absolue ou relative à un contexte ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:intermediaire",
-        "tradition:relativisme",
-        "theme:verite",
-        "approche:critique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["pragmatisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["verite"]
+      }
     },
     {
       "id": 21,
       "question": "Peut-on connaître les choses telles qu'elles sont en elles-mêmes ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:avancee",
-        "tradition:kantisme",
-        "theme:noumene",
-        "approche:transcendantale"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie", "metaphysique"],
+        "courants": ["rationalisme", "phenomenologie"],
+        "complexite": "avance",
+        "thematiques": ["connaissance", "realite", "verite"]
+      }
     },
     {
       "id": 22,
       "question": "Le témoignage d'autrui peut-il être une source légitime de connaissance ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:intermediaire",
-        "tradition:analytique",
-        "theme:temoignage",
-        "approche:sociale"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["empirisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "verite"]
+      }
     },
     {
       "id": 23,
       "question": "L'intuition est-elle une forme valide de connaissance ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:intermediaire",
-        "tradition:bergsonisme",
-        "theme:intuition",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["phenomenologie", "rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "verite"]
+      }
     },
     {
       "id": 24,
       "question": "Peut-on réfuter définitivement le scepticisme radical ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:avancee",
-        "tradition:scepticisme",
-        "theme:scepticisme",
-        "approche:dialectique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["connaissance", "verite", "raison"]
+      }
     },
     {
       "id": 25,
       "question": "La mémoire est-elle une source fiable de connaissance ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:intermediaire",
-        "tradition:empirisme",
-        "theme:memoire",
-        "approche:psychologique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie", "philosophie_esprit"],
+        "courants": ["empirisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "temps", "identite"]
+      }
     },
     {
       "id": 26,
       "question": "Comment justifier nos croyances sans tomber dans une régression infinie ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:avancee",
-        "tradition:fondationnalisme",
-        "theme:justification",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["connaissance", "verite", "raison"]
+      }
     },
     {
       "id": 27,
       "question": "La connaissance scientifique est-elle la seule connaissance légitime ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:intermediaire",
-        "tradition:positivisme",
-        "theme:scientisme",
-        "approche:critique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie", "philosophie_science"],
+        "courants": ["empirisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "verite"]
+      }
     },
     {
       "id": 28,
       "question": "Nos sens nous trompent-ils systématiquement ou occasionnellement ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:debutant",
-        "tradition:empirisme",
-        "theme:perception",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["empirisme", "phenomenologie"],
+        "complexite": "debutant",
+        "thematiques": ["connaissance", "verite", "realite"]
+      }
     },
     {
       "id": 29,
       "question": "Existe-t-il une distinction entre savoir et comprendre ?",
-      "tags": [
-        "categorie:epistemologie",
-        "difficulte:intermediaire",
-        "tradition:hermeneutique",
-        "theme:comprehension",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["epistemologie"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "raison"]
+      }
     },
     {
       "id": 30,
       "question": "La fin justifie-t-elle les moyens ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:debutant",
-        "tradition:consequentialisme",
-        "theme:moyens_fins",
-        "approche:pratique"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["utilitarisme"],
+        "complexite": "debutant",
+        "thematiques": ["morale", "justice"]
+      }
     },
     {
       "id": 31,
       "question": "Existe-t-il des actes intrinsèquement mauvais ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:intermediaire",
-        "tradition:deontologie",
-        "theme:mal",
-        "approche:normative"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["morale"]
+      }
     },
     {
       "id": 32,
       "question": "Le bonheur est-il le but ultime de la vie morale ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:intermediaire",
-        "tradition:eudemonisme",
-        "theme:bonheur",
-        "approche:teleologique"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["utilitarisme", "stoicisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["bonheur", "morale", "sens"]
+      }
     },
     {
       "id": 33,
       "question": "Peut-on agir moralement par pur devoir sans aucune inclination ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:avancee",
-        "tradition:kantisme",
-        "theme:devoir",
-        "approche:deontologique"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["morale", "liberte"]
+      }
     },
     {
       "id": 34,
       "question": "La vertu peut-elle s'enseigner ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:intermediaire",
-        "tradition:socratisme",
-        "theme:vertu",
-        "approche:maieutique"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["stoicisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["morale", "connaissance"]
+      }
     },
     {
       "id": 35,
       "question": "Avons-nous des obligations morales envers les générations futures ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:intermediaire",
-        "tradition:contemporaine",
-        "theme:responsabilite",
-        "approche:appliquee"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "philosophie_politique"],
+        "courants": ["utilitarisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["morale", "justice", "temps"]
+      }
     },
     {
       "id": 36,
       "question": "Le relativisme moral conduit-il nécessairement au nihilisme ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:avancee",
-        "tradition:relativisme",
-        "theme:relativisme",
-        "approche:metaethique"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["existentialisme"],
+        "complexite": "avance",
+        "thematiques": ["morale", "verite"]
+      }
     },
     {
       "id": 37,
       "question": "Peut-on être moral sans être libre ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:avancee",
-        "tradition:kantisme",
-        "theme:liberte",
-        "approche:transcendantale"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "metaphysique"],
+        "courants": ["rationalisme", "existentialisme"],
+        "complexite": "avance",
+        "thematiques": ["liberte", "morale"]
+      }
     },
     {
       "id": 38,
       "question": "L'égoïsme peut-il être une position éthique défendable ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:intermediaire",
-        "tradition:egoisme",
-        "theme:egoisme",
-        "approche:normative"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["utilitarisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["morale"]
+      }
     },
     {
       "id": 39,
       "question": "Doit-on toujours dire la vérité ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:debutant",
-        "tradition:deontologie",
-        "theme:veracite",
-        "approche:pratique"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["rationalisme"],
+        "complexite": "debutant",
+        "thematiques": ["verite", "morale"]
+      }
     },
     {
       "id": 40,
       "question": "Les animaux ont-ils des droits moraux ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:intermediaire",
-        "tradition:utilitarisme",
-        "theme:droits_animaux",
-        "approche:appliquee"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["utilitarisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["morale", "justice", "nature"]
+      }
     },
     {
       "id": 41,
       "question": "Peut-on sacrifier un innocent pour en sauver plusieurs ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:intermediaire",
-        "tradition:utilitarisme",
-        "theme:dilemme",
-        "approche:consequentialiste"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["utilitarisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["morale", "justice"]
+      }
     },
     {
       "id": 42,
       "question": "La pitié est-elle une vertu ou une faiblesse ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:intermediaire",
-        "tradition:nietzscheanisme",
-        "theme:compassion",
-        "approche:genealogique"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["stoicisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["morale"]
+      }
     },
     {
       "id": 43,
       "question": "Qu'est-ce qui fonde l'obligation morale ?",
-      "tags": [
-        "categorie:ethique",
-        "difficulte:avancee",
-        "tradition:occidentale",
-        "theme:fondement",
-        "approche:metaethique"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["morale", "raison"]
+      }
     },
     {
       "id": 44,
       "question": "Qu'est-ce qui légitime l'autorité de l'État ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:intermediaire",
-        "tradition:contractualisme",
-        "theme:legitimite",
-        "approche:normative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["pouvoir", "justice"]
+      }
     },
     {
       "id": 45,
       "question": "La liberté individuelle doit-elle primer sur le bien commun ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:intermediaire",
-        "tradition:liberalisme",
-        "theme:liberte",
-        "approche:normative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique", "ethique"],
+        "courants": ["utilitarisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["liberte", "justice", "pouvoir"]
+      }
     },
     {
       "id": 46,
       "question": "L'égalité parfaite est-elle compatible avec la liberté ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:avancee",
-        "tradition:socialisme",
-        "theme:egalite",
-        "approche:dialectique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["liberte", "justice"]
+      }
     },
     {
       "id": 47,
       "question": "La démocratie est-elle la meilleure forme de gouvernement ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:intermediaire",
-        "tradition:democratie",
-        "theme:gouvernement",
-        "approche:comparative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["pouvoir", "justice", "liberte"]
+      }
     },
     {
       "id": 48,
       "question": "Peut-on justifier la désobéissance civile ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:intermediaire",
-        "tradition:contemporaine",
-        "theme:resistance",
-        "approche:pratique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique", "ethique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["justice", "liberte", "morale"]
+      }
     },
     {
       "id": 49,
       "question": "La propriété privée est-elle un droit naturel ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:intermediaire",
-        "tradition:liberalisme",
-        "theme:propriete",
-        "approche:jusnaturaliste"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["justice", "liberte"]
+      }
     },
     {
       "id": 50,
       "question": "Une société sans État est-elle possible ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:avancee",
-        "tradition:anarchisme",
-        "theme:anarchie",
-        "approche:utopique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["pouvoir", "liberte"]
+      }
     },
     {
       "id": 51,
       "question": "La justice est-elle réductible à l'utilité sociale ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:avancee",
-        "tradition:utilitarisme",
-        "theme:justice",
-        "approche:consequentialiste"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique", "ethique"],
+        "courants": ["utilitarisme"],
+        "complexite": "avance",
+        "thematiques": ["justice"]
+      }
     },
     {
       "id": 52,
       "question": "Le pouvoir corrompt-il nécessairement ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:intermediaire",
-        "tradition:realisme",
-        "theme:pouvoir",
-        "approche:empirique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["pouvoir", "morale"]
+      }
     },
     {
       "id": 53,
       "question": "Les droits de l'homme sont-ils universels ou culturellement relatifs ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:intermediaire",
-        "tradition:droits_homme",
-        "theme:universalisme",
-        "approche:interculturelle"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique", "ethique"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["justice", "liberte"]
+      }
     },
     {
       "id": 54,
       "question": "La violence peut-elle être un moyen légitime d'action politique ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:avancee",
-        "tradition:revolutionnaire",
-        "theme:violence",
-        "approche:critique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique", "ethique"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["pouvoir", "justice", "morale"]
+      }
     },
     {
       "id": 55,
       "question": "Qu'est-ce qu'une société juste ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:intermediaire",
-        "tradition:rawlsienne",
-        "theme:justice_sociale",
-        "approche:normative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique"],
+        "courants": ["utilitarisme", "rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["justice"]
+      }
     },
     {
       "id": 56,
       "question": "L'intérêt général existe-t-il ou n'est-il qu'une fiction ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:avancee",
-        "tradition:republicanisme",
-        "theme:bien_commun",
-        "approche:critique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique"],
+        "courants": ["utilitarisme"],
+        "complexite": "avance",
+        "thematiques": ["justice", "pouvoir"]
+      }
     },
     {
       "id": 57,
       "question": "Peut-on contraindre quelqu'un à être libre ?",
-      "tags": [
-        "categorie:philosophie_politique",
-        "difficulte:avancee",
-        "tradition:rousseauisme",
-        "theme:liberte_positive",
-        "approche:dialectique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_politique"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["liberte", "pouvoir"]
+      }
     },
     {
       "id": 58,
       "question": "La conscience peut-elle exister sans le cerveau ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:avancee",
-        "tradition:dualisme",
-        "theme:conscience",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "metaphysique"],
+        "courants": ["phenomenologie"],
+        "complexite": "avance",
+        "thematiques": ["conscience", "existence"]
+      }
     },
     {
       "id": 59,
       "question": "Qu'est-ce qui fait que je suis la même personne qu'hier ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:intermediaire",
-        "tradition:empirisme",
-        "theme:identite_personnelle",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "metaphysique"],
+        "courants": ["empirisme", "phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["identite", "temps", "conscience"]
+      }
     },
     {
       "id": 60,
       "question": "Une machine peut-elle vraiment penser ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:intermediaire",
-        "tradition:computationnalisme",
-        "theme:intelligence_artificielle",
-        "approche:fonctionnaliste"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "epistemologie"],
+        "courants": ["pragmatisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["conscience", "raison"]
+      }
     },
     {
       "id": 61,
       "question": "L'esprit et le corps sont-ils deux substances distinctes ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:intermediaire",
-        "tradition:cartesianisme",
-        "theme:dualisme",
-        "approche:metaphysique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "metaphysique"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["conscience", "existence"]
+      }
     },
     {
       "id": 62,
       "question": "Les autres esprits existent-ils ou suis-je seul conscient ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:avancee",
-        "tradition:solipsisme",
-        "theme:autres_esprits",
-        "approche:sceptique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "epistemologie"],
+        "courants": ["phenomenologie"],
+        "complexite": "avance",
+        "thematiques": ["conscience", "existence"]
+      }
     },
     {
       "id": 63,
       "question": "Qu'est-ce que cela fait d'être une chauve-souris ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:avancee",
-        "tradition:phenomenologie",
-        "theme:qualia",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit"],
+        "courants": ["phenomenologie"],
+        "complexite": "avance",
+        "thematiques": ["conscience"]
+      }
     },
     {
       "id": 64,
       "question": "La volonté est-elle libre ou déterminée par des causes antérieures ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:avancee",
-        "tradition:determinisme",
-        "theme:libre_arbitre",
-        "approche:metaphysique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "metaphysique"],
+        "courants": ["stoicisme", "rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["liberte", "conscience"]
+      }
     },
     {
       "id": 65,
       "question": "Les émotions sont-elles des jugements ou de simples sensations ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:intermediaire",
-        "tradition:cognitivisme",
-        "theme:emotions",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit"],
+        "courants": ["stoicisme", "phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["conscience", "raison"]
+      }
     },
     {
       "id": 66,
       "question": "Peut-on avoir une pensée sans langage ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:intermediaire",
-        "tradition:analytique",
-        "theme:pensee",
-        "approche:linguistique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "philosophie_langage"],
+        "courants": ["pragmatisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["langage", "conscience", "raison"]
+      }
     },
     {
       "id": 67,
       "question": "L'inconscient existe-t-il vraiment ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:intermediaire",
-        "tradition:psychanalyse",
-        "theme:inconscient",
-        "approche:psychologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["conscience", "existence"]
+      }
     },
     {
       "id": 68,
       "question": "Qu'est-ce qui distingue une action d'un simple mouvement corporel ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:intermediaire",
-        "tradition:analytique",
-        "theme:action",
-        "approche:conceptuelle"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "ethique"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["liberte", "conscience"]
+      }
     },
     {
       "id": 69,
       "question": "La perception est-elle directe ou toujours médiatisée ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:avancee",
-        "tradition:realisme",
-        "theme:perception",
-        "approche:epistemologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "epistemologie"],
+        "courants": ["phenomenologie", "empirisme"],
+        "complexite": "avance",
+        "thematiques": ["conscience", "connaissance", "realite"]
+      }
     },
     {
       "id": 70,
       "question": "Peut-on réduire les états mentaux à des états cérébraux ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:avancee",
-        "tradition:materialisme",
-        "theme:reduction",
-        "approche:scientifique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "metaphysique"],
+        "courants": ["empirisme"],
+        "complexite": "avance",
+        "thematiques": ["conscience", "existence"]
+      }
     },
     {
       "id": 71,
       "question": "L'attention modifie-t-elle ce que nous percevons ?",
-      "tags": [
-        "categorie:philosophie_esprit",
-        "difficulte:intermediaire",
-        "tradition:phenomenologie",
-        "theme:attention",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "epistemologie"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["conscience", "connaissance"]
+      }
     },
     {
       "id": 72,
       "question": "La vie a-t-elle un sens objectif ou devons-nous le créer ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:existentialisme",
-        "theme:sens",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "metaphysique"],
+        "courants": ["existentialisme", "phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["sens", "existence"]
+      }
     },
     {
       "id": 73,
       "question": "L'angoisse est-elle révélatrice de notre condition humaine ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:heideggerianisme",
-        "theme:angoisse",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_esprit", "ethique"],
+        "courants": ["existentialisme", "phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["existence", "conscience"]
+      }
     },
     {
       "id": 74,
       "question": "Sommes-nous condamnés à être libres ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:sartrisme",
-        "theme:liberte",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "metaphysique"],
+        "courants": ["existentialisme", "phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["liberte", "existence"]
+      }
     },
     {
       "id": 75,
       "question": "La mort donne-t-elle ou retire-t-elle un sens à la vie ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:existentialisme",
-        "theme:mort",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "metaphysique"],
+        "courants": ["existentialisme", "stoicisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["mort", "sens", "existence"]
+      }
     },
     {
       "id": 76,
       "question": "Peut-on vivre authentiquement dans une société de masse ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:heideggerianisme",
-        "theme:authenticite",
-        "approche:critique"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "philosophie_politique"],
+        "courants": ["existentialisme", "phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["existence", "liberte"]
+      }
     },
     {
       "id": 77,
       "question": "L'absurde peut-il être surmonté ou faut-il l'accepter ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:camusien",
-        "theme:absurde",
-        "approche:litteraire"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "metaphysique"],
+        "courants": ["existentialisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["sens", "existence"]
+      }
     },
     {
       "id": 78,
       "question": "L'existence précède-t-elle vraiment l'essence ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:avancee",
-        "tradition:sartrisme",
-        "theme:essence",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ontologie"],
+        "courants": ["existentialisme", "phenomenologie"],
+        "complexite": "avance",
+        "thematiques": ["existence", "identite"]
+      }
     },
     {
       "id": 79,
       "question": "La mauvaise foi est-elle inévitable ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:avancee",
-        "tradition:sartrisme",
-        "theme:mauvaise_foi",
-        "approche:psychologique"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "philosophie_esprit"],
+        "courants": ["existentialisme"],
+        "complexite": "avance",
+        "thematiques": ["liberte", "conscience", "verite"]
+      }
     },
     {
       "id": 80,
       "question": "Autrui est-il nécessaire à ma propre existence ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:sartrisme",
-        "theme:autrui",
-        "approche:dialectique"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "philosophie_esprit"],
+        "courants": ["existentialisme", "phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["existence", "identite"]
+      }
     },
     {
       "id": 81,
       "question": "Le désespoir est-il une condition ou un choix ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:kierkegaardianisme",
-        "theme:desespoir",
-        "approche:psychologique"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "philosophie_esprit"],
+        "courants": ["existentialisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["existence", "liberte", "bonheur"]
+      }
     },
     {
       "id": 82,
       "question": "Peut-on échapper à la facticité de notre existence ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:avancee",
-        "tradition:heideggerianisme",
-        "theme:facticite",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["metaphysique", "ethique"],
+        "courants": ["existentialisme", "phenomenologie"],
+        "complexite": "avance",
+        "thematiques": ["existence", "liberte"]
+      }
     },
     {
       "id": 83,
       "question": "L'engagement donne-t-il un sens à l'existence ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:sartrisme",
-        "theme:engagement",
-        "approche:politique"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "philosophie_politique"],
+        "courants": ["existentialisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["sens", "existence", "liberte"]
+      }
     },
     {
       "id": 84,
       "question": "La solitude est-elle la condition fondamentale de l'homme ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:existentialisme",
-        "theme:solitude",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["ethique", "philosophie_esprit"],
+        "courants": ["existentialisme", "phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["existence"]
+      }
     },
     {
       "id": 85,
       "question": "Faut-il imaginer Sisyphe heureux ?",
-      "tags": [
-        "categorie:existentialisme",
-        "difficulte:intermediaire",
-        "tradition:camusien",
-        "theme:bonheur",
-        "approche:litteraire"
-      ]
+      "classification": {
+        "disciplines": ["ethique"],
+        "courants": ["existentialisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["bonheur", "sens", "existence"]
+      }
     },
     {
       "id": 86,
       "question": "La beauté est-elle objective ou subjective ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:kantisme",
-        "theme:beaute",
-        "approche:transcendantale"
-      ]
+      "classification": {
+        "disciplines": ["esthetique", "epistemologie"],
+        "courants": ["rationalisme", "empirisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["beaute", "verite"]
+      }
     },
     {
       "id": 87,
       "question": "L'art doit-il avoir une finalité morale ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:platonisme",
-        "theme:art_morale",
-        "approche:normative"
-      ]
+      "classification": {
+        "disciplines": ["esthetique", "ethique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["art", "morale", "beaute"]
+      }
     },
     {
       "id": 88,
       "question": "Qu'est-ce qui distingue l'art du non-art ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:analytique",
-        "theme:definition_art",
-        "approche:conceptuelle"
-      ]
+      "classification": {
+        "disciplines": ["esthetique"],
+        "courants": ["pragmatisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["art", "beaute"]
+      }
     },
     {
       "id": 89,
       "question": "Le jugement de goût peut-il prétendre à l'universalité ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:avancee",
-        "tradition:kantisme",
-        "theme:gout",
-        "approche:transcendantale"
-      ]
+      "classification": {
+        "disciplines": ["esthetique", "epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["beaute", "verite"]
+      }
     },
     {
       "id": 90,
       "question": "L'art peut-il exprimer l'indicible ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:romantisme",
-        "theme:expression",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["esthetique", "philosophie_langage"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["art", "langage"]
+      }
     },
     {
       "id": 91,
       "question": "La copie parfaite d'une œuvre a-t-elle la même valeur que l'original ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:contemporaine",
-        "theme:authenticite",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["esthetique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["art", "identite", "beaute"]
+      }
     },
     {
       "id": 92,
       "question": "Le sublime est-il une forme supérieure de beauté ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:avancee",
-        "tradition:kantisme",
-        "theme:sublime",
-        "approche:transcendantale"
-      ]
+      "classification": {
+        "disciplines": ["esthetique"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["beaute"]
+      }
     },
     {
       "id": 93,
       "question": "L'art engagé est-il encore de l'art ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:marxisme",
-        "theme:engagement",
-        "approche:politique"
-      ]
+      "classification": {
+        "disciplines": ["esthetique", "philosophie_politique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["art", "pouvoir"]
+      }
     },
     {
       "id": 94,
       "question": "La laideur peut-elle être esthétiquement intéressante ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:contemporaine",
-        "theme:laideur",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["esthetique"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["beaute", "art"]
+      }
     },
     {
       "id": 95,
       "question": "L'intention de l'artiste est-elle nécessaire pour interpréter une œuvre ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:hermeneutique",
-        "theme:interpretation",
-        "approche:hermeneutique"
-      ]
+      "classification": {
+        "disciplines": ["esthetique", "epistemologie"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["art", "connaissance"]
+      }
     },
     {
       "id": 96,
       "question": "L'art peut-il changer le monde ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:contemporaine",
-        "theme:pouvoir_art",
-        "approche:politique"
-      ]
+      "classification": {
+        "disciplines": ["esthetique", "philosophie_politique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["art", "pouvoir"]
+      }
     },
     {
       "id": 97,
       "question": "Le plaisir esthétique est-il désintéressé ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:avancee",
-        "tradition:kantisme",
-        "theme:plaisir",
-        "approche:transcendantale"
-      ]
+      "classification": {
+        "disciplines": ["esthetique"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["beaute", "bonheur"]
+      }
     },
     {
       "id": 98,
       "question": "La nature peut-elle être considérée comme une œuvre d'art ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:romantisme",
-        "theme:nature",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["esthetique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["beaute", "nature", "art"]
+      }
     },
     {
       "id": 99,
       "question": "L'art contemporain a-t-il abandonné la beauté ?",
-      "tags": [
-        "categorie:esthetique",
-        "difficulte:intermediaire",
-        "tradition:contemporaine",
-        "theme:art_contemporain",
-        "approche:critique"
-      ]
+      "classification": {
+        "disciplines": ["esthetique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["art", "beaute"]
+      }
     },
     {
       "id": 100,
       "question": "Une contradiction peut-elle être vraie ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:avancee",
-        "tradition:logique_paraconsistante",
-        "theme:contradiction",
-        "approche:formelle"
-      ]
+      "classification": {
+        "disciplines": ["logique"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["verite", "raison"]
+      }
     },
     {
       "id": 101,
       "question": "Les lois de la logique sont-elles des vérités nécessaires ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:avancee",
-        "tradition:logicisme",
-        "theme:necessite",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["logique", "epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["verite", "raison"]
+      }
     },
     {
       "id": 102,
       "question": "Peut-on raisonner validement à partir de prémisses fausses ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:intermediaire",
-        "tradition:aristotelisme",
-        "theme:validite",
-        "approche:formelle"
-      ]
+      "classification": {
+        "disciplines": ["logique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["verite", "raison"]
+      }
     },
     {
       "id": 103,
       "question": "Le paradoxe du menteur peut-il être résolu ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:avancee",
-        "tradition:analytique",
-        "theme:paradoxe",
-        "approche:semantique"
-      ]
+      "classification": {
+        "disciplines": ["logique", "philosophie_langage"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["verite", "langage"]
+      }
     },
     {
       "id": 104,
       "question": "La logique formelle capture-t-elle tout le raisonnement humain ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:intermediaire",
-        "tradition:analytique",
-        "theme:formalisation",
-        "approche:critique"
-      ]
+      "classification": {
+        "disciplines": ["logique", "philosophie_esprit"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["raison", "connaissance"]
+      }
     },
     {
       "id": 105,
       "question": "Existe-t-il plusieurs logiques également valides ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:avancee",
-        "tradition:pluralisme_logique",
-        "theme:pluralisme",
-        "approche:comparative"
-      ]
+      "classification": {
+        "disciplines": ["logique"],
+        "courants": ["pragmatisme"],
+        "complexite": "avance",
+        "thematiques": ["verite", "raison"]
+      }
     },
     {
       "id": 106,
       "question": "L'induction est-elle logiquement justifiable ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:avancee",
-        "tradition:empirisme",
-        "theme:induction",
-        "approche:epistemologique"
-      ]
+      "classification": {
+        "disciplines": ["logique", "epistemologie"],
+        "courants": ["empirisme"],
+        "complexite": "avance",
+        "thematiques": ["connaissance", "raison"]
+      }
     },
     {
       "id": 107,
       "question": "Qu'est-ce qui fait qu'un argument est fallacieux ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:intermediaire",
-        "tradition:rhetorique",
-        "theme:sophisme",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["logique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["raison", "verite"]
+      }
     },
     {
       "id": 108,
       "question": "La logique peut-elle fonder les mathématiques ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:avancee",
-        "tradition:logicisme",
-        "theme:fondements",
-        "approche:formelle"
-      ]
+      "classification": {
+        "disciplines": ["logique", "epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["connaissance", "raison"]
+      }
     },
     {
       "id": 109,
       "question": "Un système formel peut-il prouver sa propre cohérence ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:avancee",
-        "tradition:godelien",
-        "theme:incompletude",
-        "approche:metamathematique"
-      ]
+      "classification": {
+        "disciplines": ["logique"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["verite", "raison"]
+      }
     },
     {
       "id": 110,
       "question": "La vérité logique est-elle conventionnelle ou découverte ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:avancee",
-        "tradition:conventionnalisme",
-        "theme:verite_logique",
-        "approche:philosophique"
-      ]
+      "classification": {
+        "disciplines": ["logique", "epistemologie"],
+        "courants": ["pragmatisme", "rationalisme"],
+        "complexite": "avance",
+        "thematiques": ["verite", "connaissance"]
+      }
     },
     {
       "id": 111,
       "question": "Peut-on penser l'impossible ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:intermediaire",
-        "tradition:phenomenologie",
-        "theme:impossibilite",
-        "approche:conceptuelle"
-      ]
+      "classification": {
+        "disciplines": ["logique", "philosophie_esprit"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["raison", "conscience"]
+      }
     },
     {
       "id": 112,
       "question": "Le principe du tiers exclu est-il universellement valide ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:avancee",
-        "tradition:intuitionnisme",
-        "theme:tiers_exclu",
-        "approche:constructiviste"
-      ]
+      "classification": {
+        "disciplines": ["logique"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["verite", "raison"]
+      }
     },
     {
       "id": 113,
       "question": "Qu'est-ce qui distingue une bonne raison d'une mauvaise ?",
-      "tags": [
-        "categorie:logique",
-        "difficulte:intermediaire",
-        "tradition:analytique",
-        "theme:raison",
-        "approche:normative"
-      ]
+      "classification": {
+        "disciplines": ["logique", "epistemologie"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["raison", "verite"]
+      }
     },
     {
       "id": 114,
       "question": "Le sens d'un mot est-il déterminé par son usage ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:intermediaire",
-        "tradition:wittgensteinianisme",
-        "theme:sens",
-        "approche:pragmatique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage"],
+        "courants": ["pragmatisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["langage", "verite"]
+      }
     },
     {
       "id": 115,
       "question": "Peut-on exprimer une pensée sans la trahir ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:intermediaire",
-        "tradition:hermeneutique",
-        "theme:expression",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage", "philosophie_esprit"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["langage", "verite"]
+      }
     },
     {
       "id": 116,
       "question": "Le langage structure-t-il notre pensée ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:intermediaire",
-        "tradition:sapir_whorf",
-        "theme:pensee",
-        "approche:linguistique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage", "philosophie_esprit"],
+        "courants": ["pragmatisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["langage", "conscience", "raison"]
+      }
     },
     {
       "id": 117,
       "question": "Comment un mot peut-il référer à quelque chose ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:avancee",
-        "tradition:analytique",
-        "theme:reference",
-        "approche:semantique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["langage", "realite"]
+      }
     },
     {
       "id": 118,
       "question": "Existe-t-il un langage privé ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:avancee",
-        "tradition:wittgensteinianisme",
-        "theme:langage_prive",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage", "philosophie_esprit"],
+        "courants": ["pragmatisme"],
+        "complexite": "avance",
+        "thematiques": ["langage", "conscience"]
+      }
     },
     {
       "id": 119,
       "question": "La métaphore est-elle réductible au sens littéral ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:intermediaire",
-        "tradition:rhetorique",
-        "theme:metaphore",
-        "approche:semantique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["langage", "verite"]
+      }
     },
     {
       "id": 120,
       "question": "Peut-on mentir sans utiliser de mots ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:intermediaire",
-        "tradition:pragmatique",
-        "theme:mensonge",
-        "approche:pratique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage", "ethique"],
+        "courants": ["pragmatisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["langage", "verite", "morale"]
+      }
     },
     {
       "id": 121,
       "question": "Les limites de mon langage sont-elles les limites de mon monde ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:avancee",
-        "tradition:wittgensteinianisme",
-        "theme:limites",
-        "approche:transcendantale"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage", "metaphysique"],
+        "courants": ["pragmatisme"],
+        "complexite": "avance",
+        "thematiques": ["langage", "realite", "connaissance"]
+      }
     },
     {
       "id": 122,
       "question": "Qu'est-ce qui fait qu'un énoncé est performatif ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:intermediaire",
-        "tradition:pragmatique",
-        "theme:performatif",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage"],
+        "courants": ["pragmatisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["langage"]
+      }
     },
     {
       "id": 123,
       "question": "La traduction parfaite est-elle possible ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:avancee",
-        "tradition:quinienne",
-        "theme:traduction",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage"],
+        "courants": ["pragmatisme"],
+        "complexite": "avance",
+        "thematiques": ["langage", "verite"]
+      }
     },
     {
       "id": 124,
       "question": "Le langage peut-il exprimer l'ineffable ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:avancee",
-        "tradition:mystique",
-        "theme:ineffable",
-        "approche:negative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage", "metaphysique"],
+        "courants": ["phenomenologie"],
+        "complexite": "avance",
+        "thematiques": ["langage"]
+      }
     },
     {
       "id": 125,
       "question": "Comprendre une phrase, est-ce savoir ses conditions de vérité ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:avancee",
-        "tradition:veritativeconditionnelle",
-        "theme:comprehension",
-        "approche:semantique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage", "epistemologie"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["langage", "verite", "connaissance"]
+      }
     },
     {
       "id": 126,
       "question": "Les noms propres ont-ils un sens ou seulement une référence ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:avancee",
-        "tradition:fregeen",
-        "theme:noms_propres",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["langage"]
+      }
     },
     {
       "id": 127,
       "question": "Le silence peut-il être une forme de communication ?",
-      "tags": [
-        "categorie:philosophie_langage",
-        "difficulte:intermediaire",
-        "tradition:pragmatique",
-        "theme:silence",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_langage"],
+        "courants": ["phenomenologie", "pragmatisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["langage"]
+      }
     },
     {
       "id": 128,
       "question": "Les théories scientifiques décrivent-elles la réalité ou sont-elles de simples instruments ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:avancee",
-        "tradition:instrumentalisme",
-        "theme:realisme",
-        "approche:epistemologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["pragmatisme", "empirisme"],
+        "complexite": "avance",
+        "thematiques": ["verite", "realite", "connaissance"]
+      }
     },
     {
       "id": 129,
       "question": "Qu'est-ce qui distingue la science de la pseudoscience ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:intermediaire",
-        "tradition:popperianisme",
-        "theme:demarcation",
-        "approche:methodologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["empirisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "verite"]
+      }
     },
     {
       "id": 130,
       "question": "Les révolutions scientifiques sont-elles rationnelles ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:avancee",
-        "tradition:kuhnien",
-        "theme:revolution",
-        "approche:historique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["pragmatisme"],
+        "complexite": "avance",
+        "thematiques": ["connaissance", "raison"]
+      }
     },
     {
       "id": 131,
       "question": "Peut-on observer sans théorie préalable ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:avancee",
-        "tradition:empirisme",
-        "theme:observation",
-        "approche:epistemologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["empirisme"],
+        "complexite": "avance",
+        "thematiques": ["connaissance", "verite"]
+      }
     },
     {
       "id": 132,
       "question": "La science progresse-t-elle vers la vérité ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:intermediaire",
-        "tradition:realisme",
-        "theme:progres",
-        "approche:historique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["empirisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["verite", "connaissance"]
+      }
     },
     {
       "id": 133,
       "question": "Les lois scientifiques sont-elles des découvertes ou des inventions ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:intermediaire",
-        "tradition:constructivisme",
-        "theme:lois",
-        "approche:epistemologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["pragmatisme", "empirisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "verite"]
+      }
     },
     {
       "id": 134,
       "question": "L'expérience peut-elle réfuter définitivement une théorie ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:avancee",
-        "tradition:falsificationnisme",
-        "theme:refutation",
-        "approche:methodologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["empirisme"],
+        "complexite": "avance",
+        "thematiques": ["connaissance", "verite"]
+      }
     },
     {
       "id": 135,
       "question": "Les entités théoriques comme les électrons existent-elles vraiment ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:avancee",
-        "tradition:realisme_scientifique",
-        "theme:entites_theoriques",
-        "approche:ontologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "ontologie"],
+        "courants": ["empirisme"],
+        "complexite": "avance",
+        "thematiques": ["existence", "realite"]
+      }
     },
     {
       "id": 136,
       "question": "La simplicité est-elle un critère de vérité scientifique ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:intermediaire",
-        "tradition:occamien",
-        "theme:simplicite",
-        "approche:methodologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["pragmatisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["verite", "connaissance"]
+      }
     },
     {
       "id": 137,
       "question": "Les sciences humaines peuvent-elles atteindre l'objectivité des sciences naturelles ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:intermediaire",
-        "tradition:hermeneutique",
-        "theme:objectivite",
-        "approche:comparative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance", "verite"]
+      }
     },
     {
       "id": 138,
       "question": "La science peut-elle tout expliquer ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:intermediaire",
-        "tradition:scientisme",
-        "theme:limites",
-        "approche:critique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["empirisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["connaissance"]
+      }
     },
     {
       "id": 139,
       "question": "Deux théories incompatibles peuvent-elles être également confirmées par les faits ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:avancee",
-        "tradition:sous_determination",
-        "theme:sous_determination",
-        "approche:epistemologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "epistemologie"],
+        "courants": ["pragmatisme"],
+        "complexite": "avance",
+        "thematiques": ["verite", "connaissance"]
+      }
     },
     {
       "id": 140,
       "question": "La science est-elle neutre moralement ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:intermediaire",
-        "tradition:ethique_sciences",
-        "theme:valeurs",
-        "approche:normative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "ethique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["morale", "connaissance"]
+      }
     },
     {
       "id": 141,
       "question": "Le réductionnisme scientifique est-il justifié ?",
-      "tags": [
-        "categorie:philosophie_science",
-        "difficulte:avancee",
-        "tradition:reductionnisme",
-        "theme:reduction",
-        "approche:metaphysique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_science", "metaphysique"],
+        "courants": ["empirisme"],
+        "complexite": "avance",
+        "thematiques": ["connaissance", "realite"]
+      }
     },
     {
       "id": 142,
       "question": "Peut-on prouver l'existence de Dieu ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:theisme",
-        "theme:existence_dieu",
-        "approche:argumentative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion", "epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["foi", "existence", "raison"]
+      }
     },
     {
       "id": 143,
       "question": "Le mal est-il compatible avec l'existence d'un Dieu bon et tout-puissant ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:theodicee",
-        "theme:mal",
-        "approche:dialectique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion", "ethique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["foi", "morale"]
+      }
     },
     {
       "id": 144,
       "question": "La foi et la raison sont-elles compatibles ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:fideisme",
-        "theme:foi_raison",
-        "approche:dialectique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion", "epistemologie"],
+        "courants": ["rationalisme"],
+        "complexite": "intermediaire",
+        "thematiques": ["foi", "raison"]
+      }
     },
     {
       "id": 145,
       "question": "L'expérience mystique peut-elle être une source de connaissance ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:avancee",
-        "tradition:mystique",
-        "theme:experience_mystique",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion", "epistemologie"],
+        "courants": ["phenomenologie"],
+        "complexite": "avance",
+        "thematiques": ["foi", "connaissance"]
+      }
     },
     {
       "id": 146,
       "question": "La religion est-elle une illusion nécessaire ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:critique",
-        "theme:illusion",
-        "approche:psychologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["foi", "verite"]
+      }
     },
     {
       "id": 147,
       "question": "Peut-on être moral sans croire en Dieu ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:atheisme",
-        "theme:morale_religion",
-        "approche:ethique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion", "ethique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["foi", "morale"]
+      }
     },
     {
       "id": 148,
       "question": "La vie après la mort est-elle concevable ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:eschatologie",
-        "theme:immortalite",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion", "metaphysique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["mort", "existence", "foi"]
+      }
     },
     {
       "id": 149,
       "question": "Le sacré peut-il exister sans religion instituée ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:phenomenologie_religion",
-        "theme:sacre",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["foi", "existence"]
+      }
     },
     {
       "id": 150,
       "question": "Toutes les religions disent-elles la même chose sous des formes différentes ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:perennialisme",
-        "theme:pluralisme",
-        "approche:comparative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["foi", "verite"]
+      }
     },
     {
       "id": 151,
       "question": "L'athéisme est-il une position de foi ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:atheisme",
-        "theme:atheisme",
-        "approche:epistemologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion", "epistemologie"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["foi", "connaissance"]
+      }
     },
     {
       "id": 152,
       "question": "Dieu peut-il créer une pierre si lourde qu'il ne puisse pas la soulever ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:theologie",
-        "theme:omnipotence",
-        "approche:logique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion", "logique"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["foi", "raison"]
+      }
     },
     {
       "id": 153,
       "question": "La prière a-t-elle un sens si Dieu est omniscient ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:theisme",
-        "theme:priere",
-        "approche:pratique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion"],
+        "courants": [],
+        "complexite": "intermediaire",
+        "thematiques": ["foi"]
+      }
     },
     {
       "id": 154,
       "question": "Le miracle est-il possible ou contradictoire avec les lois de la nature ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:avancee",
-        "tradition:empirisme",
-        "theme:miracle",
-        "approche:epistemologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion", "philosophie_science"],
+        "courants": ["empirisme"],
+        "complexite": "avance",
+        "thematiques": ["foi", "nature"]
+      }
     },
     {
       "id": 155,
       "question": "La religion répond-elle à un besoin humain fondamental ?",
-      "tags": [
-        "categorie:philosophie_religion",
-        "difficulte:intermediaire",
-        "tradition:anthropologie",
-        "theme:besoin_religieux",
-        "approche:fonctionnelle"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_religion"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["foi", "existence"]
+      }
     },
     {
       "id": 156,
       "question": "Le temps est-il réel ou une illusion de notre esprit ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:avancee",
-        "tradition:idealisme",
-        "theme:realite_temps",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "metaphysique"],
+        "courants": ["phenomenologie"],
+        "complexite": "avance",
+        "thematiques": ["temps", "realite"]
+      }
     },
     {
       "id": 157,
       "question": "Le passé et le futur existent-ils au même titre que le présent ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:avancee",
-        "tradition:eternlisme",
-        "theme:existence_temporelle",
-        "approche:metaphysique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "metaphysique"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["temps", "existence"]
+      }
     },
     {
       "id": 158,
       "question": "Pourquoi le temps semble-t-il s'écouler dans une seule direction ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:avancee",
-        "tradition:physique",
-        "theme:fleche_temps",
-        "approche:scientifique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "philosophie_science"],
+        "courants": ["empirisme"],
+        "complexite": "avance",
+        "thematiques": ["temps"]
+      }
     },
     {
       "id": 159,
       "question": "L'instant présent a-t-il une durée ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:intermediaire",
-        "tradition:phenomenologie",
-        "theme:present",
-        "approche:analytique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "metaphysique"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["temps"]
+      }
     },
     {
       "id": 160,
       "question": "Le voyage dans le temps est-il logiquement possible ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:avancee",
-        "tradition:analytique",
-        "theme:voyage_temps",
-        "approche:logique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "logique"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["temps", "raison"]
+      }
     },
     {
       "id": 161,
       "question": "Le temps existait-il avant l'univers ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:avancee",
-        "tradition:cosmologie",
-        "theme:origine_temps",
-        "approche:speculative"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "metaphysique"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["temps", "existence"]
+      }
     },
     {
       "id": 162,
       "question": "Peut-on vivre pleinement dans le présent ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:intermediaire",
-        "tradition:stoicisme",
-        "theme:carpe_diem",
-        "approche:pratique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "ethique"],
+        "courants": ["stoicisme", "phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["temps", "bonheur", "existence"]
+      }
     },
     {
       "id": 163,
       "question": "Le temps vécu est-il le même que le temps mesuré ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:intermediaire",
-        "tradition:bergsonisme",
-        "theme:duree",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "philosophie_esprit"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["temps", "conscience"]
+      }
     },
     {
       "id": 164,
       "question": "L'éternité est-elle l'absence de temps ou le temps infini ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:avancee",
-        "tradition:theologie",
-        "theme:eternite",
-        "approche:conceptuelle"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "philosophie_religion"],
+        "courants": [],
+        "complexite": "avance",
+        "thematiques": ["temps", "existence"]
+      }
     },
     {
       "id": 165,
       "question": "Nos souvenirs déforment-ils nécessairement le passé ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:intermediaire",
-        "tradition:phenomenologie",
-        "theme:memoire",
-        "approche:psychologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "philosophie_esprit"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["temps", "verite", "identite"]
+      }
     },
     {
       "id": 166,
       "question": "L'anticipation du futur influence-t-elle notre perception du présent ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:intermediaire",
-        "tradition:phenomenologie",
-        "theme:anticipation",
-        "approche:phenomenologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "philosophie_esprit"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["temps", "conscience"]
+      }
     },
     {
       "id": 167,
       "question": "Peut-on être nostalgique d'un temps qu'on n'a pas vécu ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:intermediaire",
-        "tradition:contemporaine",
-        "theme:nostalgie",
-        "approche:psychologique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "philosophie_esprit"],
+        "courants": ["phenomenologie"],
+        "complexite": "intermediaire",
+        "thematiques": ["temps", "identite"]
+      }
     },
     {
       "id": 168,
       "question": "Le temps guérit-il vraiment toutes les blessures ?",
-      "tags": [
-        "categorie:philosophie_temps",
-        "difficulte:debutant",
-        "tradition:sagesse_populaire",
-        "theme:guerison",
-        "approche:pratique"
-      ]
+      "classification": {
+        "disciplines": ["philosophie_temps", "ethique"],
+        "courants": ["stoicisme"],
+        "complexite": "debutant",
+        "thematiques": ["temps", "bonheur"]
+      }
     }
   ]
 }

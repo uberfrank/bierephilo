@@ -350,8 +350,8 @@ function showQuestionDetail(question) {
 
 // ==================== AUTO-INITIALIZATION ====================
 
-// Load questions when page loads (if questions list exists)
-if (document.getElementById('questionsList')) {
+// Load questions when page loads (if questions list or game section exists)
+if (document.getElementById('questionsList') || document.getElementById('game')) {
     // Wait for UX module to initialize first
     window.addEventListener('load', () => {
         // Small delay to ensure translations are loaded

@@ -364,13 +364,31 @@ function updateDrawButtons() {
 
 // Setup draw controls
 function setupDrawControls() {
-    // Draw button selection
+    // Draw button selection - clicking these buttons should draw that many questions
     const drawButtons = document.querySelectorAll('.draw-btn');
     drawButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const count = parseInt(btn.dataset.count);
             setSelectedDrawCount(count);
             updateDrawButtons();
+
+            // Actually draw the questions when clicking the number buttons
+            if (isMugEmpty()) {
+                showGameComplete();
+                return;
+            }
+
+            const drawnQuestions = drawFromMug(count);
+            updateGameplayUI();
+
+            const questionWord = drawnQuestions.length > 1 ? getTranslation('questionsSection.questions') : getTranslation('questionsSection.question');
+            showToast(`${getTranslation('messages.drew')} ${drawnQuestions.length} ${questionWord}`);
+
+            if (isMugEmpty()) {
+                setTimeout(() => {
+                    showGameComplete();
+                }, 2000);
+            }
         });
     });
 

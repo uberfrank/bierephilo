@@ -14,7 +14,7 @@ let gameState = {
     currentRound: 0,         // Current round number
     totalRounds: 0,          // Total rounds played
     roundQuestions: [],      // Questions drawn in current round
-    selectedDrawCount: 1     // Number of questions to draw (1-5)
+    selectedDrawCount: 3     // Number of questions to draw (1-5)
 };
 
 // ==================== STATE INITIALIZATION ====================
@@ -30,7 +30,7 @@ function resetGameState() {
         currentRound: 0,
         totalRounds: 0,
         roundQuestions: [],
-        selectedDrawCount: 1
+        selectedDrawCount: 3
     };
 }
 
@@ -166,7 +166,7 @@ function initializeMug(questionsData) {
     gameState.currentRound = 0;
     gameState.totalRounds = 0;
     gameState.roundQuestions = [];
-    gameState.selectedDrawCount = 1;
+    gameState.selectedDrawCount = 3;
 
     return gameState.mug.length;
 }

@@ -299,6 +299,16 @@ function renderRoundQuestions() {
 
     if (!container) return;
 
+    if (!data) {
+        container.innerHTML = `
+            <div class="empty-round">
+                <div class="empty-round-icon">⏳</div>
+                <p>${getTranslation('game.loadingQuestions') || 'Loading questions...'}</p>
+            </div>
+        `;
+        return;
+    }
+
     if (roundQuestions.length === 0) {
         container.innerHTML = `
             <div class="empty-round">

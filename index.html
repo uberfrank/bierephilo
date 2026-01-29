@@ -55,10 +55,10 @@
                             <h4 data-i18n="game.randomMode">Fully Random</h4>
                             <p data-i18n="game.randomModeDesc">All questions shuffled randomly</p>
                         </button>
-                        <button class="game-mode-btn" data-mode="by-tags">
-                            <div class="game-mode-icon">🏷️</div>
-                            <h4 data-i18n="game.byTagsMode">By Tags</h4>
-                            <p data-i18n="game.byTagsModeDesc">Select specific categories or tags</p>
+                        <button class="game-mode-btn" data-mode="by-topic">
+                            <div class="game-mode-icon">📖</div>
+                            <h4 data-i18n="game.byTopicMode">By Topic</h4>
+                            <p data-i18n="game.byTopicModeDesc">Select a specific topic to focus on</p>
                         </button>
                         <button class="game-mode-btn" data-mode="custom">
                             <div class="game-mode-icon">⚙️</div>
@@ -97,7 +97,46 @@
                     </div>
                 </div>
 
-                <!-- Tag Selection Screen (for by-tags and custom modes) -->
+                <!-- Topic Category Selection Screen (for by-topic mode) -->
+                <div id="topicCategoryScreen" class="game-screen">
+                    <h3 class="game-subtitle" data-i18n="game.topicCategoryTitle">Choose a Category</h3>
+                    <div class="topic-category-buttons">
+                        <button class="topic-category-btn" data-category="movement">
+                            <div class="topic-category-icon">🏛️</div>
+                            <h4 data-i18n="topicCategories.movement">Movement</h4>
+                        </button>
+                        <button class="topic-category-btn" data-category="branch">
+                            <div class="topic-category-icon">🌳</div>
+                            <h4 data-i18n="topicCategories.branch">Branch</h4>
+                        </button>
+                        <button class="topic-category-btn" data-category="difficulty">
+                            <div class="topic-category-icon">📊</div>
+                            <h4 data-i18n="topicCategories.difficulty">Difficulty</h4>
+                        </button>
+                        <button class="topic-category-btn" data-category="theme">
+                            <div class="topic-category-icon">💡</div>
+                            <h4 data-i18n="topicCategories.theme">Theme</h4>
+                        </button>
+                    </div>
+                    <div class="game-nav-buttons">
+                        <button class="btn btn-secondary" id="backToCountFromCategory" data-i18n="game.backButton">Back</button>
+                    </div>
+                </div>
+
+                <!-- Topic Selection Screen (for by-topic mode) -->
+                <div id="topicSelectionScreen" class="game-screen">
+                    <h3 class="game-subtitle" id="topicScreenTitle" data-i18n="game.topicSelectionTitle">Select a Topic</h3>
+
+                    <!-- Topic Options -->
+                    <div id="topicOptions" class="topic-options"></div>
+
+                    <div class="game-nav-buttons">
+                        <button class="btn btn-secondary" id="backToCategory" data-i18n="game.backButton">Back</button>
+                        <button class="btn btn-primary" id="startGameFromTopic" data-i18n="game.startGameButton">Start Game</button>
+                    </div>
+                </div>
+
+                <!-- Tag Selection Screen (for custom mode) -->
                 <div id="tagSelectionScreen" class="game-screen">
                     <h3 class="game-subtitle" id="tagScreenTitle" data-i18n="game.tagSelectionTitle">Select Tags</h3>
 

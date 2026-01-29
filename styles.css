@@ -1142,6 +1142,84 @@ body {
     font-weight: 600;
 }
 
+/* Topic Category Selection */
+.topic-category-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.topic-category-btn {
+    background: var(--bg-color);
+    padding: var(--spacing-lg);
+    border: 2px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.topic-category-btn:active {
+    transform: scale(0.98);
+    border-color: var(--primary-color);
+    background: rgba(33, 150, 243, 0.05);
+}
+
+.topic-category-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.topic-category-btn h4 {
+    font-size: 1.125rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+/* Topic Options */
+.topic-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.topic-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    background: var(--bg-color);
+    border: 2px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.topic-option:active,
+.topic-option.selected {
+    border-color: var(--primary-color);
+    background: rgba(33, 150, 243, 0.05);
+}
+
+.topic-option.selected {
+    box-shadow: var(--shadow);
+}
+
+.topic-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.topic-count {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
 .game-header {
     display: flex;
     justify-content: space-between;

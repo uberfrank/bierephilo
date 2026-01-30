@@ -31,7 +31,7 @@ function setupModeSelection() {
             }
 
             switchGameScreen('questionCountScreen');
-            const modeName = mode === 'random' ? getTranslation('game.randomMode') : mode === 'by-tags' ? getTranslation('game.byTagsMode') : getTranslation('game.customMode');
+            const modeName = mode === 'random' ? getTranslation('game.randomMode') : mode === 'by-topic' ? getTranslation('game.byTopicMode') : getTranslation('game.customMode');
             showToast(`${modeName} ${getTranslation('messages.modeSelected')}`);
         });
     });
@@ -89,8 +89,11 @@ function setupQuestionCountSelection() {
         if (state.mode === 'random') {
             // For fully random, skip tag selection and start game
             startGameplay();
+        } else if (state.mode === 'by-topic') {
+            // For by-topic, go to topic category selection
+            switchGameScreen('topicCategoryScreen');
         } else {
-            // For by-tags and custom, go to tag selection
+            // For custom, go to tag selection
             renderTagSelection();
             switchGameScreen('tagSelectionScreen');
         }
@@ -246,6 +249,138 @@ function setupTagSelectionNavigation() {
     document.getElementById('startGame')?.addEventListener('click', () => {
         if (!hasSelectedTags()) {
             showToast(getTranslation('messages.selectAtLeastOneTag'));
+            return;
+        }
+
+        startGameplay();
+    });
+}
+
+// ==================== TOPIC CATEGORY SELECTION ====================
+
+// Setup topic category selection
+function setupTopicCategorySelection() {
+    const categoryButtons = document.querySelectorAll('.topic-category-btn');
+
+    categoryButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const category = btn.dataset.category;
+            setTopicCategory(category);
+            renderTopicSelection(category);
+            switchGameScreen('topicSelectionScreen');
+        });
+    });
+
+    // Back to count screen from category
+    document.getElementById('backToCountFromCategory')?.addEventListener('click', () => {
+        switchGameScreen('questionCountScreen');
+    });
+}
+
+// ==================== TOPIC SELECTION ====================
+
+// Get topics for a category
+function getTopicsForCategory(category, questionsData) {
+    const tagPrefix = getTagPrefixForCategory(category);
+    const topicsSet = new Set();
+
+    questionsData.questions.forEach(q => {
+        q.tags.forEach(tag => {
+            if (tag.startsWith(`${tagPrefix}:`)) {
+                topicsSet.add(tag.split(':')[1]);
+            }
+        });
+    });
+
+    return Array.from(topicsSet).sort();
+}
+
+// Get tag prefix for category (mirror of game-state.js function)
+function getTagPrefixForCategory(category) {
+    const prefixes = {
+        'movement': 'mouvement',
+        'branch': 'branche',
+        'difficulty': 'difficulte',
+        'theme': 'theme'
+    };
+    return prefixes[category] || category;
+}
+
+// Get translation key for topic
+function getTopicTranslationKey(category, topic) {
+    const categoryKeys = {
+        'movement': 'movements',
+        'branch': 'branches',
+        'difficulty': 'difficulties',
+        'theme': 'themes'
+    };
+    return `${categoryKeys[category]}.${topic}`;
+}
+
+// Render topic selection screen
+function renderTopicSelection(category) {
+    const container = document.getElementById('topicOptions');
+    const data = getQuestionsData();
+
+    if (!container || !data) return;
+
+    const topics = getTopicsForCategory(category, data);
+    const tagPrefix = getTagPrefixForCategory(category);
+    const state = getGameState();
+
+    const html = topics.map(topic => {
+        const tagToMatch = `${tagPrefix}:${topic}`;
+        const count = data.questions.filter(q => q.tags.includes(tagToMatch)).length;
+        const isSelected = state.selectedTopic === topic;
+
+        // Get translated topic name
+        const translationKey = getTopicTranslationKey(category, topic);
+        const topicName = getTranslation(translationKey) || topic.replace(/_/g, ' ');
+
+        return `
+            <div class="topic-option ${isSelected ? 'selected' : ''}" data-topic="${topic}">
+                <span class="topic-name">${topicName}</span>
+                <span class="topic-count">(${count})</span>
+            </div>
+        `;
+    }).join('');
+
+    container.innerHTML = html;
+
+    // Setup topic option listeners
+    setupTopicOptionListeners();
+}
+
+// Setup topic option click listeners
+function setupTopicOptionListeners() {
+    const topicOptions = document.querySelectorAll('.topic-option');
+
+    topicOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            // Remove selected class from all options
+            topicOptions.forEach(opt => opt.classList.remove('selected'));
+
+            // Add selected class to clicked option
+            option.classList.add('selected');
+
+            // Update game state
+            setSelectedTopic(option.dataset.topic);
+        });
+    });
+}
+
+// Setup topic selection navigation
+function setupTopicSelectionNavigation() {
+    // Back to category screen
+    document.getElementById('backToCategory')?.addEventListener('click', () => {
+        setSelectedTopic(null);
+        switchGameScreen('topicCategoryScreen');
+    });
+
+    // Start game button from topic selection
+    document.getElementById('startGameFromTopic')?.addEventListener('click', () => {
+        if (!hasSelectedTopic()) {
+            showToast(getTranslation('messages.selectAtLeastOneTopic'));
             return;
         }
 
@@ -473,6 +608,8 @@ function initializeGameFlow() {
 
     setupModeSelection();
     setupQuestionCountSelection();
+    setupTopicCategorySelection();
+    setupTopicSelectionNavigation();
     setupTagSelectionNavigation();
     setupDrawControls();
     setupGameCompleteActions();

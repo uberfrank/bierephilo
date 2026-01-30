@@ -6,10 +6,12 @@
 
 // Game state object
 let gameState = {
-    mode: null,              // 'random', 'by-tags', 'custom'
+    mode: null,              // 'random', 'by-topic', 'custom'
     questionCount: 'all',    // 'all' or number
     selectedTags: [],        // Array of selected tag strings
     customTagCounts: {},     // For custom mode: { tag: count }
+    topicCategory: null,     // 'movement', 'branch', 'difficulty', 'theme'
+    selectedTopic: null,     // The selected topic value (e.g., 'ancient_greek', 'metaphysics')
     mug: [],                 // Array of questions in the virtual mug
     currentRound: 0,         // Current round number
     totalRounds: 0,          // Total rounds played
@@ -26,6 +28,8 @@ function resetGameState() {
         questionCount: 'all',
         selectedTags: [],
         customTagCounts: {},
+        topicCategory: null,
+        selectedTopic: null,
         mug: [],
         currentRound: 0,
         totalRounds: 0,
@@ -68,6 +72,14 @@ function getCustomTagCounts() {
     return gameState.customTagCounts;
 }
 
+function getTopicCategory() {
+    return gameState.topicCategory;
+}
+
+function getSelectedTopic() {
+    return gameState.selectedTopic;
+}
+
 // ==================== STATE SETTERS ====================
 
 function setGameMode(mode) {
@@ -80,6 +92,14 @@ function setQuestionCount(count) {
 
 function setSelectedDrawCount(count) {
     gameState.selectedDrawCount = count;
+}
+
+function setTopicCategory(category) {
+    gameState.topicCategory = category;
+}
+
+function setSelectedTopic(topic) {
+    gameState.selectedTopic = topic;
 }
 
 // ==================== TAG MANAGEMENT ====================
@@ -125,11 +145,15 @@ function buildQuestionPool(questionsData) {
     if (gameState.mode === 'random') {
         // Fully random - all questions
         pool = [...questionsData.questions];
-    } else if (gameState.mode === 'by-tags') {
-        // By tags - questions matching selected tags
-        pool = questionsData.questions.filter(q =>
-            gameState.selectedTags.some(tag => q.tags.includes(tag))
-        );
+    } else if (gameState.mode === 'by-topic') {
+        // By topic - questions matching the selected topic
+        if (gameState.selectedTopic) {
+            const tagPrefix = getTagPrefixForCategory(gameState.topicCategory);
+            const tagToMatch = `${tagPrefix}:${gameState.selectedTopic}`;
+            pool = questionsData.questions.filter(q =>
+                q.tags.includes(tagToMatch)
+            );
+        }
     } else if (gameState.mode === 'custom') {
         // Custom - specific counts from each tag
         pool = [];
@@ -146,6 +170,17 @@ function buildQuestionPool(questionsData) {
         .map(id => pool.find(q => q.id === id));
 
     return uniquePool;
+}
+
+// Get tag prefix for topic category
+function getTagPrefixForCategory(category) {
+    const prefixes = {
+        'movement': 'mouvement',
+        'branch': 'branche',
+        'difficulty': 'difficulte',
+        'theme': 'theme'
+    };
+    return prefixes[category] || category;
 }
 
 // ==================== MUG MANAGEMENT ====================
@@ -216,5 +251,13 @@ function canStartGame() {
     if (gameState.mode === 'random') {
         return true;
     }
+    if (gameState.mode === 'by-topic') {
+        return gameState.selectedTopic !== null;
+    }
     return hasSelectedTags();
+}
+
+// Check if a topic is selected (for by-topic mode)
+function hasSelectedTopic() {
+    return gameState.selectedTopic !== null;
 }

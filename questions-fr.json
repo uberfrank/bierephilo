@@ -1,7 +1,7 @@
 {
   "metadata": {
     "titre": "Questions philosophiques",
-    "version": "2.0",
+    "version": "3.0",
     "total_questions": 168,
     "langues_disponibles": [
       "fr"
@@ -12,7 +12,8 @@
       "id": 1,
       "question": "Pourquoi y a-t-il quelque chose plutôt que rien ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
         "difficulte:avancee",
         "theme:existence"
       ]
@@ -21,7 +22,8 @@
       "id": 2,
       "question": "Les universaux existent-ils indépendamment des objets particuliers ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
         "difficulte:avancee",
         "theme:existence"
       ]
@@ -30,7 +32,8 @@
       "id": 3,
       "question": "Le monde extérieur existe-t-il indépendamment de notre perception ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:idealism",
         "difficulte:intermediaire",
         "theme:realite"
       ]
@@ -39,7 +42,8 @@
       "id": 4,
       "question": "Qu'est-ce qui fait qu'une chose reste la même à travers le temps ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:identite"
       ]
@@ -48,7 +52,8 @@
       "id": 5,
       "question": "La causalité est-elle une relation réelle ou une habitude de l'esprit ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:empiricism",
         "difficulte:avancee",
         "theme:realite"
       ]
@@ -57,7 +62,8 @@
       "id": 6,
       "question": "Existe-t-il des propriétés essentielles qui définissent chaque chose ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:existence"
       ]
@@ -66,7 +72,8 @@
       "id": 7,
       "question": "Le hasard existe-t-il ou tout est-il déterminé ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:liberte"
       ]
@@ -75,7 +82,8 @@
       "id": 8,
       "question": "Les nombres sont-ils des entités réelles ou des constructions mentales ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
         "difficulte:avancee",
         "theme:realite"
       ]
@@ -84,7 +92,8 @@
       "id": 9,
       "question": "Peut-on concevoir le néant absolu ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:existentialism",
         "difficulte:avancee",
         "theme:existence"
       ]
@@ -93,7 +102,8 @@
       "id": 10,
       "question": "L'infini peut-il exister dans la réalité ou seulement en pensée ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
         "difficulte:avancee",
         "theme:realite"
       ]
@@ -102,7 +112,8 @@
       "id": 11,
       "question": "Les lois de la nature sont-elles nécessaires ou contingentes ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:rationalism",
         "difficulte:avancee",
         "theme:nature"
       ]
@@ -111,7 +122,8 @@
       "id": 12,
       "question": "Qu'est-ce qui distingue une substance de ses propriétés ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:existence"
       ]
@@ -120,7 +132,8 @@
       "id": 13,
       "question": "Les mondes possibles existent-ils réellement ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:existence"
       ]
@@ -129,7 +142,8 @@
       "id": 14,
       "question": "La réalité est-elle fondamentalement une ou multiple ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:realite"
       ]
@@ -138,7 +152,8 @@
       "id": 15,
       "question": "Qu'est-ce qui distingue une croyance vraie d'une connaissance ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -147,7 +162,8 @@
       "id": 16,
       "question": "Peut-on douter de tout sans se contredire ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:rationalism",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -156,7 +172,8 @@
       "id": 17,
       "question": "L'expérience sensible est-elle la source de toute connaissance ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:empiricism",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -165,7 +182,8 @@
       "id": 18,
       "question": "Existe-t-il des vérités a priori indépendantes de l'expérience ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:rationalism",
         "difficulte:avancee",
         "theme:verite"
       ]
@@ -174,7 +192,8 @@
       "id": 19,
       "question": "Comment puis-je savoir que je ne rêve pas en ce moment ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:rationalism",
         "difficulte:debutant",
         "theme:conscience"
       ]
@@ -183,7 +202,8 @@
       "id": 20,
       "question": "La vérité est-elle absolue ou relative à un contexte ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:pragmatism",
         "difficulte:intermediaire",
         "theme:verite"
       ]
@@ -192,7 +212,8 @@
       "id": 21,
       "question": "Peut-on connaître les choses telles qu'elles sont en elles-mêmes ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:idealism",
         "difficulte:avancee",
         "theme:connaissance"
       ]
@@ -201,7 +222,8 @@
       "id": 22,
       "question": "Le témoignage d'autrui peut-il être une source légitime de connaissance ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -210,7 +232,8 @@
       "id": 23,
       "question": "L'intuition est-elle une forme valide de connaissance ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:rationalism",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -219,7 +242,8 @@
       "id": 24,
       "question": "Peut-on réfuter définitivement le scepticisme radical ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:ancient_greek",
         "difficulte:avancee",
         "theme:connaissance"
       ]
@@ -228,7 +252,8 @@
       "id": 25,
       "question": "La mémoire est-elle une source fiable de connaissance ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:empiricism",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -237,7 +262,8 @@
       "id": 26,
       "question": "Comment justifier nos croyances sans tomber dans une régression infinie ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:connaissance"
       ]
@@ -246,7 +272,8 @@
       "id": 27,
       "question": "La connaissance scientifique est-elle la seule connaissance légitime ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -255,7 +282,8 @@
       "id": 28,
       "question": "Nos sens nous trompent-ils systématiquement ou occasionnellement ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:empiricism",
         "difficulte:debutant",
         "theme:connaissance"
       ]
@@ -264,7 +292,8 @@
       "id": 29,
       "question": "Existe-t-il une distinction entre savoir et comprendre ?",
       "tags": [
-        "categorie:epistemologie",
+        "branche:epistemology",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -273,7 +302,8 @@
       "id": 30,
       "question": "La fin justifie-t-elle les moyens ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:utilitarianism",
         "difficulte:debutant",
         "theme:morale"
       ]
@@ -282,7 +312,8 @@
       "id": 31,
       "question": "Existe-t-il des actes intrinsèquement mauvais ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:idealism",
         "difficulte:intermediaire",
         "theme:morale"
       ]
@@ -291,7 +322,8 @@
       "id": 32,
       "question": "Le bonheur est-il le but ultime de la vie morale ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:bonheur"
       ]
@@ -300,7 +332,8 @@
       "id": 33,
       "question": "Peut-on agir moralement par pur devoir sans aucune inclination ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:idealism",
         "difficulte:avancee",
         "theme:morale"
       ]
@@ -309,7 +342,8 @@
       "id": 34,
       "question": "La vertu peut-elle s'enseigner ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:morale"
       ]
@@ -318,7 +352,8 @@
       "id": 35,
       "question": "Avons-nous des obligations morales envers les générations futures ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:utilitarianism",
         "difficulte:intermediaire",
         "theme:morale"
       ]
@@ -327,7 +362,8 @@
       "id": 36,
       "question": "Le relativisme moral conduit-il nécessairement au nihilisme ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:critical_poststructural",
         "difficulte:avancee",
         "theme:morale"
       ]
@@ -336,7 +372,8 @@
       "id": 37,
       "question": "Peut-on être moral sans être libre ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:idealism",
         "difficulte:avancee",
         "theme:liberte"
       ]
@@ -345,7 +382,8 @@
       "id": 38,
       "question": "L'égoïsme peut-il être une position éthique défendable ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:morale"
       ]
@@ -354,7 +392,8 @@
       "id": 39,
       "question": "Doit-on toujours dire la vérité ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:idealism",
         "difficulte:debutant",
         "theme:verite"
       ]
@@ -363,7 +402,8 @@
       "id": 40,
       "question": "Les animaux ont-ils des droits moraux ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:utilitarianism",
         "difficulte:intermediaire",
         "theme:morale"
       ]
@@ -372,7 +412,8 @@
       "id": 41,
       "question": "Peut-on sacrifier un innocent pour en sauver plusieurs ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:utilitarianism",
         "difficulte:intermediaire",
         "theme:morale"
       ]
@@ -381,7 +422,8 @@
       "id": 42,
       "question": "La pitié est-elle une vertu ou une faiblesse ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:morale"
       ]
@@ -390,7 +432,8 @@
       "id": 43,
       "question": "Qu'est-ce qui fonde l'obligation morale ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:idealism",
         "difficulte:avancee",
         "theme:morale"
       ]
@@ -399,7 +442,8 @@
       "id": 44,
       "question": "Qu'est-ce qui légitime l'autorité de l'État ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:rationalism",
         "difficulte:intermediaire",
         "theme:pouvoir"
       ]
@@ -408,7 +452,8 @@
       "id": 45,
       "question": "La liberté individuelle doit-elle primer sur le bien commun ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:rationalism",
         "difficulte:intermediaire",
         "theme:liberte"
       ]
@@ -417,7 +462,8 @@
       "id": 46,
       "question": "L'égalité parfaite est-elle compatible avec la liberté ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:marxism",
         "difficulte:avancee",
         "theme:liberte"
       ]
@@ -426,7 +472,8 @@
       "id": 47,
       "question": "La démocratie est-elle la meilleure forme de gouvernement ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:pouvoir"
       ]
@@ -435,7 +482,8 @@
       "id": 48,
       "question": "Peut-on justifier la désobéissance civile ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:pragmatism",
         "difficulte:intermediaire",
         "theme:justice"
       ]
@@ -444,7 +492,8 @@
       "id": 49,
       "question": "La propriété privée est-elle un droit naturel ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:rationalism",
         "difficulte:intermediaire",
         "theme:justice"
       ]
@@ -453,7 +502,8 @@
       "id": 50,
       "question": "Une société sans État est-elle possible ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:marxism",
         "difficulte:avancee",
         "theme:pouvoir"
       ]
@@ -462,7 +512,8 @@
       "id": 51,
       "question": "La justice est-elle réductible à l'utilité sociale ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:utilitarianism",
         "difficulte:avancee",
         "theme:justice"
       ]
@@ -471,7 +522,8 @@
       "id": 52,
       "question": "Le pouvoir corrompt-il nécessairement ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:pouvoir"
       ]
@@ -480,7 +532,8 @@
       "id": 53,
       "question": "Les droits de l'homme sont-ils universels ou culturellement relatifs ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:critical_poststructural",
         "difficulte:intermediaire",
         "theme:justice"
       ]
@@ -489,7 +542,8 @@
       "id": 54,
       "question": "La violence peut-elle être un moyen légitime d'action politique ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:marxism",
         "difficulte:avancee",
         "theme:pouvoir"
       ]
@@ -498,7 +552,8 @@
       "id": 55,
       "question": "Qu'est-ce qu'une société juste ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:justice"
       ]
@@ -507,7 +562,8 @@
       "id": 56,
       "question": "L'intérêt général existe-t-il ou n'est-il qu'une fiction ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:rationalism",
         "difficulte:avancee",
         "theme:justice"
       ]
@@ -516,7 +572,8 @@
       "id": 57,
       "question": "Peut-on contraindre quelqu'un à être libre ?",
       "tags": [
-        "categorie:philosophie_politique",
+        "branche:political_theory",
+        "mouvement:rationalism",
         "difficulte:avancee",
         "theme:liberte"
       ]
@@ -525,7 +582,8 @@
       "id": 58,
       "question": "La conscience peut-elle exister sans le cerveau ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:rationalism",
         "difficulte:avancee",
         "theme:conscience"
       ]
@@ -534,7 +592,8 @@
       "id": 59,
       "question": "Qu'est-ce qui fait que je suis la même personne qu'hier ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:empiricism",
         "difficulte:intermediaire",
         "theme:identite"
       ]
@@ -543,7 +602,8 @@
       "id": 60,
       "question": "Une machine peut-elle vraiment penser ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:conscience"
       ]
@@ -552,7 +612,8 @@
       "id": 61,
       "question": "L'esprit et le corps sont-ils deux substances distinctes ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:rationalism",
         "difficulte:intermediaire",
         "theme:conscience"
       ]
@@ -561,7 +622,8 @@
       "id": 62,
       "question": "Les autres esprits existent-ils ou suis-je seul conscient ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:rationalism",
         "difficulte:avancee",
         "theme:conscience"
       ]
@@ -570,7 +632,8 @@
       "id": 63,
       "question": "Qu'est-ce que cela fait d'être une chauve-souris ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:conscience"
       ]
@@ -579,7 +642,8 @@
       "id": 64,
       "question": "La volonté est-elle libre ou déterminée par des causes antérieures ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:rationalism",
         "difficulte:avancee",
         "theme:liberte"
       ]
@@ -588,7 +652,8 @@
       "id": 65,
       "question": "Les émotions sont-elles des jugements ou de simples sensations ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:conscience"
       ]
@@ -597,7 +662,8 @@
       "id": 66,
       "question": "Peut-on avoir une pensée sans langage ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:langage"
       ]
@@ -606,7 +672,8 @@
       "id": 67,
       "question": "L'inconscient existe-t-il vraiment ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:critical_poststructural",
         "difficulte:intermediaire",
         "theme:conscience"
       ]
@@ -615,7 +682,8 @@
       "id": 68,
       "question": "Qu'est-ce qui distingue une action d'un simple mouvement corporel ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:action",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:liberte"
       ]
@@ -624,7 +692,8 @@
       "id": 69,
       "question": "La perception est-elle directe ou toujours médiatisée ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:phenomenology",
         "difficulte:avancee",
         "theme:conscience"
       ]
@@ -633,7 +702,8 @@
       "id": 70,
       "question": "Peut-on réduire les états mentaux à des états cérébraux ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:conscience"
       ]
@@ -642,7 +712,8 @@
       "id": 71,
       "question": "L'attention modifie-t-elle ce que nous percevons ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:phenomenology",
         "difficulte:intermediaire",
         "theme:conscience"
       ]
@@ -651,7 +722,8 @@
       "id": 72,
       "question": "La vie a-t-elle un sens objectif ou devons-nous le créer ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:sens"
       ]
@@ -660,7 +732,8 @@
       "id": 73,
       "question": "L'angoisse est-elle révélatrice de notre condition humaine ?",
       "tags": [
-        "categorie:philosophie_esprit",
+        "branche:mind",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:existence"
       ]
@@ -669,7 +742,8 @@
       "id": 74,
       "question": "Sommes-nous condamnés à être libres ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:liberte"
       ]
@@ -678,7 +752,8 @@
       "id": 75,
       "question": "La mort donne-t-elle ou retire-t-elle un sens à la vie ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:mort"
       ]
@@ -687,7 +762,8 @@
       "id": 76,
       "question": "Peut-on vivre authentiquement dans une société de masse ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:existence"
       ]
@@ -696,7 +772,8 @@
       "id": 77,
       "question": "L'absurde peut-il être surmonté ou faut-il l'accepter ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:sens"
       ]
@@ -705,7 +782,8 @@
       "id": 78,
       "question": "L'existence précède-t-elle vraiment l'essence ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:existentialism",
         "difficulte:avancee",
         "theme:existence"
       ]
@@ -714,7 +792,8 @@
       "id": 79,
       "question": "La mauvaise foi est-elle inévitable ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:avancee",
         "theme:liberte"
       ]
@@ -723,7 +802,8 @@
       "id": 80,
       "question": "Autrui est-il nécessaire à ma propre existence ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:existence"
       ]
@@ -732,7 +812,8 @@
       "id": 81,
       "question": "Le désespoir est-il une condition ou un choix ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:existence"
       ]
@@ -741,7 +822,8 @@
       "id": 82,
       "question": "Peut-on échapper à la facticité de notre existence ?",
       "tags": [
-        "categorie:metaphysique",
+        "branche:metaphysics",
+        "mouvement:existentialism",
         "difficulte:avancee",
         "theme:existence"
       ]
@@ -750,7 +832,8 @@
       "id": 83,
       "question": "L'engagement donne-t-il un sens à l'existence ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:sens"
       ]
@@ -759,7 +842,8 @@
       "id": 84,
       "question": "La solitude est-elle la condition fondamentale de l'homme ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:existence"
       ]
@@ -768,7 +852,8 @@
       "id": 85,
       "question": "Faut-il imaginer Sisyphe heureux ?",
       "tags": [
-        "categorie:ethique",
+        "branche:ethics",
+        "mouvement:existentialism",
         "difficulte:intermediaire",
         "theme:bonheur"
       ]
@@ -777,7 +862,8 @@
       "id": 86,
       "question": "La beauté est-elle objective ou subjective ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:beaute"
       ]
@@ -786,7 +872,8 @@
       "id": 87,
       "question": "L'art doit-il avoir une finalité morale ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:art"
       ]
@@ -795,7 +882,8 @@
       "id": 88,
       "question": "Qu'est-ce qui distingue l'art du non-art ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:art"
       ]
@@ -804,7 +892,8 @@
       "id": 89,
       "question": "Le jugement de goût peut-il prétendre à l'universalité ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:idealism",
         "difficulte:avancee",
         "theme:beaute"
       ]
@@ -813,7 +902,8 @@
       "id": 90,
       "question": "L'art peut-il exprimer l'indicible ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:idealism",
         "difficulte:intermediaire",
         "theme:art"
       ]
@@ -822,7 +912,8 @@
       "id": 91,
       "question": "La copie parfaite d'une œuvre a-t-elle la même valeur que l'original ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:art"
       ]
@@ -831,7 +922,8 @@
       "id": 92,
       "question": "Le sublime est-il une forme supérieure de beauté ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:idealism",
         "difficulte:avancee",
         "theme:beaute"
       ]
@@ -840,7 +932,8 @@
       "id": 93,
       "question": "L'art engagé est-il encore de l'art ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:marxism",
         "difficulte:intermediaire",
         "theme:art"
       ]
@@ -849,7 +942,8 @@
       "id": 94,
       "question": "La laideur peut-elle être esthétiquement intéressante ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:critical_poststructural",
         "difficulte:intermediaire",
         "theme:beaute"
       ]
@@ -858,7 +952,8 @@
       "id": 95,
       "question": "L'intention de l'artiste est-elle nécessaire pour interpréter une œuvre ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:art"
       ]
@@ -867,7 +962,8 @@
       "id": 96,
       "question": "L'art peut-il changer le monde ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:marxism",
         "difficulte:intermediaire",
         "theme:art"
       ]
@@ -876,7 +972,8 @@
       "id": 97,
       "question": "Le plaisir esthétique est-il désintéressé ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:idealism",
         "difficulte:avancee",
         "theme:beaute"
       ]
@@ -885,7 +982,8 @@
       "id": 98,
       "question": "La nature peut-elle être considérée comme une œuvre d'art ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:idealism",
         "difficulte:intermediaire",
         "theme:beaute"
       ]
@@ -894,7 +992,8 @@
       "id": 99,
       "question": "L'art contemporain a-t-il abandonné la beauté ?",
       "tags": [
-        "categorie:esthetique",
+        "branche:aesthetics",
+        "mouvement:critical_poststructural",
         "difficulte:intermediaire",
         "theme:art"
       ]
@@ -903,7 +1002,8 @@
       "id": 100,
       "question": "Une contradiction peut-elle être vraie ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:ancient_greek",
         "difficulte:avancee",
         "theme:verite"
       ]
@@ -912,7 +1012,8 @@
       "id": 101,
       "question": "Les lois de la logique sont-elles des vérités nécessaires ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:verite"
       ]
@@ -921,7 +1022,8 @@
       "id": 102,
       "question": "Peut-on raisonner validement à partir de prémisses fausses ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:verite"
       ]
@@ -930,7 +1032,8 @@
       "id": 103,
       "question": "Le paradoxe du menteur peut-il être résolu ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:verite"
       ]
@@ -939,7 +1042,8 @@
       "id": 104,
       "question": "La logique formelle capture-t-elle tout le raisonnement humain ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:raison"
       ]
@@ -948,7 +1052,8 @@
       "id": 105,
       "question": "Existe-t-il plusieurs logiques également valides ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:verite"
       ]
@@ -957,7 +1062,8 @@
       "id": 106,
       "question": "L'induction est-elle logiquement justifiable ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:empiricism",
         "difficulte:avancee",
         "theme:connaissance"
       ]
@@ -966,7 +1072,8 @@
       "id": 107,
       "question": "Qu'est-ce qui fait qu'un argument est fallacieux ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:raison"
       ]
@@ -975,7 +1082,8 @@
       "id": 108,
       "question": "La logique peut-elle fonder les mathématiques ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:connaissance"
       ]
@@ -984,7 +1092,8 @@
       "id": 109,
       "question": "Un système formel peut-il prouver sa propre cohérence ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:verite"
       ]
@@ -993,7 +1102,8 @@
       "id": 110,
       "question": "La vérité logique est-elle conventionnelle ou découverte ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:verite"
       ]
@@ -1002,7 +1112,8 @@
       "id": 111,
       "question": "Peut-on penser l'impossible ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:raison"
       ]
@@ -1011,7 +1122,8 @@
       "id": 112,
       "question": "Le principe du tiers exclu est-il universellement valide ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:ancient_greek",
         "difficulte:avancee",
         "theme:verite"
       ]
@@ -1020,7 +1132,8 @@
       "id": 113,
       "question": "Qu'est-ce qui distingue une bonne raison d'une mauvaise ?",
       "tags": [
-        "categorie:logique",
+        "branche:logic",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:raison"
       ]
@@ -1029,7 +1142,8 @@
       "id": 114,
       "question": "Le sens d'un mot est-il déterminé par son usage ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:langage"
       ]
@@ -1038,7 +1152,8 @@
       "id": 115,
       "question": "Peut-on exprimer une pensée sans la trahir ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:critical_poststructural",
         "difficulte:intermediaire",
         "theme:langage"
       ]
@@ -1047,7 +1162,8 @@
       "id": 116,
       "question": "Le langage structure-t-il notre pensée ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:langage"
       ]
@@ -1056,7 +1172,8 @@
       "id": 117,
       "question": "Comment un mot peut-il référer à quelque chose ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:langage"
       ]
@@ -1065,7 +1182,8 @@
       "id": 118,
       "question": "Existe-t-il un langage privé ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:langage"
       ]
@@ -1074,7 +1192,8 @@
       "id": 119,
       "question": "La métaphore est-elle réductible au sens littéral ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:langage"
       ]
@@ -1083,7 +1202,8 @@
       "id": 120,
       "question": "Peut-on mentir sans utiliser de mots ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:langage"
       ]
@@ -1092,7 +1212,8 @@
       "id": 121,
       "question": "Les limites de mon langage sont-elles les limites de mon monde ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:langage"
       ]
@@ -1101,7 +1222,8 @@
       "id": 122,
       "question": "Qu'est-ce qui fait qu'un énoncé est performatif ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:langage"
       ]
@@ -1110,7 +1232,8 @@
       "id": 123,
       "question": "La traduction parfaite est-elle possible ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:langage"
       ]
@@ -1119,7 +1242,8 @@
       "id": 124,
       "question": "Le langage peut-il exprimer l'ineffable ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:langage"
       ]
@@ -1128,7 +1252,8 @@
       "id": 125,
       "question": "Comprendre une phrase, est-ce savoir ses conditions de vérité ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:langage"
       ]
@@ -1137,7 +1262,8 @@
       "id": 126,
       "question": "Les noms propres ont-ils un sens ou seulement une référence ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:langage"
       ]
@@ -1146,7 +1272,8 @@
       "id": 127,
       "question": "Le silence peut-il être une forme de communication ?",
       "tags": [
-        "categorie:philosophie_langage",
+        "branche:language",
+        "mouvement:phenomenology",
         "difficulte:intermediaire",
         "theme:langage"
       ]
@@ -1155,7 +1282,8 @@
       "id": 128,
       "question": "Les théories scientifiques décrivent-elles la réalité ou sont-elles de simples instruments ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:pragmatism",
         "difficulte:avancee",
         "theme:verite"
       ]
@@ -1164,7 +1292,8 @@
       "id": 129,
       "question": "Qu'est-ce qui distingue la science de la pseudoscience ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -1173,7 +1302,8 @@
       "id": 130,
       "question": "Les révolutions scientifiques sont-elles rationnelles ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:pragmatism",
         "difficulte:avancee",
         "theme:connaissance"
       ]
@@ -1182,7 +1312,8 @@
       "id": 131,
       "question": "Peut-on observer sans théorie préalable ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:pragmatism",
         "difficulte:avancee",
         "theme:connaissance"
       ]
@@ -1191,7 +1322,8 @@
       "id": 132,
       "question": "La science progresse-t-elle vers la vérité ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:verite"
       ]
@@ -1200,7 +1332,8 @@
       "id": 133,
       "question": "Les lois scientifiques sont-elles des découvertes ou des inventions ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:pragmatism",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -1209,7 +1342,8 @@
       "id": 134,
       "question": "L'expérience peut-elle réfuter définitivement une théorie ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:connaissance"
       ]
@@ -1218,7 +1352,8 @@
       "id": 135,
       "question": "Les entités théoriques comme les électrons existent-elles vraiment ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:existence"
       ]
@@ -1227,7 +1362,8 @@
       "id": 136,
       "question": "La simplicité est-elle un critère de vérité scientifique ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:pragmatism",
         "difficulte:intermediaire",
         "theme:verite"
       ]
@@ -1236,7 +1372,8 @@
       "id": 137,
       "question": "Les sciences humaines peuvent-elles atteindre l'objectivité des sciences naturelles ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:phenomenology",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -1245,7 +1382,8 @@
       "id": 138,
       "question": "La science peut-elle tout expliquer ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:connaissance"
       ]
@@ -1254,7 +1392,8 @@
       "id": 139,
       "question": "Deux théories incompatibles peuvent-elles être également confirmées par les faits ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:pragmatism",
         "difficulte:avancee",
         "theme:verite"
       ]
@@ -1263,7 +1402,8 @@
       "id": 140,
       "question": "La science est-elle neutre moralement ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:critical_poststructural",
         "difficulte:intermediaire",
         "theme:morale"
       ]
@@ -1272,7 +1412,8 @@
       "id": 141,
       "question": "Le réductionnisme scientifique est-il justifié ?",
       "tags": [
-        "categorie:philosophie_science",
+        "branche:science",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:connaissance"
       ]
@@ -1281,7 +1422,8 @@
       "id": 142,
       "question": "Peut-on prouver l'existence de Dieu ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:medieval",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1290,7 +1432,8 @@
       "id": 143,
       "question": "Le mal est-il compatible avec l'existence d'un Dieu bon et tout-puissant ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:medieval",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1299,7 +1442,8 @@
       "id": 144,
       "question": "La foi et la raison sont-elles compatibles ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:medieval",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1308,7 +1452,8 @@
       "id": 145,
       "question": "L'expérience mystique peut-elle être une source de connaissance ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:classical_eastern",
         "difficulte:avancee",
         "theme:foi"
       ]
@@ -1317,7 +1462,8 @@
       "id": 146,
       "question": "La religion est-elle une illusion nécessaire ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:critical_poststructural",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1326,7 +1472,8 @@
       "id": 147,
       "question": "Peut-on être moral sans croire en Dieu ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:rationalism",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1335,7 +1482,8 @@
       "id": 148,
       "question": "La vie après la mort est-elle concevable ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:ancient_greek",
         "difficulte:intermediaire",
         "theme:mort"
       ]
@@ -1344,7 +1492,8 @@
       "id": 149,
       "question": "Le sacré peut-il exister sans religion instituée ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:phenomenology",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1353,7 +1502,8 @@
       "id": 150,
       "question": "Toutes les religions disent-elles la même chose sous des formes différentes ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:classical_eastern",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1362,7 +1512,8 @@
       "id": 151,
       "question": "L'athéisme est-il une position de foi ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:analytic",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1371,7 +1522,8 @@
       "id": 152,
       "question": "Dieu peut-il créer une pierre si lourde qu'il ne puisse pas la soulever ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:medieval",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1380,7 +1532,8 @@
       "id": 153,
       "question": "La prière a-t-elle un sens si Dieu est omniscient ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:medieval",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1389,7 +1542,8 @@
       "id": 154,
       "question": "Le miracle est-il possible ou contradictoire avec les lois de la nature ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:empiricism",
         "difficulte:avancee",
         "theme:foi"
       ]
@@ -1398,7 +1552,8 @@
       "id": 155,
       "question": "La religion répond-elle à un besoin humain fondamental ?",
       "tags": [
-        "categorie:philosophie_religion",
+        "branche:religion",
+        "mouvement:phenomenology",
         "difficulte:intermediaire",
         "theme:foi"
       ]
@@ -1407,7 +1562,8 @@
       "id": 156,
       "question": "Le temps est-il réel ou une illusion de notre esprit ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:idealism",
         "difficulte:avancee",
         "theme:temps"
       ]
@@ -1416,7 +1572,8 @@
       "id": 157,
       "question": "Le passé et le futur existent-ils au même titre que le présent ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:temps"
       ]
@@ -1425,7 +1582,8 @@
       "id": 158,
       "question": "Pourquoi le temps semble-t-il s'écouler dans une seule direction ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:temps"
       ]
@@ -1434,7 +1592,8 @@
       "id": 159,
       "question": "L'instant présent a-t-il une durée ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:phenomenology",
         "difficulte:intermediaire",
         "theme:temps"
       ]
@@ -1443,7 +1602,8 @@
       "id": 160,
       "question": "Le voyage dans le temps est-il logiquement possible ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:analytic",
         "difficulte:avancee",
         "theme:temps"
       ]
@@ -1452,7 +1612,8 @@
       "id": 161,
       "question": "Le temps existait-il avant l'univers ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:medieval",
         "difficulte:avancee",
         "theme:temps"
       ]
@@ -1461,7 +1622,8 @@
       "id": 162,
       "question": "Peut-on vivre pleinement dans le présent ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:classical_eastern",
         "difficulte:intermediaire",
         "theme:temps"
       ]
@@ -1470,7 +1632,8 @@
       "id": 163,
       "question": "Le temps vécu est-il le même que le temps mesuré ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:phenomenology",
         "difficulte:intermediaire",
         "theme:temps"
       ]
@@ -1479,7 +1642,8 @@
       "id": 164,
       "question": "L'éternité est-elle l'absence de temps ou le temps infini ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:medieval",
         "difficulte:avancee",
         "theme:temps"
       ]
@@ -1488,7 +1652,8 @@
       "id": 165,
       "question": "Nos souvenirs déforment-ils nécessairement le passé ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:phenomenology",
         "difficulte:intermediaire",
         "theme:temps"
       ]
@@ -1497,7 +1662,8 @@
       "id": 166,
       "question": "L'anticipation du futur influence-t-elle notre perception du présent ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:phenomenology",
         "difficulte:intermediaire",
         "theme:temps"
       ]
@@ -1506,7 +1672,8 @@
       "id": 167,
       "question": "Peut-on être nostalgique d'un temps qu'on n'a pas vécu ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:phenomenology",
         "difficulte:intermediaire",
         "theme:temps"
       ]
@@ -1515,7 +1682,8 @@
       "id": 168,
       "question": "Le temps guérit-il vraiment toutes les blessures ?",
       "tags": [
-        "categorie:philosophie_temps",
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
         "difficulte:debutant",
         "theme:temps"
       ]
@@ -1523,64 +1691,64 @@
   ],
   "categories": [
     {
-      "id": "metaphysique",
+      "id": "metaphysics",
       "nom": "Métaphysique",
       "description": "Questions sur la nature fondamentale de la réalité"
     },
     {
-      "id": "epistemologie",
+      "id": "epistemology",
       "nom": "Épistémologie",
       "description": "Questions sur la connaissance et la vérité"
     },
     {
-      "id": "ethique",
+      "id": "ethics",
       "nom": "Éthique",
       "description": "Questions sur le bien, le mal et la moralité"
     },
     {
-      "id": "philosophie_politique",
-      "nom": "Philosophie politique",
+      "id": "political_theory",
+      "nom": "Théorie politique",
       "description": "Questions sur la justice, le pouvoir et la société"
     },
     {
-      "id": "philosophie_esprit",
-      "nom": "Philosophie de l'esprit",
+      "id": "mind",
+      "nom": "Esprit",
       "description": "Questions sur la conscience et l'identité"
     },
     {
-      "id": "existentialisme",
-      "nom": "Existentialisme",
-      "description": "Questions sur le sens de l'existence"
-    },
-    {
-      "id": "esthetique",
+      "id": "aesthetics",
       "nom": "Esthétique",
       "description": "Questions sur la beauté et l'art"
     },
     {
-      "id": "logique",
+      "id": "logic",
       "nom": "Logique",
       "description": "Questions sur le raisonnement et l'argumentation"
     },
     {
-      "id": "philosophie_langage",
-      "nom": "Philosophie du langage",
+      "id": "language",
+      "nom": "Langage",
       "description": "Questions sur le sens et la communication"
     },
     {
-      "id": "philosophie_science",
-      "nom": "Philosophie des sciences",
+      "id": "science",
+      "nom": "Science",
       "description": "Questions sur la méthode scientifique et ses limites"
     },
     {
-      "id": "philosophie_religion",
-      "nom": "Philosophie de la religion",
+      "id": "religion",
+      "nom": "Religion",
       "description": "Questions sur le divin et le sacré"
     },
     {
-      "id": "philosophie_temps",
-      "nom": "Philosophie du temps",
-      "description": "Questions sur la temporalité et l'éternité"
+      "id": "action",
+      "nom": "Action",
+      "description": "Questions sur l'agentivité, l'intention et la liberté"
+    },
+    {
+      "id": "social_theory",
+      "nom": "Théorie sociale",
+      "description": "Questions sur les structures sociales et la communauté"
     }
   ]
 }

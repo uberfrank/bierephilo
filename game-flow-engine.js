@@ -30,9 +30,16 @@ function setupModeSelection() {
                 }
             }
 
-            switchGameScreen('questionCountScreen');
             const modeName = mode === 'random' ? getTranslation('game.randomMode') : mode === 'by-topic' ? getTranslation('game.byTopicMode') : getTranslation('game.customMode');
             showToast(`${modeName} ${getTranslation('messages.modeSelected')}`);
+
+            // By-topic mode skips question count - uses all questions from topic
+            if (mode === 'by-topic') {
+                setQuestionCount('all');
+                switchGameScreen('topicCategoryScreen');
+            } else {
+                switchGameScreen('questionCountScreen');
+            }
         });
     });
 }
@@ -102,7 +109,7 @@ function setupQuestionCountSelection() {
 
 // ==================== TAG SELECTION ====================
 
-// Render tag selection screen
+// Render tag selection screen for custom mode
 function renderTagSelection() {
     const container = document.getElementById('tagCategories');
     const titleElement = document.getElementById('tagScreenTitle');
@@ -111,51 +118,123 @@ function renderTagSelection() {
 
     if (!container || !data) return;
 
-    // Update title based on mode
+    // Update title
     if (titleElement) {
-        const titleKey = state.mode === 'custom' ? 'game.tagSelectionCustomTitle' : 'game.tagSelectionTitle';
-        titleElement.textContent = getTranslation(titleKey);
-        titleElement.setAttribute('data-i18n', titleKey);
+        titleElement.textContent = getTranslation('game.tagSelectionCustomTitle');
+        titleElement.setAttribute('data-i18n', 'game.tagSelectionCustomTitle');
     }
 
-    // Show/hide custom sliders container
+    // Hide sliders container for custom mode (sample size comes at the end)
     const customSlidersContainer = document.getElementById('customTagSliders');
     if (customSlidersContainer) {
-        customSlidersContainer.style.display = state.mode === 'custom' ? 'block' : 'none';
-        customSlidersContainer.innerHTML = '';
+        customSlidersContainer.style.display = 'none';
     }
 
-    // Render categories as checkboxes
-    const categories = data.categories;
-    const html = categories.map(category => {
-        const categoryTag = `categorie:${category.id}`;
-        const count = data.questions.filter(q =>
-            q.tags.includes(categoryTag)
-        ).length;
+    // Build topic sections for all four categories
+    const topicTypes = [
+        { key: 'branch', prefix: 'branche', translationKey: 'branches', icon: '🌳' },
+        { key: 'movement', prefix: 'mouvement', translationKey: 'movements', icon: '🏛️' },
+        { key: 'theme', prefix: 'theme', translationKey: 'themes', icon: '💡' },
+        { key: 'difficulty', prefix: 'difficulte', translationKey: 'difficulties', icon: '📊' }
+    ];
 
-        const isChecked = state.selectedTags.includes(categoryTag);
+    let html = '';
 
-        return `
-            <div class="tag-category">
-                <label class="tag-checkbox-label">
-                    <input type="checkbox" class="tag-checkbox" data-tag="${categoryTag}" ${isChecked ? 'checked' : ''}>
-                    <span class="tag-checkbox-text">${category.nom}</span>
-                    <span class="tag-count">(${count})</span>
-                </label>
+    topicTypes.forEach(topicType => {
+        const topics = getTopicsForCategory(topicType.key, data);
+
+        html += `<div class="topic-type-section">
+            <div class="topic-type-header" data-section="${topicType.key}">
+                <span class="topic-type-icon">${topicType.icon}</span>
+                <span class="topic-type-title">${getTranslation('topicCategories.' + topicType.key)}</span>
+                <span class="topic-type-toggle">▼</span>
             </div>
-        `;
-    }).join('');
+            <div class="topic-type-content" id="section-${topicType.key}">`;
+
+        topics.forEach(topic => {
+            const tag = `${topicType.prefix}:${topic}`;
+            const count = data.questions.filter(q => q.tags.includes(tag)).length;
+            const isChecked = state.selectedTags.includes(tag);
+            const translationKey = `${topicType.translationKey}.${topic}`;
+            const topicName = getTranslation(translationKey) || topic.replace(/_/g, ' ');
+
+            html += `
+                <div class="tag-category">
+                    <label class="tag-checkbox-label">
+                        <input type="checkbox" class="tag-checkbox" data-tag="${tag}" ${isChecked ? 'checked' : ''}>
+                        <span class="tag-checkbox-text">${topicName}</span>
+                        <span class="tag-count">(${count})</span>
+                    </label>
+                </div>`;
+        });
+
+        html += `</div></div>`;
+    });
 
     container.innerHTML = html;
 
+    // Setup section toggle listeners
+    setupTopicSectionToggles();
+
     // Setup checkbox listeners
     setupTagCheckboxes();
+
+    // Update selected count display
+    updateSelectedTopicsCount();
+}
+
+// Setup topic section toggle listeners
+function setupTopicSectionToggles() {
+    const headers = document.querySelectorAll('.topic-type-header');
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            const section = header.dataset.section;
+            const content = document.getElementById(`section-${section}`);
+            const toggle = header.querySelector('.topic-type-toggle');
+
+            if (content) {
+                const isHidden = content.style.display === 'none';
+                content.style.display = isHidden ? 'block' : 'none';
+                if (toggle) {
+                    toggle.textContent = isHidden ? '▼' : '▶';
+                }
+            }
+        });
+    });
+}
+
+// Update selected topics count display
+function updateSelectedTopicsCount() {
+    const state = getGameState();
+    const data = getQuestionsData();
+    if (!data) return;
+
+    // Calculate total questions from selected topics
+    let totalQuestions = 0;
+    const uniqueQuestions = new Set();
+
+    state.selectedTags.forEach(tag => {
+        data.questions.forEach(q => {
+            if (q.tags.includes(tag)) {
+                uniqueQuestions.add(q.id);
+            }
+        });
+    });
+
+    totalQuestions = uniqueQuestions.size;
+
+    // Update the start button text to show count
+    const startBtn = document.getElementById('startGame');
+    if (startBtn && state.selectedTags.length > 0) {
+        startBtn.textContent = `${getTranslation('game.continueButton')} (${totalQuestions} ${getTranslation('questionsSection.questions')})`;
+    } else if (startBtn) {
+        startBtn.textContent = getTranslation('game.continueButton');
+    }
 }
 
 // Setup tag checkbox listeners
 function setupTagCheckboxes() {
     const checkboxes = document.querySelectorAll('.tag-checkbox');
-    const state = getGameState();
 
     checkboxes.forEach(checkbox => {
         checkbox.addEventListener('change', (e) => {
@@ -163,20 +242,12 @@ function setupTagCheckboxes() {
 
             if (e.target.checked) {
                 addSelectedTag(tag);
-
-                // For custom mode, add slider
-                if (state.mode === 'custom') {
-                    addCustomTagSlider(tag);
-                }
             } else {
                 removeSelectedTag(tag);
-
-                // For custom mode, remove slider
-                if (state.mode === 'custom') {
-                    removeCustomTagSliderUI(tag);
-                    removeCustomTagCount(tag);
-                }
             }
+
+            // Update the count display
+            updateSelectedTopicsCount();
         });
     });
 }
@@ -240,18 +311,112 @@ function removeCustomTagSliderUI(tag) {
 
 // Setup tag selection navigation
 function setupTagSelectionNavigation() {
-    // Back to count screen
+    // Back to mode screen (custom mode skips count screen)
     document.getElementById('backToCount')?.addEventListener('click', () => {
-        switchGameScreen('questionCountScreen');
+        switchGameScreen('gameModeScreen');
     });
 
-    // Start game button
+    // Continue to sample size selection
     document.getElementById('startGame')?.addEventListener('click', () => {
         if (!hasSelectedTags()) {
             showToast(getTranslation('messages.selectAtLeastOneTag'));
             return;
         }
 
+        // Go to sample size screen for custom mode
+        setupCustomSampleScreen();
+        switchGameScreen('customSampleScreen');
+    });
+}
+
+// Setup custom sample screen
+function setupCustomSampleScreen() {
+    const data = getQuestionsData();
+    const state = getGameState();
+    if (!data) return;
+
+    // Calculate total available questions from selected topics
+    const uniqueQuestions = new Set();
+    state.selectedTags.forEach(tag => {
+        data.questions.forEach(q => {
+            if (q.tags.includes(tag)) {
+                uniqueQuestions.add(q.id);
+            }
+        });
+    });
+    const totalAvailable = uniqueQuestions.size;
+
+    // Update the "All Questions" count
+    const allCountEl = document.getElementById('customAllQuestionsCount');
+    if (allCountEl) {
+        allCountEl.textContent = `${totalAvailable} ${getTranslation('questionsSection.questions')}`;
+    }
+
+    // Update slider max
+    const slider = document.getElementById('customSampleSlider');
+    const sliderMax = document.getElementById('customSliderMax');
+    if (slider) {
+        slider.max = totalAvailable;
+        slider.value = Math.min(20, totalAvailable);
+    }
+    if (sliderMax) {
+        sliderMax.textContent = totalAvailable;
+    }
+
+    // Update selected info text
+    const infoEl = document.getElementById('customSelectedInfo');
+    if (infoEl) {
+        infoEl.textContent = `${state.selectedTags.length} ${getTranslation('game.topicsSelected') || 'topics selected'}`;
+    }
+
+    // Update sample value display
+    const sampleValue = document.getElementById('customSampleValue');
+    if (sampleValue && slider) {
+        sampleValue.textContent = slider.value;
+    }
+
+    // Set default to all questions
+    setQuestionCount('all');
+}
+
+// Setup custom sample screen navigation
+function setupCustomSampleNavigation() {
+    const allBtn = document.getElementById('customAllBtn');
+    const sampleBtn = document.getElementById('customSampleBtn');
+    const sliderContainer = document.getElementById('customSampleSliderContainer');
+    const slider = document.getElementById('customSampleSlider');
+    const sampleValue = document.getElementById('customSampleValue');
+
+    // All questions button
+    allBtn?.addEventListener('click', () => {
+        allBtn.classList.add('selected');
+        sampleBtn?.classList.remove('selected');
+        if (sliderContainer) sliderContainer.style.display = 'none';
+        setQuestionCount('all');
+    });
+
+    // Sample button
+    sampleBtn?.addEventListener('click', () => {
+        sampleBtn.classList.add('selected');
+        allBtn?.classList.remove('selected');
+        if (sliderContainer) sliderContainer.style.display = 'block';
+        if (slider) setQuestionCount(parseInt(slider.value));
+    });
+
+    // Slider
+    slider?.addEventListener('input', (e) => {
+        const value = e.target.value;
+        if (sampleValue) sampleValue.textContent = value;
+        setQuestionCount(parseInt(value));
+    });
+
+    // Back to tag selection
+    document.getElementById('backToTagSelection')?.addEventListener('click', () => {
+        switchGameScreen('tagSelectionScreen');
+    });
+
+    // Start game
+    document.getElementById('startCustomGame')?.addEventListener('click', () => {
         startGameplay();
     });
 }
@@ -271,9 +436,9 @@ function setupTopicCategorySelection() {
         });
     });
 
-    // Back to count screen from category
+    // Back to mode screen from category (by-topic mode skips count screen)
     document.getElementById('backToCountFromCategory')?.addEventListener('click', () => {
-        switchGameScreen('questionCountScreen');
+        switchGameScreen('gameModeScreen');
     });
 }
 
@@ -611,6 +776,7 @@ function initializeGameFlow() {
     setupTopicCategorySelection();
     setupTopicSelectionNavigation();
     setupTagSelectionNavigation();
+    setupCustomSampleNavigation();
     setupDrawControls();
     setupGameCompleteActions();
 }

@@ -155,13 +155,9 @@ function buildQuestionPool(questionsData) {
             );
         }
     } else if (gameState.mode === 'custom') {
-        // Custom - specific counts from each tag
-        pool = [];
-        gameState.selectedTags.forEach(tag => {
-            const count = gameState.customTagCounts[tag] || 0;
-            const tagQuestions = questionsData.questions.filter(q => q.tags.includes(tag));
-            const shuffled = shuffleArray(tagQuestions);
-            pool.push(...shuffled.slice(0, count));
+        // Custom - all questions matching any of the selected tags
+        pool = questionsData.questions.filter(q => {
+            return gameState.selectedTags.some(tag => q.tags.includes(tag));
         });
     }
 

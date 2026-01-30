@@ -138,17 +138,47 @@
 
                 <!-- Tag Selection Screen (for custom mode) -->
                 <div id="tagSelectionScreen" class="game-screen">
-                    <h3 class="game-subtitle" id="tagScreenTitle" data-i18n="game.tagSelectionTitle">Select Tags</h3>
+                    <h3 class="game-subtitle" id="tagScreenTitle" data-i18n="game.tagSelectionCustomTitle">Select Topics</h3>
 
                     <!-- Tag Categories -->
                     <div id="tagCategories" class="tag-categories"></div>
 
-                    <!-- Custom Mode: Per-Tag Sliders -->
+                    <!-- Hidden container for legacy slider support -->
                     <div id="customTagSliders" class="custom-tag-sliders" style="display: none;"></div>
 
                     <div class="game-nav-buttons">
                         <button class="btn btn-secondary" id="backToCount" data-i18n="game.backButton">Back</button>
-                        <button class="btn btn-primary" id="startGame" data-i18n="game.startGameButton">Start Game</button>
+                        <button class="btn btn-primary" id="startGame" data-i18n="game.continueButton">Continue</button>
+                    </div>
+                </div>
+
+                <!-- Custom Mode: Sample Size Selection Screen -->
+                <div id="customSampleScreen" class="game-screen">
+                    <h3 class="game-subtitle" data-i18n="game.questionCountTitle">How Many Questions?</h3>
+                    <p id="customSelectedInfo" class="section-text"></p>
+                    <div class="question-count-options">
+                        <button class="count-option-btn selected" data-count="all" id="customAllBtn">
+                            <div class="count-icon">📚</div>
+                            <h4 data-i18n="game.allQuestions">All Questions</h4>
+                            <p id="customAllQuestionsCount">0 questions</p>
+                        </button>
+                        <button class="count-option-btn" data-count="sample" id="customSampleBtn">
+                            <div class="count-icon">🎯</div>
+                            <h4 data-i18n="game.sample">Sample</h4>
+                            <p data-i18n="game.sampleDesc">Choose a custom amount</p>
+                        </button>
+                    </div>
+                    <div id="customSampleSliderContainer" class="slider-container" style="display: none;">
+                        <label for="customSampleSlider" class="slider-label"><span data-i18n="game.sliderLabel">Number of questions:</span> <span id="customSampleValue">20</span></label>
+                        <input type="range" id="customSampleSlider" class="slider" min="5" max="100" value="20" step="1">
+                        <div class="slider-markers">
+                            <span>5</span>
+                            <span id="customSliderMax">100</span>
+                        </div>
+                    </div>
+                    <div class="game-nav-buttons">
+                        <button class="btn btn-secondary" id="backToTagSelection" data-i18n="game.backButton">Back</button>
+                        <button class="btn btn-primary" id="startCustomGame" data-i18n="game.startGameButton">Start Game</button>
                     </div>
                 </div>
 

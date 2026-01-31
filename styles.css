@@ -1220,6 +1220,75 @@ body {
     color: var(--text-light);
 }
 
+/* Topic Type Sections (for custom mode) */
+.topic-type-section {
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-md);
+    overflow: hidden;
+    border: 2px solid #e0e0e0;
+}
+
+.topic-type-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    cursor: pointer;
+    transition: var(--transition);
+    background: var(--bg-light);
+}
+
+.topic-type-header:hover {
+    background: rgba(33, 150, 243, 0.1);
+}
+
+.topic-type-icon {
+    font-size: 1.5rem;
+}
+
+.topic-type-title {
+    flex: 1;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.topic-type-toggle {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    transition: var(--transition);
+}
+
+.topic-type-content {
+    padding: var(--spacing-sm);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xs);
+}
+
+.topic-type-content .tag-category {
+    border: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    margin: 0;
+}
+
+.topic-type-content .tag-checkbox-label:hover {
+    background: var(--bg-light);
+}
+
+@media (min-width: 768px) {
+    .topic-type-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .topic-type-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .game-header {
     display: flex;
     justify-content: space-between;

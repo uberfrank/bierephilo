@@ -1,8 +1,8 @@
 {
   "metadata": {
     "titre": "Philosophical Questions",
-    "version": "3.0",
-    "total_questions": 168,
+    "version": "4.0",
+    "total_questions": 328,
     "langues_disponibles": [
       "en"
     ]
@@ -1686,6 +1686,1606 @@
         "mouvement:ancient_greek",
         "difficulte:debutant",
         "theme:temps"
+      ]
+    },
+    {
+      "id": 169,
+      "question": "What makes an action voluntary rather than compelled?",
+      "tags": [
+        "branche:action",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:liberte"
+      ]
+    },
+    {
+      "id": 170,
+      "question": "Can we be held responsible for actions we did not intend?",
+      "tags": [
+        "branche:action",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:morale"
+      ]
+    },
+    {
+      "id": 171,
+      "question": "Is omission a form of action?",
+      "tags": [
+        "branche:action",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:morale"
+      ]
+    },
+    {
+      "id": 172,
+      "question": "What role does intention play in the morality of an action?",
+      "tags": [
+        "branche:action",
+        "mouvement:idealism",
+        "difficulte:intermediaire",
+        "theme:morale"
+      ]
+    },
+    {
+      "id": 173,
+      "question": "Can we act against our own best judgment?",
+      "tags": [
+        "branche:action",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 174,
+      "question": "Is weakness of will a real phenomenon or a conceptual confusion?",
+      "tags": [
+        "branche:action",
+        "mouvement:ancient_greek",
+        "difficulte:avancee",
+        "theme:liberte"
+      ]
+    },
+    {
+      "id": 175,
+      "question": "What is the relationship between reasons and causes of action?",
+      "tags": [
+        "branche:action",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 176,
+      "question": "Can collective entities truly act or only individuals within them?",
+      "tags": [
+        "branche:action",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:pouvoir"
+      ]
+    },
+    {
+      "id": 177,
+      "question": "Is habit a form of action or its absence?",
+      "tags": [
+        "branche:action",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 178,
+      "question": "What distinguishes rational action from mere behavior?",
+      "tags": [
+        "branche:action",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 179,
+      "question": "Can we ever act purely altruistically?",
+      "tags": [
+        "branche:action",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:morale"
+      ]
+    },
+    {
+      "id": 180,
+      "question": "Is procrastination a failure of action or a form of it?",
+      "tags": [
+        "branche:action",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:liberte"
+      ]
+    },
+    {
+      "id": 181,
+      "question": "Does acting under duress diminish moral responsibility?",
+      "tags": [
+        "branche:action",
+        "mouvement:idealism",
+        "difficulte:intermediaire",
+        "theme:justice"
+      ]
+    },
+    {
+      "id": 182,
+      "question": "Can silence be a meaningful form of action?",
+      "tags": [
+        "branche:action",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:pouvoir"
+      ]
+    },
+    {
+      "id": 183,
+      "question": "Is human nature fundamentally good, evil, or neutral?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:debutant",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 184,
+      "question": "Does nature have intrinsic value independent of human interests?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 185,
+      "question": "Can we derive moral laws from the observation of nature?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 186,
+      "question": "Is the concept of human nature culturally constructed?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 187,
+      "question": "Are humans part of nature or fundamentally separate from it?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 188,
+      "question": "Does nature follow purposes or only mechanical causes?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
+        "difficulte:avancee",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 189,
+      "question": "Can we understand human behavior through natural science alone?",
+      "tags": [
+        "branche:science",
+        "mouvement:empiricism",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 190,
+      "question": "Is wilderness a natural state or a human concept?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 191,
+      "question": "Do natural disasters challenge the notion of a benevolent cosmos?",
+      "tags": [
+        "branche:religion",
+        "mouvement:medieval",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 192,
+      "question": "Can artificial creations ever be truly natural?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 193,
+      "question": "Is living according to nature a meaningful ethical ideal?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 194,
+      "question": "Does nature provide a standard for what is normal or healthy?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 195,
+      "question": "Can technology fundamentally alter human nature?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 196,
+      "question": "Is respect for nature compatible with human flourishing?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 197,
+      "question": "What gives personal identity its continuity over time?",
+      "tags": [
+        "branche:mind",
+        "mouvement:empiricism",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 198,
+      "question": "Can I be the same person if my memories are erased?",
+      "tags": [
+        "branche:mind",
+        "mouvement:empiricism",
+        "difficulte:debutant",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 199,
+      "question": "Is the self a substance or a bundle of experiences?",
+      "tags": [
+        "branche:mind",
+        "mouvement:empiricism",
+        "difficulte:avancee",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 200,
+      "question": "Does narrative create identity or merely describe it?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 201,
+      "question": "Can social roles fully define who we are?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 202,
+      "question": "Is cultural identity inherited or chosen?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 203,
+      "question": "Can we have multiple authentic identities?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 204,
+      "question": "Does the body constitute part of personal identity?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 205,
+      "question": "Is identity fixed or constantly evolving?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 206,
+      "question": "Can technology extend or transform personal identity?",
+      "tags": [
+        "branche:mind",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 207,
+      "question": "Does language shape our sense of identity?",
+      "tags": [
+        "branche:language",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 208,
+      "question": "Is professional identity more authentic than personal identity?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 209,
+      "question": "Can group identity override individual identity?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 210,
+      "question": "Is happiness a feeling, a judgment, or a way of living?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 211,
+      "question": "Can happiness be measured or compared between people?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 212,
+      "question": "Is a life of pleasure the same as a happy life?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 213,
+      "question": "Can we be truly happy while others suffer?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 214,
+      "question": "Does pursuing happiness directly prevent its attainment?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 215,
+      "question": "Is contentment the same as happiness?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:debutant",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 216,
+      "question": "Can happiness exist without suffering to contrast it?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 217,
+      "question": "Is material wealth necessary for happiness?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:debutant",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 218,
+      "question": "Can an evil person be genuinely happy?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 219,
+      "question": "Does happiness require other people?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:debutant",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 220,
+      "question": "Is it possible to be happy without knowing you are happy?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 221,
+      "question": "Can artificial happiness through drugs be authentic?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 222,
+      "question": "Is the Buddhist cessation of desire a path to happiness?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 223,
+      "question": "Does death deprive us of something or nothing at all?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 224,
+      "question": "Is fearing death irrational?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 225,
+      "question": "Would immortality be desirable or a curse?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 226,
+      "question": "Does death make life more or less meaningful?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 227,
+      "question": "Is being dead a harm to the one who died?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 228,
+      "question": "Can we prepare adequately for our own death?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:debutant",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 229,
+      "question": "Does contemplating death change how we should live?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 230,
+      "question": "Is grief appropriate when someone dies?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 231,
+      "question": "Does the manner of death affect its meaning?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:medieval",
+        "difficulte:intermediaire",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 232,
+      "question": "Can memories of the dead provide a form of continued existence?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 233,
+      "question": "Is euthanasia ever morally permissible?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 234,
+      "question": "Does the death of language speakers mean the death of a worldview?",
+      "tags": [
+        "branche:language",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 235,
+      "question": "Can civilizations truly die?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:mort"
+      ]
+    },
+    {
+      "id": 236,
+      "question": "Can life have meaning without a cosmic purpose?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 237,
+      "question": "Is the search for meaning itself meaningful?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 238,
+      "question": "Can suffering provide meaning to life?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 239,
+      "question": "Does work give life meaning or distract from meaninglessness?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 240,
+      "question": "Is meaning found in pleasure, virtue, or something else?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 241,
+      "question": "Can a meaningless life still be worth living?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 242,
+      "question": "Is meaning subjective or objective?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 243,
+      "question": "Does caring for others create meaning in life?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 244,
+      "question": "Can art provide meaning that philosophy cannot?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:idealism",
+        "difficulte:intermediaire",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 245,
+      "question": "Is nostalgia a search for lost meaning?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 246,
+      "question": "Does contributing to something larger than oneself provide meaning?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 247,
+      "question": "Is the meaning of life different for each person?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:sens"
+      ]
+    },
+    {
+      "id": 248,
+      "question": "Is enlightenment attainable or an asymptotic ideal?",
+      "tags": [
+        "branche:religion",
+        "mouvement:classical_eastern",
+        "difficulte:avancee",
+        "theme:connaissance"
+      ]
+    },
+    {
+      "id": 249,
+      "question": "Can meditation provide genuine philosophical insight?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 250,
+      "question": "Is non-attachment a realistic goal for human beings?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 251,
+      "question": "Does Eastern philosophy offer a genuine alternative to Western thought?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:connaissance"
+      ]
+    },
+    {
+      "id": 252,
+      "question": "Is the concept of karma morally coherent?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:justice"
+      ]
+    },
+    {
+      "id": 253,
+      "question": "Can emptiness be a positive philosophical concept?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:classical_eastern",
+        "difficulte:avancee",
+        "theme:existence"
+      ]
+    },
+    {
+      "id": 254,
+      "question": "Is the self an illusion according to Eastern philosophy?",
+      "tags": [
+        "branche:mind",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:identite"
+      ]
+    },
+    {
+      "id": 255,
+      "question": "Can reason prove its own reliability?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:rationalism",
+        "difficulte:avancee",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 256,
+      "question": "Is intuition a form of reason or its opposite?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 257,
+      "question": "Are emotions enemies or allies of reason?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 258,
+      "question": "Can reason alone motivate action?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:idealism",
+        "difficulte:avancee",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 259,
+      "question": "Is instrumental reason the only kind of practical reason?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:pragmatism",
+        "difficulte:avancee",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 260,
+      "question": "Does critical thinking have limits?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:analytic",
+        "difficulte:debutant",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 261,
+      "question": "Can two rational people reach opposite conclusions?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 262,
+      "question": "Is the distinction between reason and passion sustainable?",
+      "tags": [
+        "branche:mind",
+        "mouvement:empiricism",
+        "difficulte:intermediaire",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 263,
+      "question": "Does ideology corrupt reason?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 264,
+      "question": "Is perception directly of reality or only of appearances?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:empiricism",
+        "difficulte:intermediaire",
+        "theme:realite"
+      ]
+    },
+    {
+      "id": 265,
+      "question": "Does social reality exist independently of beliefs about it?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:realite"
+      ]
+    },
+    {
+      "id": 266,
+      "question": "Can fiction reveal truths about reality?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:realite"
+      ]
+    },
+    {
+      "id": 267,
+      "question": "Is virtual reality a lesser form of reality?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:realite"
+      ]
+    },
+    {
+      "id": 268,
+      "question": "Do mathematical objects exist in a realm separate from physical reality?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:rationalism",
+        "difficulte:avancee",
+        "theme:realite"
+      ]
+    },
+    {
+      "id": 269,
+      "question": "Is reality fundamentally material or mental?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:idealism",
+        "difficulte:avancee",
+        "theme:realite"
+      ]
+    },
+    {
+      "id": 270,
+      "question": "Can scientific models capture reality or only describe it?",
+      "tags": [
+        "branche:science",
+        "mouvement:pragmatism",
+        "difficulte:avancee",
+        "theme:realite"
+      ]
+    },
+    {
+      "id": 271,
+      "question": "Is power merely the ability to compel others?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:pouvoir"
+      ]
+    },
+    {
+      "id": 272,
+      "question": "Does knowledge confer power?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:pouvoir"
+      ]
+    },
+    {
+      "id": 273,
+      "question": "Is economic power more fundamental than political power?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:pouvoir"
+      ]
+    },
+    {
+      "id": 274,
+      "question": "Can power be exercised without domination?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:pouvoir"
+      ]
+    },
+    {
+      "id": 275,
+      "question": "Is the power over oneself the greatest power?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:pouvoir"
+      ]
+    },
+    {
+      "id": 276,
+      "question": "Do institutions have power independent of the individuals within them?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:marxism",
+        "difficulte:avancee",
+        "theme:pouvoir"
+      ]
+    },
+    {
+      "id": 277,
+      "question": "Is justice giving each person what they deserve?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:justice"
+      ]
+    },
+    {
+      "id": 278,
+      "question": "Can procedural justice guarantee substantive justice?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:justice"
+      ]
+    },
+    {
+      "id": 279,
+      "question": "Does justice require equality of outcomes or opportunities?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:justice"
+      ]
+    },
+    {
+      "id": 280,
+      "question": "Is restorative justice preferable to punitive justice?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:justice"
+      ]
+    },
+    {
+      "id": 281,
+      "question": "Can there be justice between generations?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:avancee",
+        "theme:justice"
+      ]
+    },
+    {
+      "id": 282,
+      "question": "Does global justice require global government?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:justice"
+      ]
+    },
+    {
+      "id": 283,
+      "question": "Is natural beauty more profound than artistic beauty?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:idealism",
+        "difficulte:intermediaire",
+        "theme:beaute"
+      ]
+    },
+    {
+      "id": 284,
+      "question": "Can mathematical proofs be beautiful?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:rationalism",
+        "difficulte:intermediaire",
+        "theme:beaute"
+      ]
+    },
+    {
+      "id": 285,
+      "question": "Is there beauty in simplicity?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:classical_eastern",
+        "difficulte:debutant",
+        "theme:beaute"
+      ]
+    },
+    {
+      "id": 286,
+      "question": "Does beauty serve a purpose or is it purposeless?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:idealism",
+        "difficulte:intermediaire",
+        "theme:beaute"
+      ]
+    },
+    {
+      "id": 287,
+      "question": "Can a morally repugnant work be aesthetically beautiful?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:beaute"
+      ]
+    },
+    {
+      "id": 288,
+      "question": "Is beauty in the harmony of parts or the impact of the whole?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:beaute"
+      ]
+    },
+    {
+      "id": 289,
+      "question": "Does everyday life contain hidden beauty?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:beaute"
+      ]
+    },
+    {
+      "id": 290,
+      "question": "Is creativity necessary for art or can art be algorithmic?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:art"
+      ]
+    },
+    {
+      "id": 291,
+      "question": "Can commercial art be genuine art?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:art"
+      ]
+    },
+    {
+      "id": 292,
+      "question": "Is all art ultimately self-expression?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:idealism",
+        "difficulte:intermediaire",
+        "theme:art"
+      ]
+    },
+    {
+      "id": 293,
+      "question": "Does authenticity matter in art or only the result?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:art"
+      ]
+    },
+    {
+      "id": 294,
+      "question": "Can art therapy heal what words cannot reach?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:art"
+      ]
+    },
+    {
+      "id": 295,
+      "question": "Is craft as valuable as fine art?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:art"
+      ]
+    },
+    {
+      "id": 296,
+      "question": "Does economic inequality necessarily undermine freedom?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:liberte"
+      ]
+    },
+    {
+      "id": 297,
+      "question": "Is freedom from constraints sufficient or do we need freedom to achieve goals?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:liberte"
+      ]
+    },
+    {
+      "id": 298,
+      "question": "Can a society be both free and equal?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:liberte"
+      ]
+    },
+    {
+      "id": 299,
+      "question": "Is freedom of thought possible without freedom of expression?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:rationalism",
+        "difficulte:intermediaire",
+        "theme:liberte"
+      ]
+    },
+    {
+      "id": 300,
+      "question": "Does consciousness require self-awareness?",
+      "tags": [
+        "branche:mind",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 301,
+      "question": "Can there be unconscious thoughts?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 302,
+      "question": "Is consciousness gradual or all-or-nothing?",
+      "tags": [
+        "branche:mind",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 303,
+      "question": "Can a claim be both true and unjust?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:verite"
+      ]
+    },
+    {
+      "id": 304,
+      "question": "Does religious experience provide evidence for transcendent reality?",
+      "tags": [
+        "branche:religion",
+        "mouvement:phenomenology",
+        "difficulte:avancee",
+        "theme:foi"
+      ]
+    },
+    {
+      "id": 305,
+      "question": "Can faith exist without doubt?",
+      "tags": [
+        "branche:religion",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:foi"
+      ]
+    },
+    {
+      "id": 306,
+      "question": "Is there a moral duty to believe the truth?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:verite"
+      ]
+    },
+    {
+      "id": 307,
+      "question": "Is our experience of time subjective or objective?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:temps"
+      ]
+    },
+    {
+      "id": 308,
+      "question": "Does aging necessarily bring wisdom?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:debutant",
+        "theme:temps"
+      ]
+    },
+    {
+      "id": 309,
+      "question": "Can we be morally responsible for our predecessors' actions?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:avancee",
+        "theme:justice"
+      ]
+    },
+    {
+      "id": 310,
+      "question": "Is hope rational when evidence suggests otherwise?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:foi"
+      ]
+    },
+    {
+      "id": 311,
+      "question": "Can analogy be a valid form of logical argument?",
+      "tags": [
+        "branche:logic",
+        "mouvement:medieval",
+        "difficulte:intermediaire",
+        "theme:raison"
+      ]
+    },
+    {
+      "id": 312,
+      "question": "Did medieval thinkers successfully reconcile faith and reason?",
+      "tags": [
+        "branche:religion",
+        "mouvement:medieval",
+        "difficulte:intermediaire",
+        "theme:foi"
+      ]
+    },
+    {
+      "id": 313,
+      "question": "Is divine command theory a coherent basis for ethics?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:medieval",
+        "difficulte:avancee",
+        "theme:morale"
+      ]
+    },
+    {
+      "id": 314,
+      "question": "Can the concept of natural law ground moral objectivity?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:medieval",
+        "difficulte:avancee",
+        "theme:nature"
+      ]
+    },
+    {
+      "id": 315,
+      "question": "Is the soul a coherent philosophical concept?",
+      "tags": [
+        "branche:mind",
+        "mouvement:medieval",
+        "difficulte:intermediaire",
+        "theme:existence"
+      ]
+    },
+    {
+      "id": 316,
+      "question": "Can sensory experience ever provide certainty?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:empiricism",
+        "difficulte:avancee",
+        "theme:connaissance"
+      ]
+    },
+    {
+      "id": 317,
+      "question": "Is all knowledge ultimately derived from experience?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:empiricism",
+        "difficulte:intermediaire",
+        "theme:connaissance"
+      ]
+    },
+    {
+      "id": 318,
+      "question": "Should we maximize aggregate happiness or individual well-being?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:bonheur"
+      ]
+    },
+    {
+      "id": 319,
+      "question": "Can the greatest good for the greatest number justify individual sacrifice?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:avancee",
+        "theme:justice"
+      ]
+    },
+    {
+      "id": 320,
+      "question": "Does the observer affect what is observed?",
+      "tags": [
+        "branche:science",
+        "mouvement:analytic",
+        "difficulte:avancee",
+        "theme:realite"
+      ]
+    },
+    {
+      "id": 321,
+      "question": "Is consensus a reliable guide to reality?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:realite"
+      ]
+    },
+    {
+      "id": 322,
+      "question": "Can reality be known independent of conceptual frameworks?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:idealism",
+        "difficulte:avancee",
+        "theme:realite"
+      ]
+    },
+    {
+      "id": 323,
+      "question": "Does soft power differ morally from hard power?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:pouvoir"
+      ]
+    },
+    {
+      "id": 324,
+      "question": "Is the balance of power essential to international justice?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:rationalism",
+        "difficulte:avancee",
+        "theme:pouvoir"
+      ]
+    },
+    {
+      "id": 325,
+      "question": "Can minimalism in art achieve maximal beauty?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:beaute"
+      ]
+    },
+    {
+      "id": 326,
+      "question": "Is there beauty in decay and impermanence?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:beaute"
+      ]
+    },
+    {
+      "id": 327,
+      "question": "Does digital art possess the same value as physical art?",
+      "tags": [
+        "branche:aesthetics",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:art"
+      ]
+    },
+    {
+      "id": 328,
+      "question": "Is the concept of free will compatible with divine foreknowledge?",
+      "tags": [
+        "branche:religion",
+        "mouvement:medieval",
+        "difficulte:avancee",
+        "theme:liberte"
       ]
     }
   ],

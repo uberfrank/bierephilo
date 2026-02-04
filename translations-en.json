@@ -11,6 +11,8 @@
     "randomModeDesc": "All questions shuffled randomly",
     "byTopicMode": "By Topic",
     "byTopicModeDesc": "Select a specific topic to focus on",
+    "monthlyThemeMode": "Monthly Theme",
+    "monthlyThemeDesc": "Consciousness & Unconsciousness",
     "customMode": "Custom",
     "customModeDesc": "Mix and match tags with custom counts",
     "questionCountTitle": "How Many Questions?",

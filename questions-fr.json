@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Questions philosophiques",
     "version": "4.0",
-    "total_questions": 328,
+    "total_questions": 344,
     "langues_disponibles": [
       "fr"
     ]
@@ -3286,6 +3286,166 @@
         "mouvement:medieval",
         "difficulte:avancee",
         "theme:liberte"
+      ]
+    },
+    {
+      "id": 329,
+      "question": "Sommes-nous les mieux placés pour savoir qui nous sommes ?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 330,
+      "question": "Nos rêves ont-ils toujours un sens, ou sont-ils juste du « bruit » ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 331,
+      "question": "Pourquoi nous arrive-t-il de faire le contraire de ce que nous voulons ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 332,
+      "question": "Peut-on se libérer de son passé ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 333,
+      "question": "Les lapsus révèlent-ils ce qu'on pense réellement ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 334,
+      "question": "Sommes-nous condamnés à sortir toujours avec le même genre de personne à cause de notre inconscient ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 335,
+      "question": "Est-on plus vrai quand on a un peu trop bu ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 336,
+      "question": "Est-ce que nous contrôlons nos choix autant qu'on le croit ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 337,
+      "question": "As-tu déjà été surpris par ta propre réaction ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 338,
+      "question": "Faut-il toujours faire confiance à son intuition ?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 339,
+      "question": "Est-ce qu'on se ment parfois à soi-même sans le savoir ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 340,
+      "question": "Pourquoi certaines personnes nous irritent sans raison claire ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 341,
+      "question": "Peut-on vouloir deux choses contradictoires en même temps ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 342,
+      "question": "Est-ce que nos actions disent plus sur nous que nos intentions ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 343,
+      "question": "Nos choix sont-ils libres si une partie de nous échappe à notre contrôle ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 344,
+      "question": "Est-il préférable d'explorer son inconscient ou de le laisser tranquille ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:conscience"
       ]
     }
   ],

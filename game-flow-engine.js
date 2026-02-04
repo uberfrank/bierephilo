@@ -12,6 +12,12 @@ function initializeGame() {
 
 // ==================== MODE SELECTION ====================
 
+// Monthly theme configuration
+const MONTHLY_THEME = {
+    tag: 'theme:conscience',
+    translationKey: 'game.monthlyThemeDesc'
+};
+
 // Setup game mode selection
 function setupModeSelection() {
     const gameModeButtons = document.querySelectorAll('.game-mode-btn');
@@ -30,11 +36,21 @@ function setupModeSelection() {
                 }
             }
 
-            const modeName = mode === 'random' ? getTranslation('game.randomMode') : mode === 'by-topic' ? getTranslation('game.byTopicMode') : getTranslation('game.customMode');
+            const modeNames = {
+                'random': getTranslation('game.randomMode'),
+                'by-topic': getTranslation('game.byTopicMode'),
+                'custom': getTranslation('game.customMode'),
+                'monthly-theme': getTranslation('game.monthlyThemeMode')
+            };
+            const modeName = modeNames[mode] || mode;
             showToast(`${modeName} ${getTranslation('messages.modeSelected')}`);
 
-            // By-topic mode skips question count - uses all questions from topic
-            if (mode === 'by-topic') {
+            // Monthly theme starts immediately with all questions from the theme
+            if (mode === 'monthly-theme') {
+                setQuestionCount('all');
+                startGameplay();
+            } else if (mode === 'by-topic') {
+                // By-topic mode skips question count - uses all questions from topic
                 setQuestionCount('all');
                 switchGameScreen('topicCategoryScreen');
             } else {

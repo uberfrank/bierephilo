@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Philosophical Questions",
     "version": "4.0",
-    "total_questions": 328,
+    "total_questions": 344,
     "langues_disponibles": [
       "en"
     ]
@@ -3286,6 +3286,166 @@
         "mouvement:medieval",
         "difficulte:avancee",
         "theme:liberte"
+      ]
+    },
+    {
+      "id": 329,
+      "question": "Are we the best placed to know who we are?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 330,
+      "question": "Do our dreams always have meaning, or are they just noise?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 331,
+      "question": "Why do we sometimes do the opposite of what we want?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 332,
+      "question": "Can we free ourselves from our past?",
+      "tags": [
+        "branche:mind",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 333,
+      "question": "Do slips of the tongue reveal what we really think?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 334,
+      "question": "Are we doomed to always date the same type of person because of our unconscious?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 335,
+      "question": "Are we more authentic when we've had a bit too much to drink?",
+      "tags": [
+        "branche:mind",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 336,
+      "question": "Do we control our choices as much as we think?",
+      "tags": [
+        "branche:mind",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 337,
+      "question": "Have you ever been surprised by your own reaction?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 338,
+      "question": "Should we always trust our intuition?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 339,
+      "question": "Do we sometimes lie to ourselves without knowing it?",
+      "tags": [
+        "branche:mind",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 340,
+      "question": "Why do some people irritate us for no clear reason?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 341,
+      "question": "Can we want two contradictory things at the same time?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 342,
+      "question": "Do our actions say more about us than our intentions?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 343,
+      "question": "Are our choices free if part of us is beyond our control?",
+      "tags": [
+        "branche:mind",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:conscience"
+      ]
+    },
+    {
+      "id": 344,
+      "question": "Is it better to explore one's unconscious or leave it alone?",
+      "tags": [
+        "branche:mind",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:conscience"
       ]
     }
   ],

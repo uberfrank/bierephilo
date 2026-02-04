@@ -11,6 +11,8 @@
     "randomModeDesc": "Toutes les questions mélangées aléatoirement",
     "byTopicMode": "Par sujet",
     "byTopicModeDesc": "Sélectionnez un sujet spécifique",
+    "monthlyThemeMode": "Sujet du mois",
+    "monthlyThemeDesc": "Conscience et inconscience",
     "customMode": "Personnalisé",
     "customModeDesc": "Mélangez et associez les étiquettes avec des comptes personnalisés",
     "questionCountTitle": "Combien de questions ?",

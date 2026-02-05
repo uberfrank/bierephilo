@@ -936,6 +936,16 @@ body {
     margin: 0;
 }
 
+.game-mode-btn.monthly-theme-btn {
+    border-color: var(--primary-color);
+    background: rgba(33, 150, 243, 0.05);
+}
+
+.game-mode-btn.monthly-theme-btn p {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
 .question-count-options {
     display: grid;
     grid-template-columns: 1fr;

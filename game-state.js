@@ -6,7 +6,7 @@
 
 // Game state object
 let gameState = {
-    mode: null,              // 'random', 'by-topic', 'custom'
+    mode: null,              // 'random', 'by-topic', 'custom', 'monthly-theme'
     questionCount: 'all',    // 'all' or number
     selectedTags: [],        // Array of selected tag strings
     customTagCounts: {},     // For custom mode: { tag: count }
@@ -145,6 +145,11 @@ function buildQuestionPool(questionsData) {
     if (gameState.mode === 'random') {
         // Fully random - all questions
         pool = [...questionsData.questions];
+    } else if (gameState.mode === 'monthly-theme') {
+        // Monthly theme - questions matching the current monthly theme tag
+        pool = questionsData.questions.filter(q =>
+            q.tags.includes(MONTHLY_THEME.tag)
+        );
     } else if (gameState.mode === 'by-topic') {
         // By topic - questions matching the selected topic
         if (gameState.selectedTopic) {
@@ -244,7 +249,7 @@ function hasSelectedTags() {
 
 // Check if game can start
 function canStartGame() {
-    if (gameState.mode === 'random') {
+    if (gameState.mode === 'random' || gameState.mode === 'monthly-theme') {
         return true;
     }
     if (gameState.mode === 'by-topic') {

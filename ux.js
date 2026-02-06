@@ -5,7 +5,7 @@
 // ==================== MULTILINGUAL SUPPORT ====================
 
 // Global language state
-let currentLanguage = 'en';
+let currentLanguage = 'fr';
 let translations = {};
 
 // Load translations
@@ -423,7 +423,7 @@ function initializeLanguageToggle() {
 
 async function initializeUX() {
     // Load saved language preference or default to 'en'
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'fr';
     currentLanguage = savedLanguage;
 
     // Load translations

@@ -1,7 +1,8 @@
 {
-  "name": "Bierephilo - Philosophical Questions",
-  "short_name": "Bierephilo",
-  "description": "Where beer meets philosophy - 168 thought-provoking philosophical questions across 12 categories in French and English",
+  "name": "Bières & philosophie",
+  "short_name": "Bières & philo",
+  "description": "Où la bière rencontre la philosophie - des questions philosophiques pour animer vos soirées",
+  "lang": "fr",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

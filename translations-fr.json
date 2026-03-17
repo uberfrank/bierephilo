@@ -12,7 +12,7 @@
     "byTopicMode": "Par sujet",
     "byTopicModeDesc": "Sélectionnez un sujet spécifique",
     "monthlyThemeMode": "Sujet du mois",
-    "monthlyThemeDesc": "Conscience et inconscience",
+    "monthlyThemeDesc": "Quand la sagesse danse avec le bonheur",
     "customMode": "Personnalisé",
     "customModeDesc": "Mélangez et associez les étiquettes avec des comptes personnalisés",
     "questionCountTitle": "Combien de questions ?",
@@ -102,7 +102,8 @@
     "raison": "Raison",
     "foi": "Foi",
     "nature": "Nature",
-    "sens": "Sens"
+    "sens": "Sens",
+    "sagesse_bonheur": "Sagesse & Bonheur"
   },
   "questionsSection": {
     "title": "Questions philosophiques",

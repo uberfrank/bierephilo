@@ -12,7 +12,7 @@
     "byTopicMode": "By Topic",
     "byTopicModeDesc": "Select a specific topic to focus on",
     "monthlyThemeMode": "Monthly Theme",
-    "monthlyThemeDesc": "Consciousness & Unconsciousness",
+    "monthlyThemeDesc": "When Wisdom Dances with Happiness",
     "customMode": "Custom",
     "customModeDesc": "Mix and match tags with custom counts",
     "questionCountTitle": "How Many Questions?",
@@ -102,7 +102,8 @@
     "raison": "Reason",
     "foi": "Faith",
     "nature": "Nature",
-    "sens": "Meaning"
+    "sens": "Meaning",
+    "sagesse_bonheur": "Wisdom & Happiness"
   },
   "questionsSection": {
     "title": "Philosophical Questions",

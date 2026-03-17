@@ -14,7 +14,7 @@ function initializeGame() {
 
 // Monthly theme configuration
 const MONTHLY_THEME = {
-    tag: 'theme:conscience',
+    tag: 'theme:sagesse_bonheur',
     translationKey: 'game.monthlyThemeDesc'
 };
 

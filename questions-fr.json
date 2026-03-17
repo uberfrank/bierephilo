@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Questions philosophiques",
     "version": "4.0",
-    "total_questions": 344,
+    "total_questions": 353,
     "langues_disponibles": [
       "fr"
     ]
@@ -3431,6 +3431,96 @@
         "mouvement:critical_poststructural",
         "difficulte:intermediaire",
         "theme:conscience"
+      ]
+    },
+    {
+      "id": 345,
+      "question": "Pouvez-vous vous rappeler un moment où tout allait de travers autour de vous — un projet qui s'effondre, un transport annulé ou un imprévu total — mais où, contre toute attente, vous avez réussi à rester calme ? Que s'est-il passé dans votre tête à ce moment précis ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 346,
+      "question": "Quel a été le moment le plus frustrant de votre mois dernier où vous vous êtes acharné sur quelque chose que vous ne pouviez absolument pas changer ? Racontez-nous cette bataille contre les moulins à vent.",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 347,
+      "question": "Est-ce qu'il vous est déjà arrivé de devoir prendre une décision très impopulaire ou coûteuse pour vous, simplement parce que vous sentiez que c'était « la chose juste » à faire ? Quel a été le déclic et comment cela s'est-il terminé ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 348,
+      "question": "On a tous un souvenir d'une situation où on n'a pas agi selon nos valeurs par peur ou par facilité. Pourriez-vous nous raconter cet événement et ce que vous avez ressenti après coup ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 349,
+      "question": "Pouvez-vous nous parler d'un événement qui vous a semblé être une catastrophe sur le coup, mais qui, avec le recul, a été le point de départ de quelque chose de positif ? Que s'est-il passé entre le moment du « drame » et celui de la réalisation ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:debutant",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 350,
+      "question": "Vous est-il déjà arrivé d'être absolument furieux contre quelqu'un, pour découvrir ensuite un détail qui a radicalement changé votre vision de la situation ? Racontez-nous ce moment de bascule où votre colère s'est envolée.",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:debutant",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 351,
+      "question": "Quel a été le moment le plus embarrassant ou le plus difficile de votre semaine ? Avec le recul, quelle est la part de « l'événement lui-même » et quelle est la part du « jugement » que vous avez porté dessus ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 352,
+      "question": "Est-ce qu'il y a eu un moment dans votre vie où vous avez eu le sentiment d'être « totalement là », sans aucune pensée pour hier ou demain ? Qu'est-ce qui, dans cet événement, vous a ancré dans le présent ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 353,
+      "question": "Pouvez-vous nous raconter une heure précise de votre semaine où vous avez eu l'impression que le temps s'arrêtait ? Que se passait-il autour de vous ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:sagesse_bonheur"
       ]
     }
   ],

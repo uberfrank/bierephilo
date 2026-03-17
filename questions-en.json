@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Philosophical Questions",
     "version": "4.0",
-    "total_questions": 344,
+    "total_questions": 353,
     "langues_disponibles": [
       "en"
     ]
@@ -3431,6 +3431,96 @@
         "mouvement:critical_poststructural",
         "difficulte:intermediaire",
         "theme:conscience"
+      ]
+    },
+    {
+      "id": 345,
+      "question": "Can you recall a moment when everything was going wrong around you — a project falling apart, a cancelled ride, or a total surprise — but against all odds, you managed to stay calm? What was going through your mind at that exact moment?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 346,
+      "question": "What was the most frustrating moment last month when you stubbornly fought against something you absolutely could not change? Tell us about this battle against windmills.",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 347,
+      "question": "Have you ever had to make a very unpopular or costly decision simply because you felt it was 'the right thing' to do? What was the turning point and how did it end?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 348,
+      "question": "We all have a memory of a situation where we didn't act according to our values out of fear or convenience. Could you tell us about that event and how you felt afterwards?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 349,
+      "question": "Can you tell us about an event that felt like a catastrophe at the time, but in hindsight turned out to be the starting point of something positive? What happened between the moment of 'drama' and the moment of realization?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:debutant",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 350,
+      "question": "Have you ever been absolutely furious at someone, only to later discover a detail that radically changed your view of the situation? Tell us about that tipping point when your anger vanished.",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:debutant",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 351,
+      "question": "What was the most embarrassing or difficult moment of your week? In retrospect, how much was 'the event itself' and how much was 'the judgment' you placed on it?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:ancient_greek",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 352,
+      "question": "Has there been a moment in your life where you felt 'completely present', without any thought of yesterday or tomorrow? What about that event anchored you in the present?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 353,
+      "question": "Can you tell us about a specific hour of your week when you felt like time had stopped? What was happening around you?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:sagesse_bonheur"
       ]
     }
   ],

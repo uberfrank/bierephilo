@@ -12,7 +12,7 @@
     "byTopicMode": "Par sujet",
     "byTopicModeDesc": "Sélectionnez un sujet spécifique",
     "monthlyThemeMode": "Sujet du mois",
-    "monthlyThemeDesc": "Quand la sagesse danse avec le bonheur",
+    "monthlyThemeDesc": "Boudhisme & Vipassana",
     "customMode": "Personnalisé",
     "customModeDesc": "Mélangez et associez les étiquettes avec des comptes personnalisés",
     "questionCountTitle": "Combien de questions ?",
@@ -103,7 +103,8 @@
     "foi": "Foi",
     "nature": "Nature",
     "sens": "Sens",
-    "sagesse_bonheur": "Sagesse & Bonheur"
+    "sagesse_bonheur": "Sagesse & Bonheur",
+    "boudhisme_vipassana": "Boudhisme & Vipassana"
   },
   "questionsSection": {
     "title": "Questions philosophiques",

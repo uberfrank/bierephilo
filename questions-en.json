@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Philosophical Questions",
     "version": "4.0",
-    "total_questions": 353,
+    "total_questions": 373,
     "langues_disponibles": [
       "en"
     ]
@@ -3521,6 +3521,206 @@
         "mouvement:phenomenology",
         "difficulte:debutant",
         "theme:sagesse_bonheur"
+      ]
+    },
+    {
+      "id": 354,
+      "question": "Do you remember a moment when you noticed something — a sensation, an emotion, a thought — that you wouldn't normally have noticed? What happened?",
+      "tags": [
+        "branche:mind",
+        "mouvement:classical_eastern",
+        "difficulte:debutant",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 355,
+      "question": "Have you ever had an experience — even a brief one — where you felt deeply at peace, or completely present? What was going on at that moment?",
+      "tags": [
+        "branche:mind",
+        "mouvement:classical_eastern",
+        "difficulte:debutant",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 356,
+      "question": "Can you recall a moment when you would have normally reacted impulsively, but didn't? What happened inside?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 357,
+      "question": "Has there been a moment in your life when you suddenly saw a familiar situation in a completely different light? What had changed?",
+      "tags": [
+        "branche:mind",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 358,
+      "question": "Have you ever experienced a moment when doing the right thing was clear, but difficult? What happened?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 359,
+      "question": "Can you recall a moment when something someone told you — or that you read, saw, or lived through — struck you as an obvious truth you had never been able to put into words? What was it?",
+      "tags": [
+        "branche:epistemology",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 360,
+      "question": "Can you think of a moment when something you believed to be permanent — a relationship, a certainty, an identity — turned out to be fragile or temporary? How did you experience that?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 361,
+      "question": "Has there been a moment when the loss of something opened you up to something else? What happened?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:debutant",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 362,
+      "question": "Do you remember a difficult period that eventually taught you something important? What allowed you to get through it?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:debutant",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 363,
+      "question": "Has your body ever taught you something your mind hadn't yet understood? What happened?",
+      "tags": [
+        "branche:mind",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 364,
+      "question": "Have you ever experienced a moment of silence — chosen or imposed — that surprised you by what it contained? What did you find there?",
+      "tags": [
+        "branche:mind",
+        "mouvement:classical_eastern",
+        "difficulte:debutant",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 365,
+      "question": "Do you remember a moment when you kept doing something — a practice, an effort, a commitment — without knowing if it was worth it? What kept you going?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 366,
+      "question": "Has there been a moment when repeating something over and over — a gesture, a habit, a ritual — revealed something to you that you wouldn't have seen otherwise?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 367,
+      "question": "Have you ever felt that time was stretching or contracting — that a few minutes lasted an eternity, or that an hour passed in an instant? In what context?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 368,
+      "question": "Has there been a moment when you realized you had been telling yourself a false story about yourself or about a situation? What allowed you to see things differently?",
+      "tags": [
+        "branche:mind",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 369,
+      "question": "Can you recall a moment when you felt compassion for someone — or for yourself — in an unexpected way? What happened?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:debutant",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 370,
+      "question": "Do you remember a moment when you felt deeply aligned with your values — even if it cost you something? How did you experience that afterward?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 371,
+      "question": "Have you ever gone through something difficult whose meaning only became clear later — sometimes much later? What allowed you to make that connection?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 372,
+      "question": "Has there been a moment of solitude — physical or inner — that taught you something about yourself that the company of others would have hidden from you?",
+      "tags": [
+        "branche:mind",
+        "mouvement:classical_eastern",
+        "difficulte:intermediaire",
+        "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 373,
+      "question": "If you had to choose one experience in your life that taught you the most about the nature of the mind — or about what it means to be human — which would you choose? What happened?",
+      "tags": [
+        "branche:mind",
+        "mouvement:classical_eastern",
+        "difficulte:avancee",
+        "theme:boudhisme_vipassana"
       ]
     }
   ],

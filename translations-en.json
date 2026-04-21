@@ -12,7 +12,7 @@
     "byTopicMode": "By Topic",
     "byTopicModeDesc": "Select a specific topic to focus on",
     "monthlyThemeMode": "Monthly Theme",
-    "monthlyThemeDesc": "When Wisdom Dances with Happiness",
+    "monthlyThemeDesc": "Buddhism & Vipassana",
     "customMode": "Custom",
     "customModeDesc": "Mix and match tags with custom counts",
     "questionCountTitle": "How Many Questions?",
@@ -103,7 +103,8 @@
     "foi": "Faith",
     "nature": "Nature",
     "sens": "Meaning",
-    "sagesse_bonheur": "Wisdom & Happiness"
+    "sagesse_bonheur": "Wisdom & Happiness",
+    "boudhisme_vipassana": "Buddhism & Vipassana"
   },
   "questionsSection": {
     "title": "Philosophical Questions",

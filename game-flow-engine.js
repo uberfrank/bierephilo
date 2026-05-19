@@ -14,7 +14,7 @@ function initializeGame() {
 
 // Monthly theme configuration
 const MONTHLY_THEME = {
-    tag: 'theme:boudhisme_vipassana',
+    tag: 'theme:relations_modernes',
     translationKey: 'game.monthlyThemeDesc'
 };
 

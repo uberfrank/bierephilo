@@ -12,7 +12,7 @@
     "byTopicMode": "Par sujet",
     "byTopicModeDesc": "Sélectionnez un sujet spécifique",
     "monthlyThemeMode": "Sujet du mois",
-    "monthlyThemeDesc": "Boudhisme & Vipassana",
+    "monthlyThemeDesc": "Relations modernes",
     "customMode": "Personnalisé",
     "customModeDesc": "Mélangez et associez les étiquettes avec des comptes personnalisés",
     "questionCountTitle": "Combien de questions ?",
@@ -104,7 +104,8 @@
     "nature": "Nature",
     "sens": "Sens",
     "sagesse_bonheur": "Sagesse & Bonheur",
-    "boudhisme_vipassana": "Boudhisme & Vipassana"
+    "boudhisme_vipassana": "Boudhisme & Vipassana",
+    "relations_modernes": "Relations modernes"
   },
   "questionsSection": {
     "title": "Questions philosophiques",

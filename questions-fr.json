@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Questions philosophiques",
     "version": "4.0",
-    "total_questions": 373,
+    "total_questions": 388,
     "langues_disponibles": [
       "fr"
     ]
@@ -3721,6 +3721,156 @@
         "mouvement:classical_eastern",
         "difficulte:avancee",
         "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 374,
+      "question": "Raconte un moment récent avec quelqu'un où tu étais joignable sans être atteignable, physiquement là, mais ailleurs intérieurement. Qu'est-ce qui t'a empêché·e d'être vraiment avec cette personne ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 375,
+      "question": "Décris un moment où quelqu'un a été véritablement atteignable pour toi. Qu'est-ce qui, concrètement, t'a fait sentir ça (un geste, un silence, une qualité d'attention, etc.) ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 376,
+      "question": "Avec qui, dans ta vie, te sens-tu le plus souvent atteignable ? Et qu'est-ce que cette personne fait qui rend ça possible ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 377,
+      "question": "Le silence accueillant, celui qui laisse l'autre aller jusqu'au bout de ce qu'il a à dire, est plus rare. Qu'est-ce qui te pousse, toi, à combler les silences des autres avec des conseils, des anecdotes sur ta vie, etc. ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 378,
+      "question": "Pense à une relation dans laquelle tu te sens bien, qui n'implique pas de calcul, de stratégie. Qu'est-ce qu'elle nourrit chez toi qu'aucune nouvelle rencontre ne pourrait remplacer ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 379,
+      "question": "Rosa parle de la « logique de l'option » appliquée aux relations : toujours pouvoir changer, partir, trouver mieux ailleurs. Dans quelles relations ressens-tu cette tension entre rester et explorer ailleurs ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 380,
+      "question": "Une relation comme terreau plutôt qu'investissement, qu'est-ce que ça change concrètement dans la manière de l'entretenir au quotidien ? Donne un exemple vécu.",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 381,
+      "question": "Souvent on demande « ça va ? » sans vraiment vouloir savoir, et on répond « ça va » sans vraiment dire. Qu'est-ce qui te ferait sortir de cet automatisme dans tes propres conversations ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 382,
+      "question": "Avec qui, dans ta vie, peux-tu raconter plutôt que résumer ce qui t'arrive ? Qu'est-ce que cette personne fait qui rend le récit possible ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 383,
+      "question": "Décris un moment partagé récemment où vous avez cherché avec les mots ensemble, sans savoir d'avance où ça menait. Et qu'est-ce qui menace ce type de moments dans tes relations actuelles ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 384,
+      "question": "À quel moment précis sens-tu qu'une relation bascule du côté de quelque chose qu'on utilise ou qu'on optimise ? Quels sont les signes, pour toi ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 385,
+      "question": "As-tu déjà été consommé·e par quelqu'un, utilisé·e comme audience, comme soutien, comme distraction ? Et à l'inverse : as-tu déjà réalisé que tu consommais une relation ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 386,
+      "question": "Les amitiés « utiles », les contacts professionnels, les liens de circonstance : à quel moment peuvent-ils devenir résonnants, et à quel moment restent-ils dans la consommation ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 387,
+      "question": "Les messageries, les réseaux sociaux, les applis de rencontre transforment notre manière d'être en lien. Dans tes propres relations, où vois-tu la frontière entre ce qui nourrit la résonance et ce qui glisse vers la consommation ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 388,
+      "question": "Si tu devais identifier une seule pratique à protéger ou à instaurer pour rester atteignable à ceux qui comptent pour toi, laquelle serait-ce, et quelles seraient les conditions pour la cultiver ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:relations_modernes"
       ]
     }
   ],

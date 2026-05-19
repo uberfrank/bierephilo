@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Philosophical Questions",
     "version": "4.0",
-    "total_questions": 373,
+    "total_questions": 388,
     "langues_disponibles": [
       "en"
     ]
@@ -3721,6 +3721,156 @@
         "mouvement:classical_eastern",
         "difficulte:avancee",
         "theme:boudhisme_vipassana"
+      ]
+    },
+    {
+      "id": 374,
+      "question": "Tell me about a recent moment with someone when you were reachable but not truly available — physically there, but elsewhere inside. What kept you from really being with that person?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 375,
+      "question": "Describe a moment when someone was truly available to you. What, concretely, made you feel that (a gesture, a silence, a quality of attention, etc.)?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 376,
+      "question": "With whom in your life do you most often feel available? And what does that person do that makes it possible?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 377,
+      "question": "The welcoming silence — the one that lets the other person go all the way to the end of what they have to say — is rarer. What pushes you to fill others' silences with advice, anecdotes about your own life, and so on?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 378,
+      "question": "Think of a relationship in which you feel good, one that involves no calculation or strategy. What does it nourish in you that no new encounter could ever replace?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 379,
+      "question": "Rosa speaks of the \"logic of the option\" applied to relationships: always being able to change, to leave, to find something better elsewhere. In which relationships do you feel this tension between staying and exploring elsewhere?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 380,
+      "question": "A relationship as soil rather than investment — what does that concretely change in the way you tend to it day to day? Give an example from your own life.",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 381,
+      "question": "We often ask \"how are you?\" without really wanting to know, and answer \"fine\" without really saying anything. What would help you break out of this automatism in your own conversations?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 382,
+      "question": "With whom in your life can you tell the story rather than summarize what's happening to you? What does that person do that makes the storytelling possible?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:debutant",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 383,
+      "question": "Describe a moment shared recently where you searched for words together, without knowing in advance where it would lead. And what threatens this kind of moment in your current relationships?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 384,
+      "question": "At what precise moment do you sense a relationship tipping toward something you use or optimize? What are the signs, for you?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:intermediaire",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 385,
+      "question": "Have you ever been consumed by someone — used as an audience, as support, as distraction? And conversely: have you ever realized that you were consuming a relationship?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 386,
+      "question": "\"Useful\" friendships, professional contacts, ties of circumstance: at what point can they become resonant, and at what point do they remain mere consumption?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 387,
+      "question": "Messaging apps, social networks, and dating apps transform the way we connect. In your own relationships, where do you see the line between what nourishes resonance and what slips into consumption?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 388,
+      "question": "If you had to identify a single practice to protect or establish in order to stay available to those who matter to you, which would it be, and what would be the conditions for cultivating it?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:relations_modernes"
       ]
     }
   ],

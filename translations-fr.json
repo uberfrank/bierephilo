@@ -12,7 +12,7 @@
     "byTopicMode": "Par sujet",
     "byTopicModeDesc": "Sélectionnez un sujet spécifique",
     "monthlyThemeMode": "Sujet du mois",
-    "monthlyThemeDesc": "Relations modernes",
+    "monthlyThemeDesc": "Psychologie de l'enfant intérieur",
     "customMode": "Personnalisé",
     "customModeDesc": "Mélangez et associez les étiquettes avec des comptes personnalisés",
     "questionCountTitle": "Combien de questions ?",
@@ -105,7 +105,8 @@
     "sens": "Sens",
     "sagesse_bonheur": "Sagesse & Bonheur",
     "boudhisme_vipassana": "Boudhisme & Vipassana",
-    "relations_modernes": "Relations modernes"
+    "relations_modernes": "Relations modernes",
+    "enfant_interieur": "Psychologie de l'enfant intérieur"
   },
   "questionsSection": {
     "title": "Questions philosophiques",

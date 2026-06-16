@@ -14,7 +14,7 @@ function initializeGame() {
 
 // Monthly theme configuration
 const MONTHLY_THEME = {
-    tag: 'theme:relations_modernes',
+    tag: 'theme:enfant_interieur',
     translationKey: 'game.monthlyThemeDesc'
 };
 

@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Questions philosophiques",
     "version": "4.0",
-    "total_questions": 388,
+    "total_questions": 398,
     "langues_disponibles": [
       "fr"
     ]
@@ -3871,6 +3871,106 @@
         "mouvement:critical_poststructural",
         "difficulte:avancee",
         "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 389,
+      "question": "Avez-vous un souvenir du passé qui, selon vous, a orienté le cours de votre vie ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 390,
+      "question": "Y a-t-il des situations actuelles qui vous renvoient à des souvenirs d'enfance ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 391,
+      "question": "Certains de vos choix de vie, de vos goûts ou de vos talents ont-ils un lien direct avec votre enfance ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 392,
+      "question": "Y a-t-il un moment de votre passé où vous vous êtes senti (ou sentie, selon le destinataire) extrêmement libre ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 393,
+      "question": "Existe-t-il une façon d'accueillir avec compassion les émotions refoulées de votre enfance ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:avancee",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 394,
+      "question": "Que pensez-vous de l'art du kintsugi ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 395,
+      "question": "Avez-vous le sentiment qu'on vous a imposé une manière d'être et de vivre durant votre enfance ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 396,
+      "question": "Y a-t-il des souvenirs plus difficiles qui vous ont forgé ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 397,
+      "question": "Écrivez-vous dans un journal intime ? Des souvenirs ou des sentiments comme la colère et la tristesse y refont-ils surface ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 398,
+      "question": "Qu'est-ce qui vous apporte de grandes joies aujourd'hui ? Pouvez-vous faire des liens avec des moments de votre enfance ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:enfant_interieur"
       ]
     }
   ],

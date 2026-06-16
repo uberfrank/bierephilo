@@ -12,7 +12,7 @@
     "byTopicMode": "By Topic",
     "byTopicModeDesc": "Select a specific topic to focus on",
     "monthlyThemeMode": "Monthly Theme",
-    "monthlyThemeDesc": "Modern Relationships",
+    "monthlyThemeDesc": "Inner Child Psychology",
     "customMode": "Custom",
     "customModeDesc": "Mix and match tags with custom counts",
     "questionCountTitle": "How Many Questions?",
@@ -105,7 +105,8 @@
     "sens": "Meaning",
     "sagesse_bonheur": "Wisdom & Happiness",
     "boudhisme_vipassana": "Buddhism & Vipassana",
-    "relations_modernes": "Modern Relationships"
+    "relations_modernes": "Modern Relationships",
+    "enfant_interieur": "Inner Child Psychology"
   },
   "questionsSection": {
     "title": "Philosophical Questions",

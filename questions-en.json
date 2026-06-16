@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Philosophical Questions",
     "version": "4.0",
-    "total_questions": 388,
+    "total_questions": 398,
     "langues_disponibles": [
       "en"
     ]
@@ -3871,6 +3871,106 @@
         "mouvement:critical_poststructural",
         "difficulte:avancee",
         "theme:relations_modernes"
+      ]
+    },
+    {
+      "id": 389,
+      "question": "Do you have a memory from the past that, in your view, shaped the course of your life?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 390,
+      "question": "Are there present-day situations that bring you back to childhood memories?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 391,
+      "question": "Are some of your life choices, tastes, or talents directly linked to your childhood?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 392,
+      "question": "Is there a moment in your past when you felt extremely free?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 393,
+      "question": "Is there a way to compassionately welcome the repressed emotions of your childhood?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:avancee",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 394,
+      "question": "What do you think of the art of kintsugi?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 395,
+      "question": "Do you feel that a way of being and living was imposed on you during your childhood?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 396,
+      "question": "Are there more difficult memories that have shaped you?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 397,
+      "question": "Do you keep a personal journal? Do memories or feelings such as anger and sadness resurface there?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 398,
+      "question": "What brings you great joy today? Can you draw connections to moments from your childhood?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:debutant",
+        "theme:enfant_interieur"
       ]
     }
   ],

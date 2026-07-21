@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Philosophical Questions",
     "version": "4.0",
-    "total_questions": 398,
+    "total_questions": 419,
     "langues_disponibles": [
       "en"
     ]
@@ -3971,6 +3971,216 @@
         "mouvement:phenomenology",
         "difficulte:debutant",
         "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 399,
+      "question": "To what extent does money begin to possess us?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 400,
+      "question": "What is priceless to you?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 401,
+      "question": "Which work brings the most value to society?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 402,
+      "question": "Is the fear of losing everything real?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 403,
+      "question": "What luxury do you consider excessive?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 404,
+      "question": "An economic system built on infinite growth when we hold limited resources — where does that break down for you?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:marxism",
+        "difficulte:avancee",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 405,
+      "question": "What financial behaviors do you excuse in others but not in yourself, or vice versa?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 406,
+      "question": "Why save when the future is never guaranteed?",
+      "tags": [
+        "branche:action",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 407,
+      "question": "How do you reason about the role of luck in financial success?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 408,
+      "question": "Does the philanthropy of the ultra-rich change your perception of them?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 409,
+      "question": "Are you comfortable giving or receiving money as a gift?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 410,
+      "question": "Do you give more easily to a loved one or to a stranger?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 411,
+      "question": "Do you talk about money within your family, and why?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 412,
+      "question": "Do you place more value on your time or on your money?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 413,
+      "question": "Does your money affect your self-esteem?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 414,
+      "question": "Do you believe that, despite their inefficiencies, taxes provide a good quality of life?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 415,
+      "question": "Some debts free us and burden us at the same time. How do you navigate that contradiction?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:avancee",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 416,
+      "question": "Money is a collective fiction, and yet its existence governs almost everything. How could we free ourselves from this paradox?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 417,
+      "question": "What shocks you about money?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 418,
+      "question": "Where do you find pleasure in saving money?",
+      "tags": [
+        "branche:action",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 419,
+      "question": "What's the story behind a crazy purchase you've made?",
+      "tags": [
+        "branche:action",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:argent"
       ]
     }
   ],

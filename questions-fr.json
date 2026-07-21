@@ -2,7 +2,7 @@
   "metadata": {
     "titre": "Questions philosophiques",
     "version": "4.0",
-    "total_questions": 398,
+    "total_questions": 419,
     "langues_disponibles": [
       "fr"
     ]
@@ -3971,6 +3971,216 @@
         "mouvement:phenomenology",
         "difficulte:debutant",
         "theme:enfant_interieur"
+      ]
+    },
+    {
+      "id": 399,
+      "question": "À quel point l'argent commence à nous posséder ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 400,
+      "question": "Qu'est-ce qui n'a pas de prix pour vous ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 401,
+      "question": "Quel travail apporte le plus de valeur à la société ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:marxism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 402,
+      "question": "La peur de tout perdre est-elle réelle ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 403,
+      "question": "Quel luxe jugez-vous excessif ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 404,
+      "question": "Le système économique de croissance infinie quand on possède des ressources limitées, pour vous ça brise où ?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:marxism",
+        "difficulte:avancee",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 405,
+      "question": "Quels comportements financiers justifiez-vous pour les autres, mais pas pour vous, ou vice versa ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:analytic",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 406,
+      "question": "Pourquoi économiser quand le futur n'est aucunement garanti ?",
+      "tags": [
+        "branche:action",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 407,
+      "question": "Comment raisonnez-vous le rôle de la chance par rapport au succès financier ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:pragmatism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 408,
+      "question": "Est-ce que la philanthropie des ultra-riches change votre perception d'eux ?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 409,
+      "question": "Êtes-vous à l'aise de donner ou de recevoir un cadeau en argent ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 410,
+      "question": "Donnez-vous plus facilement à un proche ou à un inconnu ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:utilitarianism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 411,
+      "question": "Parlez-vous d'argent en famille et pourquoi ?",
+      "tags": [
+        "branche:social_theory",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 412,
+      "question": "Accordez-vous plus de valeur à votre temps ou à votre argent ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 413,
+      "question": "Est-ce que votre argent affecte votre estime de vous-même ?",
+      "tags": [
+        "branche:mind",
+        "mouvement:phenomenology",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 414,
+      "question": "Croyez-vous que malgré les inefficacités, les taxes offrent une belle qualité de vie ?",
+      "tags": [
+        "branche:political_theory",
+        "mouvement:utilitarianism",
+        "difficulte:intermediaire",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 415,
+      "question": "Certains emprunts nous libèrent et nous accablent à la fois. Comment naviguer cette contradiction ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:existentialism",
+        "difficulte:avancee",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 416,
+      "question": "L'argent est une fiction collective, et pourtant, son existence gouverne presque tout. Comment pourrait-on se libérer de ce paradoxe ?",
+      "tags": [
+        "branche:metaphysics",
+        "mouvement:critical_poststructural",
+        "difficulte:avancee",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 417,
+      "question": "Qu'est-ce qui vous choque en rapport avec l'argent ?",
+      "tags": [
+        "branche:ethics",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 418,
+      "question": "Où trouvez-vous plaisir à économiser ?",
+      "tags": [
+        "branche:action",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:argent"
+      ]
+    },
+    {
+      "id": 419,
+      "question": "Quelle est l'histoire d'une dépense folle que vous avez faite ?",
+      "tags": [
+        "branche:action",
+        "mouvement:pragmatism",
+        "difficulte:debutant",
+        "theme:argent"
       ]
     }
   ],

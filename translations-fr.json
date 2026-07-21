@@ -12,7 +12,7 @@
     "byTopicMode": "Par sujet",
     "byTopicModeDesc": "Sélectionnez un sujet spécifique",
     "monthlyThemeMode": "Sujet du mois",
-    "monthlyThemeDesc": "Psychologie de l'enfant intérieur",
+    "monthlyThemeDesc": "L'argent",
     "customMode": "Personnalisé",
     "customModeDesc": "Mélangez et associez les étiquettes avec des comptes personnalisés",
     "questionCountTitle": "Combien de questions ?",
@@ -106,7 +106,8 @@
     "sagesse_bonheur": "Sagesse & Bonheur",
     "boudhisme_vipassana": "Boudhisme & Vipassana",
     "relations_modernes": "Relations modernes",
-    "enfant_interieur": "Psychologie de l'enfant intérieur"
+    "enfant_interieur": "Psychologie de l'enfant intérieur",
+    "argent": "L'argent"
   },
   "questionsSection": {
     "title": "Questions philosophiques",

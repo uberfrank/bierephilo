@@ -12,7 +12,7 @@
     "byTopicMode": "By Topic",
     "byTopicModeDesc": "Select a specific topic to focus on",
     "monthlyThemeMode": "Monthly Theme",
-    "monthlyThemeDesc": "Inner Child Psychology",
+    "monthlyThemeDesc": "Money",
     "customMode": "Custom",
     "customModeDesc": "Mix and match tags with custom counts",
     "questionCountTitle": "How Many Questions?",
@@ -106,7 +106,8 @@
     "sagesse_bonheur": "Wisdom & Happiness",
     "boudhisme_vipassana": "Buddhism & Vipassana",
     "relations_modernes": "Modern Relationships",
-    "enfant_interieur": "Inner Child Psychology"
+    "enfant_interieur": "Inner Child Psychology",
+    "argent": "Money"
   },
   "questionsSection": {
     "title": "Philosophical Questions",
